@@ -51,6 +51,133 @@
         </div>
     </section>
 
+    <!-- section-navigation -->
+
+    <section class="section-navigation">
+        <div class="container">
+            <div class="section-navigation__grid">
+                <a href="history.html" class="section-navigation__card">
+                    <img src="./images/history.png" alt="">
+                    <span class="section-navigation__title">History</span>
+                </a>
+
+                <a href="ecology.html" class="section-navigation__card">
+                    <img src="./images/ecology.png" alt="">
+                    <span class="section-navigation__title">Ecology</span>
+                </a>
+
+                <a href="visit.html" class="section-navigation__card">
+                    <img src="./images/visit.png" alt="">
+                    <span class="section-navigation__title">Plan Your Visit</span>
+                </a>
+
+                <a href="culture.html" class="section-navigation__card">
+                    <img src="./images/culture.png" alt="">
+                    <span class="section-navigation__title">Cultural Impact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- explore-section -->
+    <section class="explore">
+        <div class="container">
+            <h2 class="explore__title">Explore the Island</h2>
+
+            <div class="explore-wrapper">
+                <div class="explore__content">
+
+                    <h3 class="explore__subtitle">
+                        Explore San Juan de Gaztelugatxe
+                    </h3>
+
+                    <p class="explore__description">
+                        Rising from the Atlantic, San Juan de Gaztelugatxe offers a journey shaped by stone, sea, and
+                        centuries of legend. From
+                        coastal viewpoints to the summit hermitage, each location reveals a different side of this
+                        iconic island.
+                    </p>
+
+                    <div class="explore__actions">
+
+                        <a href="#" class="explore__button">
+                            View More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <div class="explore__controls">
+                            <button class="explore__arrow explore__arrow--prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+
+                            <button class="explore__arrow explore__arrow--next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore__image">
+                    <img src="./images/explore.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chronicle-section -->
+    <section class="timeline">
+        <div class="container">
+
+            <h2 class="timeline__title">Chronicle</h2>
+
+            <div class="timeline__nav">
+                <span class="timeline__nav-item active" data-year="1053">1053</span>
+                <span class="timeline__nav-item" data-year="1920">1920</span>
+                <span class="timeline__nav-item" data-year="1962">1962</span>
+                <span class="timeline__nav-item" data-year="2002">2002</span>
+                <span class="timeline__nav-item" data-year="2020">2020</span>
+            </div>
+
+            <div class="timeline__content">
+                <div class="timeline__item active" data-year="1053">
+                    <img src="images/timeline_image.jpg" alt="">
+                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
+                        nearby monasteries and
+                        confirming its religious significance in medieval Spain.</p>
+
+                </div>
+
+                <div class="timeline__item" data-year="1920">
+                    <img src="images/ecology.png" alt="">
+                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
+                        nearby monasteries and
+                        confirming its religious significance in medieval Spain..</p>
+                </div>
+
+                <div class="timeline__item" data-year="1962">
+                    <img src="images/explore.jpg" alt="">
+                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
+                        nearby monasteries and
+                        confirming its religious significance in medieval Spain.</p>
+                </div>
+
+                <div class="timeline__item" data-year="2002">
+                    <img src="images/explore.jpg" alt="">
+                    <p>The site gained international recognition as a cultural heritage destination.</p>
+                </div>
+
+                <div class="timeline__item" data-year="2020">
+                    <img src="images/culture.png" alt="">
+                    <p>Tourism management measures were introduced to protect the environment.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- site-footer -->
     <footer class="site-footer">
         <div class="container">
@@ -114,5 +241,39 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const navItems = document.querySelectorAll(".timeline__nav-item");
+    const contentItems = document.querySelectorAll(".timeline__item");
+
+
+    navItems.forEach(item => {
+
+        item.addEventListener("click", () => {
+
+            const year = item.dataset.year;
+
+            // remove nav active
+            navItems.forEach(el => el.classList.remove("active"));
+
+            // add nav active
+            item.classList.add("active");
+
+
+            // hide all contents first
+            contentItems.forEach(content => {
+                content.classList.remove("active");
+            });
+
+
+            // show the coincide year in HTML
+            document
+                .querySelector(`.timeline__item[data-year="${year}"]`)
+                .classList.add("active");
+
+        });
+
+    });
+</script>
 
 </html>

@@ -88,7 +88,7 @@
     align-items: center;
     text-align: center;
     height: 201px;
-    background: url("../images/hero.png") no-repeat right top 25% / cover;
+    background: url("../images/hero.jpg") no-repeat right center / cover;
 }
 
 .footer_hero .footer_title {

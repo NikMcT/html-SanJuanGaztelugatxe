@@ -62,17 +62,17 @@
                 </a>
 
                 <a href="ecosystem.html" class="section-navigation__card">
-                    <img src="./images/ecology.png" alt="">
+                    <img src="./images/ecology.jpg" alt="">
                     <span class="section-navigation__title">Ecology</span>
                 </a>
 
                 <a href="visit.html" class="section-navigation__card">
-                    <img src="./images/visit.png" alt="">
+                    <img src="./images/visit.jpg" alt="">
                     <span class="section-navigation__title">Plan Your Visit</span>
                 </a>
 
                 <a href="culture.html" class="section-navigation__card">
-                    <img src="./images/culture.png" alt="">
+                    <img src="./images/culture.jpg" alt="">
                     <span class="section-navigation__title">Cultural Impact</span>
                 </a>
             </div>
@@ -119,8 +119,8 @@
                     </div>
                 </div>
 
-                <div class="explore__image">
-                    <img src="./images/explore.jpg" alt="">
+                <div class="explore__image"">
+                    <img src=" ./images/explore.jpg" alt="">
 
                 </div>
             </div>
@@ -151,7 +151,7 @@
                 </div>
 
                 <div class="timeline__item" data-year="1920">
-                    <img src="images/ecology.png" alt="">
+                    <img src="images/ecology.jpg" alt="">
                     <p>The earliest known written reference to the island appears in 1053, documenting its connection to
                         nearby monasteries and
                         confirming its religious significance in medieval Spain..</p>
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="timeline__item" data-year="2020">
-                    <img src="images/culture.png" alt="">
+                    <img src="images/culture.jpg" alt="">
                     <p>Tourism management measures were introduced to protect the environment.</p>
                 </div>
             </div>
@@ -574,6 +574,77 @@
         });
 
     });
+
+    const slides = [
+        {
+            subtitle: "Explore San Juan de Gaztelugatxe",
+            description:
+                "Rising from the Atlantic, San Juan de Gaztelugatxe offers a journey shaped by stone, sea, and centuries of legend.",
+            image: "./images/explore.jpg"
+        },
+        {
+            subtitle: "The 241 Stone Steps",
+            description:
+                "Discover The 241 stone steps form the most iconic route on the island. Carved into cliffs and suspended above crashing waves, this winding pathway offers an unforgettable walking experience, where every step brings you closer to the heart of Gaztelugatxe.dramatic viewpoints where cliffs, sea, and wind create one of the most iconic landscapes of the Basque coast.",
+            image: "./images/explore2.jpg"
+        },
+        {
+            subtitle: "The Hermitage of Saint John",
+            description:
+                "Follow the historicAt the summit stands the Hermitage of Saint John, the spiritual center of the island. According to tradition, visitors ring the bell three times to ward off misfortune and make a wish for good luck. stone path leading to the hermitage, a pilgrimage site that has watched over the Atlantic for centuries.",
+            image: "./images/explore3.jpg"
+        },
+        {
+            subtitle: "The Footprint of Saint John",
+            description:
+                "Located at the base of the staircase, the Footprint of Saint John is surrounded by local legend. It is believed that stepping on it may help relieve foot-related ailments and bring blessings.",
+            image: "./images/explore4.jpg"
+        },
+        {
+            subtitle: "Mirador Viewpoint",
+            description:
+                "For visitors who prefer not to climb the entire route, the roadside Mirador offers breathtaking panoramic views. From here, you can see the island, the bridge, and the coastline in one frame, making it the perfect photography spot.",
+            image: "./images/explore5.jpg"
+        }
+    ];
+
+    let currentIndex = 0;
+
+    const subtitle = document.querySelector(".explore__subtitle");
+    const description = document.querySelector(".explore__description");
+    const image = document.querySelector(".explore__image img");
+
+    const prevBtn = document.querySelector(".explore__arrow--prev");
+    const nextBtn = document.querySelector(".explore__arrow--next");
+
+    function updateSlide() {
+        const slide = slides[currentIndex];
+
+        subtitle.textContent = slide.subtitle;
+        description.textContent = slide.description;
+        image.src = slide.image;
+
+        // 控制按鈕是否可點
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === slides.length - 1;
+    }
+
+    prevBtn.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlide();
+        }
+    });
+
+    nextBtn.addEventListener("click", function () {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            updateSlide();
+        }
+    });
+
+    // 初始化
+    updateSlide();
 </script>
 
 </html>

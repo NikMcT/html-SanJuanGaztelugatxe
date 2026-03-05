@@ -65,7 +65,7 @@
 
 .site-nav .nav-list a {
     font-family: var(--font-body);
-    font-size: var(--fs-20);
+    font-size: var(--fs-16);
     color: var(--color-white);
 }
 

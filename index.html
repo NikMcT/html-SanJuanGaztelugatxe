@@ -52,7 +52,6 @@
     </section>
 
     <!-- navigation section--->
-
     <section class="section-navigation">
         <div class="container">
             <div class="section-navigation__grid">
@@ -78,7 +77,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- explore-section -->
     <section class="explore">
@@ -177,7 +175,6 @@
 
         </div>
     </section>
-
 
     <!-- Seasonal section -->
     <section class="seasonal">
@@ -473,11 +470,10 @@
                     </p>
 
                 </div>
-
             </div>
-
         </div>
     </section>
+
     <!-- site-footer -->
     <footer class="site-footer">
         <div class="container">
@@ -543,6 +539,7 @@
 </body>
 
 <script>
+
     const navItems = document.querySelectorAll(".timeline__nav-item");
     const contentItems = document.querySelectorAll(".timeline__item");
 
@@ -624,7 +621,6 @@
         description.textContent = slide.description;
         image.src = slide.image;
 
-        // 控制按鈕是否可點
         prevBtn.disabled = currentIndex === 0;
         nextBtn.disabled = currentIndex === slides.length - 1;
     }
@@ -643,7 +639,6 @@
         }
     });
 
-    // 初始化
     updateSlide();
 </script>
 

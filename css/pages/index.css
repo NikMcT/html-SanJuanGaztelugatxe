@@ -307,6 +307,12 @@
     border-radius: 16px;
 }
 
+.season-postcard {
+    width: 100%;
+    background-image: url("../../images/postcard.png");
+    background-size: contain;
+}
+
 .seasonal-board .season-card {
     position: absolute;
     width: 598px;

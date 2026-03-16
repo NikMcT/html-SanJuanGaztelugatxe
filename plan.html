@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,7 +9,7 @@
 
     <!-- Font Awesome kit for icon usage across the site -->
     <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
-    
+
     <!-- Base styles: reset, typography, color system, and design tokens -->
     <link rel="stylesheet" href="./css/base.css">
 
@@ -23,100 +24,95 @@
 
     <!-- Group shared header-->
     <header class="site-header" role="banner">
-    <a class="hero-brand" href="./index.html">Gaztelugatxe</a>
+        <a class="hero-brand" href="./index.html">Gaztelugatxe</a>
 
-    <nav class="site-nav" aria-label="Primary">
-    <ul class="nav-list">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">History</a></li>
-                <li class="nav-item"><a href="#">Ecology</a></li>
-                <li class="nav-item"><a href="#">Cultural Impact</a></li>
-                <li class="nav-item"><a aria-current="page" href="./plan.html">Plan Your Visit</a></li>
-    </ul>
-    </nav>
+        <nav class="site-nav" aria-label="Primary">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="history.html">History</a></li>
+                <li class="nav-item"><a href="ecosystem.html">Ecology</a></li>
+                <li class="nav-item"><a href="culture.html">Cultural Impact</a></li>
+                <li class="nav-item"><a href="plan.html">Plan Your Visit</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--Hero Map-->
     <section class="plan-hero">
         <div class="container plan-hero_inner">
-      
-           <figure class="plan-map" aria-describedby="map-caption">
-           <img src="./images/sjg_map.png"
-            alt="Visitor map showing routes, parking points, key stops and trail paths around San Juan de Gaztelugatxe."
-           />
 
-           <figcaption id="map-caption" class="plan-map_caption">
-           Temporary map. It will be replaced later with an updated version.
-            </figcaption>
-           </figure>
-         </div>
-      </section>
+            <figure class="plan-map" aria-describedby="map-caption">
+                <img src="./images/sjg_map.png"
+                    alt="Visitor map showing routes, parking points, key stops and trail paths around San Juan de Gaztelugatxe." />
+
+                <figcaption id="map-caption" class="plan-map_caption">
+                    Temporary map. It will be replaced later with an updated version.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
     <!--Routing and Commuting-->
     <section class="routing" aria-labelledby="routing-title">
         <div class="container">
-        <h2 id="routing-title" class="plan-section-title">Routing &amp; commuting</h2>
-        <div class="routing-grid">
+            <h2 id="routing-title" class="plan-section-title">Routing &amp; commuting</h2>
+            <div class="routing-grid">
 
-    <!--Row 1-->
-    <div class="routing-media routing-media--bus">
-        <img src="./images/routing-bus.jpg" 
-         alt="Image showcasing bus travel and commuting."
-    />
-    </div>
+                <!--Row 1-->
+                <div class="routing-media routing-media--bus">
+                    <img src="./images/routing-bus.jpg" alt="Image showcasing bus travel and commuting." />
+                </div>
 
-    <article class="route-card route-card--bus">
-         <h3 class="route-card_title">Bus Route</h3>
-         <p class="route-card_text">Public transport options and key stops for reaching Gaztelugatxe.</p>
-   
-           <a class="plan-btn plan-btn--primary"
-           href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/"
-           target="_blank" rel="noopener"
-           aria-label="Open bus route information in a new tab">
-           View more 
-          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-    </a>
-    </article>
+                <article class="route-card route-card--bus">
+                    <h3 class="route-card_title">Bus Route</h3>
+                    <p class="route-card_text">Public transport options and key stops for reaching Gaztelugatxe.</p>
 
-    <!--Row 2-->
+                    <a class="plan-btn plan-btn--primary"
+                        href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/" target="_blank"
+                        rel="noopener" aria-label="Open bus route information in a new tab">
+                        View more
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
 
-    <article class="route-card route-card--boat">
-        <h3 class="route-card_title">Boat Route</h3>
-         <p class="route-card_text">Different types of boat access and how to plan your departure and arrival.</p>
-        <a class="plan-btn plan-btn--primary"
-        href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/"
-        target="_blank" rel="noopener"
-        aria-label="Open boat route information in a new tab">
-        View more 
-        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-    </a>
-    </article>
+                <!--Row 2-->
 
-    <div class="routing-media routing-media--boat">
-        <img src="./images/routing-boat.jpg" alt="Image showing boat travel." />
-    </div>
+                <article class="route-card route-card--boat">
+                    <h3 class="route-card_title">Boat Route</h3>
+                    <p class="route-card_text">Different types of boat access and how to plan your departure and
+                        arrival.</p>
+                    <a class="plan-btn plan-btn--primary"
+                        href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/" target="_blank"
+                        rel="noopener" aria-label="Open boat route information in a new tab">
+                        View more
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
 
-    <!--Row 3-->
-    <div class="routing-media routing-media--walk">
-         <img src="./images/routing-walk.jpg" alt="Image showcasing a walking route." />
-    </div>
+                <div class="routing-media routing-media--boat">
+                    <img src="./images/routing-boat.jpg" alt="Image showing boat travel." />
+                </div>
 
-    <article class="route-card route-card--walk">
-        <h3 class="route-card_title">Walking Route</h3>
-        <p class="route-card_text">Walking paths, difficulty and preparation tips for the route</p>
-        <a class="plan-btn plan-btn--primary"
-        href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/"
-        target="_blank" rel="noopener"
-        aria-label="Open walking route information in a new tab">
-        View more 
-        <i class= "fa-solid fa-arrow-right" aria-hidden="true"></i>
-            </a>
-      </article>
-    </div>
- </div>
-</section>
+                <!--Row 3-->
+                <div class="routing-media routing-media--walk">
+                    <img src="./images/routing-walk.jpg" alt="Image showcasing a walking route." />
+                </div>
 
- <!-- Seasonal section -->
+                <article class="route-card route-card--walk">
+                    <h3 class="route-card_title">Walking Route</h3>
+                    <p class="route-card_text">Walking paths, difficulty and preparation tips for the route</p>
+                    <a class="plan-btn plan-btn--primary"
+                        href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/"
+                        target="_blank" rel="noopener" aria-label="Open walking route information in a new tab">
+                        View more
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal section -->
     <section class="seasonal">
         <div class="container">
 
@@ -338,7 +334,7 @@
 
     </section>
 
-<!-- site-footer -->
+    <!-- site-footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer_wrapper">

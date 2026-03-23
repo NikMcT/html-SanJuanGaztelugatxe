@@ -532,6 +532,7 @@
 /* history page */
 .hero-history {
     position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .history-intro {
@@ -554,9 +555,9 @@
 }
 
 .history-subtitle {
-    font-size: var(--fs-16);
+    font-size: var(--fs-24);
     color: var(--color-white);
-    max-width: 340px;
+    max-width: 500px;
     line-height: 1.6;
     margin-bottom: 24px;
 }
@@ -587,6 +588,7 @@
 .timeline-entry {
     position: absolute;
     width: 400px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .timeline-entry.left {
@@ -617,7 +619,7 @@
 
 .entry-text {
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--color-white);
 }

@@ -488,7 +488,7 @@
 }
 
 /* history background */
-.map-bg {
+/* .map-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -498,15 +498,30 @@
     background-size: cover;
     background-position: center;
     z-index: 0;
-}
-.img-sjdg {
-    position: relative;
-    width: 100%;
-    height: 1900px; 
-    background-image: url(../../images/sjdg_7.png);
-    background-size: var(--layout-width);
+    will-change: transform;
+} */
+
+.img-sjdg { 
+    position:relative;
+    width: 1600px;
+    height: 1900px;
+    background-image: url(../../images/sjdg_ori.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal {
+    position: absolute;
+    inset: 0;
+    background-image: url(../../images/sjdg_6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    clip-path: inset(100% 0 0 0); /* hidden initially */
 }
 
 /* timeline text entries */

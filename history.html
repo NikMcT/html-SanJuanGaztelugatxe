@@ -41,8 +41,9 @@
             <a href="#" class="hero-scroll">Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
         </div>
 
-        <div class="map-bg"></div>
+        <!-- <div class="map-bg"></div> -->
         <div class="img-sjdg">
+            <div class="image-reveal"></div>
             <!-- Timeline entries: alternate left/right -->
             <div class="timeline-entry left" style="top: 37%;">
                 <h3 class="entry-year">1334</h3>
@@ -141,4 +142,48 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
 </body>
+
+    <script>
+gsap.registerPlugin(ScrollTrigger);
+
+// IMAGE REVEAL (outline → image effect)
+gsap.to(".image-reveal", {
+    clipPath: "inset(0% 0 0 0)",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".hero-history",
+        start: "top 300%",
+        end: "bottom top",
+        scrub: true
+    }
+});
+
+// PARALLAX BACKGROUND
+gsap.to(".map-bg", {
+    y: "20%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".hero-history",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+    }
+});
+
+// PARALLAX IMAGE (slower)
+gsap.to(".img-sjdg", {
+    y: "-10%",
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".hero-history",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+    }
+});
+</script>

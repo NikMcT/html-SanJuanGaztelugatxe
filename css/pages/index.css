@@ -454,7 +454,6 @@
     margin-bottom: 24px;
 }
 
-
 /* history page */
 .hero-history {
     position: relative;
@@ -547,93 +546,8 @@
     font-family: var(--font-body);
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--color-black);
+    color: var(--color-white);
 }
-
-
-
-
-/* history page */
-.hero-history {
-    position: relative;
-}
- 
-.history-intro {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: var(--layout-width);
-    z-index: 10;
-    padding: 40px 0 0 0;
-}
- 
-.history-main-title {
-    font-family: var(--font-brand);
-    font-size: var(--fs-56);
-    font-weight: 400;
-    color: var(--color-black);
-    margin-bottom: 16px;
-    max-width: 600px;
-}
- 
-.history-subtitle {
-    font-size: var(--fs-16);
-    color: var(--color-black);
-    max-width: 340px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-}
- 
-/* history background */
-.img-sjdg {
-    position: relative;
-    width: 100%;
-    height: 3560px;
-    background-image: url(../../images/sjdg_4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
- 
-/* timeline text entries */
-.timeline-entry {
-    position: absolute;
-    width: 400px;
-    text-align: left;
-}
- 
-.timeline-entry.left {
-    left: 4%;
-}
- 
-.timeline-entry.right {
-    right: 20%;
-}
- 
-.entry-year {
-    font-family: var(--font-display);
-    font-size: var(--fs-32);
-    font-weight: 400;
-    color: var(--color-black);
-    margin-bottom: 4px;
-}
- 
-.entry-title {
-    font-family: var(--font-body);
-    font-size: var(--fs-20);
-    font-weight: 700;
-    color: var(--color-black);
-    margin-bottom: 10px;
-}
- 
-.entry-text {
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    line-height: 1.6;
-    color: var(--color-black);
-}
- 
 
 /* ecosystem page styling begins */
 

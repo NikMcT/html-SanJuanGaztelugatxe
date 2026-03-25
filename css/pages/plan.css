@@ -1,0 +1,219 @@
+﻿/* Plan Page CSS */
+
+/*Map*/
+
+.plan-hero {
+	padding:0px;
+    margin: 0;
+}
+
+.plan-hero .map-page{
+  width: 100%;
+}
+
+.page-plan .container {
+	max-width: 1440px;
+	margin: 0  auto;
+	padding-left: 80px;
+	padding-right: 90px;
+}
+
+@media (max-width: 1024px) {
+	.page-plan .container {
+	 padding-left: 40px;
+	 padding-right: 40px;
+	}
+}
+@media (max-width: 640px) {
+	.page-plan .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/*Routing and Commuting Section*/
+
+.routing {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.plan-section-title {
+  margin: 0 0 1.7rem;
+  font-size: 2.7rem;
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #141b31;
+}
+/* first row wrapper */
+.routing-row--top {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(320px, 0.78fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* left image */
+.routing-media--top {
+  width: 100%;
+  height: 335px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.routing-media--top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  display: block;
+}
+
+/* right card */
+.route-card--bus {
+  width: 100%;
+  height: 338px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  background-color: #10755a;
+  background-image: url("../../images/wind-pattern.jpg");
+  background: cover;
+  background-size: 255px auto;
+  background-position: center;
+}
+
+/* inner green panel */
+.route-card--bus .route-card__inner {
+  width: 100%;
+  max-width: 680px;
+  min-height: 270px;
+  background: #10755a;
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 1.8rem;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* text */
+.route-card--bus .route-card__title {
+  margin: 0 0 1.35rem;
+  font-size: 1.28rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+}
+
+.route-card--bus .route-card__text {
+  margin: 0 0 1.8rem;
+  max-width: 15ch;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+/* button */
+.route-card--bus .plan-btn {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  align-self: flex-start;
+  gap: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  background: #ffffff;
+  color: #10755a;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/*row 2*/
+
+.routing-row--boat {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 2.18fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.routing-row--boat .route-card--boat,
+.routing-row--boat .routing-media--boat {
+  height: 335px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.routing-row--boat .routing-media--boat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.routing-row--boat .route-card--boat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #ffb300;
+  background-image: url("../../../images/stairwaypattern.jpg");
+  background-repeat: repeat;
+  background-size: 210px auto;
+  background-position: center;
+}
+
+.routing-row--boat .route-card--boat .route-card__inner {
+  width: 100%;
+  max-width: none;          /* important */
+  min-height: 100%;
+  background: transparent;  /* boat card does not use inner box */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2.7rem 2rem 1.8rem;
+  margin: 0;
+}
+
+.routing-row--boat .route-card--boat .route-card__title {
+  margin: 0 0 1.2rem;
+  font-size: 1.2rem;
+  line-height: 1.08;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+}
+
+.routing-row--boat .route-card--boat .route-card__text {
+  margin: 0 0 1.8rem;
+  max-width: 12ch;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  text-align: left;
+}
+
+.routing-row--boat .route-card--boat .plan-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: auto;
+  padding: 0.95rem 1.45rem;
+  background: #f2f0ea;
+  color: #1b6f64;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}

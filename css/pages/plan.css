@@ -1,4 +1,4 @@
-﻿/* Plan Page CSS */
+/* Plan Page CSS */
 
 /*Map*/
 
@@ -46,7 +46,7 @@
   letter-spacing: -0.03em;
   color: #141b31;
 }
-/* first row wrapper */
+/* first row */
 .routing-row--top {
   display: grid;
   grid-template-columns: minmax(0, 2.2fr) minmax(320px, 0.78fr);
@@ -71,9 +71,10 @@
 }
 
 /* right card */
+
 .route-card--bus {
   width: 100%;
-  height: 338px;
+  height: 335px;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -87,7 +88,7 @@
   background-position: center;
 }
 
-/* inner green panel */
+/* inner green */
 .route-card--bus .route-card__inner {
   width: 100%;
   max-width: 680px;
@@ -107,7 +108,7 @@
 /* text */
 .route-card--bus .route-card__title {
   margin: 0 0 1.35rem;
-  font-size: 1.28rem;
+  font-size: 2rem;
   line-height: 1.05;
   font-weight: 800;
   color: #ffffff;
@@ -116,7 +117,8 @@
 
 .route-card--bus .route-card__text {
   margin: 0 0 1.8rem;
-  max-width: 15ch;
+  max-width: none;
+  text-align: left;
   line-height: 1.7;
   color: #ffffff;
 }
@@ -137,18 +139,17 @@
   font-weight: 600;
 }
 
-/*row 2*/
-
+/* row 2 */
 .routing-row--boat {
   display: grid;
-  grid-template-columns: minmax(320px, 0.82fr) minmax(0, 2.18fr);
+  grid-template-columns: 370px 1fr;
   gap: 1rem;
+  margin-top: 1.89rem;
   align-items: stretch;
 }
 
-.routing-row--boat .route-card--boat,
 .routing-row--boat .routing-media--boat {
-  height: 335px;
+  height: 345px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -157,63 +158,435 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 78% center;
   display: block;
 }
 
-.routing-row--boat .route-card--boat {
+/*left boat card */
+.route-card--boat {
+  width: 100%;
+  height: 345px;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.9rem;
   background-color: #ffb300;
-  background-image: url("../../../images/stairwaypattern.jpg");
+  background-image: url("../../images/stairway-pattern.jpg");
   background-repeat: repeat;
-  background-size: 210px auto;
+  background-size: 255px auto;
   background-position: center;
 }
 
-.routing-row--boat .route-card--boat .route-card__inner {
+.routing-row--boat .route-card__inner {
   width: 100%;
-  max-width: none;          /* important */
-  min-height: 100%;
-  background: transparent;  /* boat card does not use inner box */
+  max-width: 680px;
+  min-height: 270px;
+  background: #ffb300;
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 1.8rem;
+  padding-bottom: 2rem;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2.7rem 2rem 1.8rem;
-  margin: 0;
 }
 
-.routing-row--boat .route-card--boat .route-card__title {
-  margin: 0 0 1.2rem;
-  font-size: 1.2rem;
-  line-height: 1.08;
+.route-card--boat .route-card__title {
+  margin: 0 0 1.35rem;
+  font-size: 1.89rem;
+  line-height: 1.05;
   font-weight: 800;
   color: #ffffff;
   text-align: left;
 }
 
-.routing-row--boat .route-card--boat .route-card__text {
+.route-card--boat .route-card__text {
   margin: 0 0 1.8rem;
-  max-width: 12ch;
-  font-size: 0.95rem;
+  max-width: non;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
   text-align: left;
 }
 
-.routing-row--boat .route-card--boat .plan-btn {
+.route-card--boat .plan-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   align-self: flex-start;
   width: auto;
-  padding: 0.95rem 1.45rem;
-  background: #f2f0ea;
-  color: #1b6f64;
-  border-radius: 2px;
+  gap: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  background: #ffffff;
+  color: #ffb300;
   text-decoration: none;
+  border-radius: 2px;
   font-size: 0.95rem;
   font-weight: 600;
+}
+
+/* row 3 */
+.routing-row--walk {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(320px, 0.78fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+.routing-row--walk .routing-media--walk,
+.routing-row--walk .route-card--walk {
+  height: 338px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.routing-row--walk .routing-media--walk img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+}
+
+.route-card--walk {
+  width: 100%;
+  height: 338px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  background-color: #10755a;
+  background-image: url("../../images/wind-pattern.jpg");
+  background-repeat: repeat;
+  background-size: 255px auto;
+  background-position: center;
+}
+
+.route-card--walk .route-card__inner {
+  width: 100%;
+  max-width: 680px;
+  min-height: 270px;
+  background: #10755a;
+  padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 1.8rem;
+  padding-bottom: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.route-card--walk .route-card__title {
+  margin: 0 0 1.35rem;
+  font-size: 1.89rem;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+}
+
+.route-card--walk .route-card__text {
+  margin: 0 0 1.8rem;
+  max-width: 20ch;
+  line-height: 1.7;
+  color: #ffffff;
+  text-align: left;
+}
+
+.route-card--walk .plan-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: auto;
+  gap: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  background: #ffffff;
+  color: #10755a;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.route-card--bus .plan-btn:hover,
+.route-card--walk .plan-btn:hover {
+  background: #10755a;
+  color: #ffffff;
+}
+
+.routing-media--top,
+.routing-media--boat,
+.routing-media--walk {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.routing-media--top img,
+.routing-media--boat img,
+.routing-media--walk img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.routing-media--top:hover img,
+.routing-media--boat:hover img,
+.routing-media--walk:hover img {
+  transform: scale(1.08);
+}
+
+/*Four Seasons*/
+
+.seasons {
+  padding: 1rem 0 5rem;
+  background: #ffffff;
+}
+
+.seasons-title {
+  margin: 0 0 2rem;
+  margin-top: 0;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.03;
+  color:#141b31;
+}
+
+.seasons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.seasons-col {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.season-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.season-card--large {
+  height: 620px;
+}
+
+.season-card--small {
+  height: 290px;
+}
+
+.season-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.season-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.season-card img {
+  transition: transform 0.4s ease;
+}
+
+.season-card:hover img {
+  transform: scale(1.08);
+}
+.season-card--spring img {
+  object-position: center center;
+}
+
+.season-card--summer img {
+  object-position: center center;
+}
+
+.season-card--fall img {
+  object-position: center center;
+}
+
+.season-card--winter img {
+  object-position: center center;
+}
+
+.season-overlay {
+   position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 2rem;
+  background: linear-gradient(
+   to top,
+    rgba(1, 48, 67, 0.75) 0%,   
+    rgba(1, 48, 67, 0.45) 35%,  
+    rgba(1, 48, 67, 0.15) 65%,  
+    rgba(1, 48, 67, 0) 100%     
+  );
+}
+
+.season-overlay h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.season-card--large .season-overlay h3 {
+  font-size: 2.4rem;
+}
+
+.season-overlay p {
+  margin: 0 0 1.3rem;
+  max-width: 27ch;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.season-card--small .season-overlay p {
+  max-width: 30ch;
+}
+
+
+.season-overlay .plan-btn {
+   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: auto;
+  gap: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  background: #ffffff;
+  color: #10755a;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .seasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .season-card--large,
+  .season-card--small {
+    height: 360px;
+  }
+
+  .seasons-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Things to do */
+
+.things-to-do {
+  padding: 80px 0;
+}
+
+.things-to-do__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-48);
+  margin-bottom: 60px;
+}
+
+.things-to-do__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.things-card__image {
+  height: 600px;
+}
+
+.things-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.things-card__tags {
+  position: absolute;
+  top: 27px;
+  left: 20px;
+  color: var(--color-white);
+  padding: 4px 32px;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  background: rgba(12, 12, 32, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.things-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.things-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.things-card__content {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  padding: 20px 20px;
+  z-index: 1;
+}
+
+.things-card__content .things-card__title {
+  font-size: var(--fs-24);
+  margin-bottom: 12px;
+}
+
+.things-card__description {
+  margin-bottom: 24px;
+}
+
+.explore__button {
+    display: inline-block;
+    padding: 22px 14px;
+    color: var(--color-green);
+    background-color: var(--color-white);
+    transition: all .4s;
+    border-radius: 8px;
+}
+
+.explore__button:hover {
+    color: var(--color-white);
+    background-color: var(--color-green);
 }

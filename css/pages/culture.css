@@ -17,6 +17,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('../../images/culture/culture-bg.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.page-header-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 24px;
 }
 
@@ -126,15 +138,12 @@ body {
 }
 
 
-/* text side */
-
 .section-text {
     flex: 1;
     position: relative;
     padding-top: 30px;
 }
 
-/* big number in the background */
 .bg-number {
     position: absolute;
     top: -15px;
@@ -145,11 +154,10 @@ body {
     line-height: 1;
     color: var(--color-black);
     opacity: 0.1;
-    pointer-events: none;
-    user-select: none;
     z-index: 0;
 }
 
+/* tagline */
 .tagline {
     display: flex;
     align-items: center;
@@ -199,24 +207,6 @@ body {
     z-index: 1;
 }
 
-.more-link {
-    display: inline-block;
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--color-green);
-    text-decoration: none;
-    margin-top: 12px;
-    position: relative;
-    z-index: 1;
-}
-
-.more-link:hover {
-    text-decoration: underline;
-}
-
-
-/* image side */
 
 .section-image {
     width: 560px;

@@ -1,412 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaztelugatxe</title>
-    <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/pages/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaztelugatxe</title>
+  <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages/index.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <a href="./index.html" class="hero-brand">Gaztelugatxe</a>
+  <header class="site-header">
+    <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG logo.png" alt=" logo"></a>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="ecosystem.html">Ecology</a></li>
+        <li class="nav-item"><a href="culture.html">Cultural Impact</a></li>
+        <li class="nav-item"><a href="plan.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="hero-content">
+        <h1>A Living Ecosystem by the Atlantic</h1>
+        <p>From seabirds and coastal plants to marine life below the waves, San Juan de Gaztelugatxe thrives through a
+          delicate balance of nature.</p>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stats-bar-inner">
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Sky Animals</div>
+          <div class="stat-desc">Seabirds, raptors and migratory species recorded along the Atlantic corridor</div>
         </div>
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="history.html">History</a></li>
-                <li class="nav-item"><a href="ecosystem.html">Ecology</a></li>
-                <li class="nav-item"><a href="culture.html">Cultural Impact</a></li>
-                <li class="nav-item"><a href="plan.html">Plan Your Visit</a></li>
+        <div class="stat-item">
+          <div class="stat-number">97%</div>
+          <div class="stat-label">Native Flora</div>
+          <div class="stat-desc">Of coastal vegetation is composed of indigenous salt-tolerant species</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">34+</div>
+          <div class="stat-label">Sea Fish</div>
+          <div class="stat-desc">Species inhabiting the rocky intertidal and subtidal zones below the cliffs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ BIRDS ══════════ -->
+  <section class="birds-section">
+    <div class="bird-hero" id="birdHero">
+      <div class="birds-top">
+        <h2>Sky: A Corridor for Coastal Life</h2>
+        <div class="bird-tags">
+          <span class="bird-tag-pill">Yellow-legged Gull</span>
+          <span class="bird-tag-pill">European Shag</span>
+          <span class="bird-tag-pill">Peregrine Falcon</span>
+          <span class="bird-tag-pill">Oystercatcher</span>
+          <span class="bird-tag-pill">Egyptian Vulture</span>
+        </div>
+      </div>
+      <p class="birds-intro">
+        Above the cliffs of Gaztelugatxe, seabirds and migratory species navigate seasonal winds and ocean currents,
+        forming a vital aerial ecosystem along the Atlantic coast.
+      </p>
+      <div class="bird-thumbs-wrap">
+        <div class="bird-thumbs" id="birdThumbs">
+          <div class="bird-thumb active" data-index="0" data-img="images/ecosystem/yellow-legged-gull.jpg">
+            <img src="images/ecosystem/yellow-legged-gull.jpg" alt="Yellow-legged Gull">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Yellow-legged Gull</div>
+              <div class="bird-thumb-sub">Common coastal seabird</div>
+            </div>
+          </div>
+          <div class="bird-thumb" data-index="1" data-img="images/ecosystem/european-shag.jpg">
+            <img src="images/ecosystem/european-shag.jpg" alt="European Shag">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">European Shag</div>
+              <div class="bird-thumb-sub">Cliff-nesting cormorant</div>
+            </div>
+          </div>
+          <div class="bird-thumb" data-index="2" data-img="images/ecosystem/peregrine-falcon.jpg">
+            <img src="images/ecosystem/peregrine-falcon.jpg" alt="Peregrine Falcon">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Peregrine Falcon</div>
+              <div class="bird-thumb-sub">Apex aerial predator</div>
+            </div>
+          </div>
+          <div class="bird-thumb" data-index="3" data-img="images/ecosystem/oystercatcher.jpg">
+            <img src="images/ecosystem/oystercatcher.jpg" alt="Oystercatcher">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Oystercatcher</div>
+              <div class="bird-thumb-sub">Oceanic migratory bird</div>
+            </div>
+          </div>
+          <div class="bird-thumb" data-index="4" data-img="images/ecosystem/egyptian-vulture.jpg">
+            <img src="images/ecosystem/egyptian-vulture.jpg" alt="Egyptian Vulture">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Egyptian Vulture</div>
+              <div class="bird-thumb-sub">Rare migratory scavenger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ BIRD SPECIES DETAIL ══════════ -->
+  <section class="species-detail">
+    <div class="species-detail-inner">
+      <div class="species-left">
+        <div class="species-number" id="birdNumber">(01)</div>
+        <h3 id="birdName">Yellow-legged Gull</h3>
+        <p id="birdSummary">Larus michahellis is one of the most visible birds along the Basque coast. A versatile
+          forager, it nests on sea-facing cliffs and feeds on fish, invertebrates, and scraps from nearby fishing boats.
+        </p>
+      </div>
+      <div class="species-right" id="birdBody">
+        <p>The Yellow-legged Gull is one of the most characteristic birds of the Atlantic coast. With its bright yellow
+          legs and powerful bill tipped with red, it is easy to identify year-round on the cliffs and rocky shores of
+          Gaztelugatxe.</p>
+        <p>These birds nest in large colonies between April and July, occupying exposed ledges on the sea-facing cliffs.
+          Both parents share incubation duties and are highly territorial, often diving at intruders that venture too
+          close to the nest site.</p>
+        <p>As opportunistic omnivores, Yellow-legged Gulls adapt their diet to seasonal availability — feeding on marine
+          invertebrates, small fish, and discards from fishing vessels. Their presence serves as a useful indicator of
+          broader ecosystem health along the coastline.</p>
+        <p>Conservation efforts focus on monitoring colony sizes and reducing disturbance during the breeding season.
+          Restricted access zones and visitor education programmes have helped stabilise population numbers in recent
+          years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FLORA ══════════ -->
+  <section class="birds-section">
+    <div class="flora-hero" id="floraHero">
+      <div class="birds-top">
+        <h2>Flora: Life on the Cliffs</h2>
+        <div class="bird-tags">
+          <span class="bird-tag-pill">Rock Sea Lavender</span>
+          <span class="bird-tag-pill">Wild Olive</span>
+          <span class="bird-tag-pill">Holm Oak</span>
+          <span class="bird-tag-pill">Heather</span>
+          <span class="bird-tag-pill">Gorse</span>
+        </div>
+      </div>
+      <p class="birds-intro">
+        The vegetation of Gaztelugatxe forms a layered mosaic shaped by wind, salt spray, and thin limestone soils.
+      </p>
+      <div class="bird-thumbs-wrap">
+        <div class="bird-thumbs" id="floraThumbs">
+          <div class="flora-thumb active" data-index="0" data-img="images/ecosystem/sea-lavender.jpg">
+            <img src="images/ecosystem/sea-lavender.jpg" alt="Rock Sea Lavender, Pexels, Skylar Kang">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Rock Sea Lavender</div>
+              <div class="bird-thumb-sub">Salt-tolerant cliff plant</div>
+            </div>
+          </div>
+          <div class="flora-thumb" data-index="1" data-img="images/ecosystem/wild-olive.jpg">
+            <img src="images/ecosystem/wild-olive.jpg" alt="Wild Olive, Pexels, Julia Sakelli">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Wild Olive</div>
+              <div class="bird-thumb-sub">Ancient coastal tree</div>
+            </div>
+          </div>
+          <div class="flora-thumb" data-index="2" data-img="images/ecosystem/holm-oak.jpg">
+            <img src="images/ecosystem/holm-oak.jpg" alt="Holm Oak, Pexels, Petr Ganaj">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Holm Oak</div>
+              <div class="bird-thumb-sub">Evergreen woodland canopy</div>
+            </div>
+          </div>
+          <div class="flora-thumb" data-index="3" data-img="images/ecosystem/heather.jpg">
+            <img src="images/ecosystem/heather.jpg" alt="Heather, Pexels, Ylanite Koppens">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Heather</div>
+              <div class="bird-thumb-sub">Coastal shrub</div>
+            </div>
+          </div>
+          <div class="flora-thumb" data-index="4" data-img="images/ecosystem/gorse.jpg">
+            <img src="images/ecosystem/gorse.jpg" alt="Gorse, Pexels, Matt Hardy">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Gorse</div>
+              <div class="bird-thumb-sub">Spiny scrub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FLORA SPECIES DETAIL ══════════ -->
+  <section class="species-detail">
+    <div class="species-detail-inner">
+      <div class="species-left">
+        <div class="species-number" id="floraNumber">(01)</div>
+        <h3 id="floraName">Rock Sea Lavender</h3>
+        <p id="floraSummary">Limonium binervosum is a salt-tolerant cliff plant found on the exposed rock faces of
+          Gaztelugatxe, adapted to survive wind, spray, and minimal soil.</p>
+      </div>
+      <div class="species-right" id="floraBody">
+        <p>Rock sea lavender grows in crevices and ledges along the steep cliffs, where few other plants can survive.
+          Its low, tufted form helps it resist strong Atlantic winds and constant salt spray.</p>
+        <p>This species is one of the most characteristic plants of the Gaztelugatxe coastline, forming small patches of
+          colour against otherwise bare rock.</p>
+        <p>It thrives in extremely thin soils, drawing nutrients from accumulated organic matter and moisture trapped in
+          cracks in the limestone.</p>
+        <p>Together with other halophytes, it forms the first layer of vegetation in the vertical ecosystem of the
+          cliffs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OCEAN ══════════ -->
+  <section class="birds-section">
+    <div class="ocean-hero" id="oceanHero">
+
+      <div class="birds-top">
+        <h2>Ocean: Life Beneath the Waves</h2>
+        <div class="bird-tags">
+          <span class="bird-tag-pill">Stalked Barnacle</span>
+          <span class="bird-tag-pill">Wrasses</span>
+          <span class="bird-tag-pill">Coastal Predatory Fish</span>
+          <span class="bird-tag-pill">Key Invertebrates</span>
+          <span class="bird-tag-pill">Red Algae & Mixed Algal Cover</span>
+        </div>
+      </div>
+      <p class="birds-intro">
+        Beneath the cliffs of Gaztelugatxe, a rich intertidal and subtidal world thrives, with barnacles, fish,
+        cephalopods, and algae forming a complex Atlantic reef ecosystem.
+      </p>
+
+      <div class="bird-thumbs-wrap">
+        <div class="bird-thumbs" id="oceanThumbs">
+          <div class="ocean-thumb active" data-index="0" data-img="images/ecosystem/stalked-barnacle.jpg">
+            <img src="images/ecosystem/stalked-barnacle.jpg" alt="Stalked Barnacle, Unsplash, Zaki Ahmed">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Stalked Barnacle</div>
+              <div class="bird-thumb-sub">Intertidal filter-feeder</div>
+            </div>
+          </div>
+          <div class="ocean-thumb" data-index="1" data-img="images/ecosystem/wrasses.jpg">
+            <img src="images/ecosystem/wrasses.jpg" alt="Wrasses, Unsplash, Anastasia">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Wrasses</div>
+              <div class="bird-thumb-sub">Colorful reef-dwelling fish</div>
+            </div>
+          </div>
+          <div class="ocean-thumb" data-index="2" data-img="images/ecosystem/coastal-predatory-fish.jpg">
+            <img src="images/ecosystem/coastal-predatory-fish.jpg"
+              alt="Coastal Predatory Fish, Pexels, Adrian Frentescu">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Coastal Predatory Fish</div>
+              <div class="bird-thumb-sub">Seabass, whiting, and mackerel</div>
+            </div>
+          </div>
+          <div class="ocean-thumb" data-index="3" data-img="images/ecosystem/invertebrates.jpg">
+            <img src="images/ecosystem/invertebrates.jpg" alt="Key Invertebrates, Pexels, Pia B">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Key Invertebrates</div>
+              <div class="bird-thumb-sub">Octopus, urchins, anemones</div>
+            </div>
+          </div>
+          <div class="ocean-thumb" data-index="4" data-img="images/ecosystem/red-algae.jpg">
+            <img src="images/ecosystem/red-algae.jpg" alt="Red Algae & Mixed Algal Cover">
+            <div class="inside-bird-thumb">
+              <div class="bird-thumb-label">Mixed Algal Cover</div>
+              <div class="bird-thumb-sub">Supporting reef life</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OCEAN SPECIES DETAIL ══════════ -->
+  <section class="species-detail">
+    <div class="species-detail-inner">
+      <div class="species-left">
+        <div class="species-number" id="oceanNumber">(01)</div>
+        <h3 id="oceanName">Atlantic Wrasse</h3>
+        <p id="oceanSummary">Several wrasse species inhabit the rocky reefs below Gaztelugatxe, feeding on invertebrates
+          and playing a key role in the inshore food web along the Basque coast.</p>
+      </div>
+      <div class="species-right" id="oceanBody">
+        <p>Atlantic wrasse are among the most colourful fish found along the Basque coastline. Species such as the
+          cuckoo wrasse and corkwing wrasse are commonly encountered in the rocky reef habitats directly beneath the
+          cliffs of Gaztelugatxe.</p>
+        <p>These fish are closely associated with kelp and rocky substrate, where they forage for crustaceans, molluscs,
+          and small invertebrates. Their strong jaws allow them to extract prey from crevices and crack the shells of
+          barnacles and mussels.</p>
+        <p>Wrasse play an important ecological role as cleaner fish, removing parasites from larger species. This
+          behaviour has also made them commercially valuable as a biological solution in salmon aquaculture.</p>
+        <p>Their presence in the intertidal and shallow subtidal zone makes them a visible indicator of reef health.
+          Healthy wrasse populations suggest clean water and an intact invertebrate community on the seafloor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONSERVATION ══════════ -->
+  <section class="conservation">
+    <div class="conservation-inner">
+      <div class="conservation-header">
+        <h2>How We Protect This Ecosystem</h2>
+        <p>Preserving Gaztelugatxe's fragile balance requires responsible tourism, scientific research, and collective
+          action.</p>
+      </div>
+      <div class="feature-card">
+        <span class="tag">Conservation</span>
+        <h3>Managing Tourism to Protect Coastal Wildlife</h3>
+        <p>Visitor numbers, access control, and seasonal restrictions help reduce disturbance to seabirds, vegetation,
+          and marine habitats. Please keep the following tips in mind when visiting in order to reduce environmental
+          impact and improve your experience at the hermitage.</p>
+      </div>
+    </div>
+
+    <div class="articles-section">
+      <div class="articles-grid">
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/gorse.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Stay on defined paths</h4>
+            <p>Protect the coastal ecosystem by staying on marked trails and not damaging the vegetation or any nesting
+              grounds.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/stalked-barnacle.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Take trash with you</h4>
+            <p>Garbage can do great harms to the local flora and fauna, and there are no bins along the narrow stairs of
+              the islet. Be sure not to leave any trash behind, and pick up waste as you come across it.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/european-shag.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Keep distance from local wildlife</h4>
+            <p>Don't bother or harrass any of the local birds or wildlife. These creatures live a balanced life, and
+              intervening with thier schedules can cause more harm than good.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/yellow-legged-gull.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Don't feed the wildlife</h4>
+            <p>These creatures hold pivotal roles in the local ecosystem, and distrupting their diets can cause damage
+              to them and their flocks.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/invertebrates.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Keep any pets secured</h4>
+            <p>Dogs are welcome here, but we ask that you keep them leashed and secure. Not only can their impact do
+              damage to local flora and fauna, but the rocky shores and steep cliffs can cause harm to your pets.</p>
+          </div>
+        </div>
+        <div class="article-card">
+          <img class="article-img" src="images/ecosystem/0hero.jpg" alt="Wildlife">
+          <div class="article-body">
+            <h4>Take care of yourselves</h4>
+            <p>It's just as important to care for yourselves as it is the biotope. Be sure to drink water, rest, and
+              stay protected from the sun.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="footer_hero">
+          <h2 class="footer_title">
+            Have an idea? Let’s Trip <br> San Juan de Gaztelugatxe
+          </h2>
+        </div>
+        <div class="footer_main">
+
+          <div class="footer_logo">
+            <img src="./images/footer_logo.png" alt="footer_logo">
+          </div>
+
+          <nav class="footer_nav">
+            <ul class="footer_nav-list">
+              <li class="footer_nav-item"><a href="#">Home</a></li>
+              <li class="footer_nav-item"><a href="#">History</a></li>
+              <li class="footer_nav-item"><a href="#">Ecology</a></li>
+              <li class="footer_nav-item"><a href="#">Cultural Impact</a></li>
+              <li class="footer_nav-item"><a href="#">Plan Your Visit</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
 
-    <section class="hero">
-      <div class="hero-body">
-        <div class="hero-content">
-          <h1>A Living Ecosystem by the Atlantic</h1>
-          <p>From seabirds and coastal plants to marine life below the waves, San Juan de Gaztelugatxe thrives through a delicate balance of nature.</p>
+          <div class="footer_social">
+            <ul class="footer_social-list">
+              <li><a href="#" aria-label="Facebook">
+                  <img src="./images/social_media/Facebook.png" alt="Facebook"></a>
+              </li>
+            </ul>
+            <ul class="footer_social-list">
+              <li><a href="#" aria-label="Facebook">
+                  <img src="./images/social_media/Twitter.png" alt="Twitter"></a>
+              </li>
+            </ul>
+            <ul class="footer_social-list">
+              <li><a href="#" aria-label="Instagram">
+                  <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
+              </li>
+            </ul>
+            <ul class="footer_social-list">
+              <li><a href="#" aria-label="LinkedIn">
+                  <img src="./images/social_media/LinkedIn.png" alt="LinkedIn"></a>
+              </li>
+            </ul>
+            <ul class="footer_social-list">
+              <li><a href="#" aria-label="Youtube">
+                  <img src="./images/social_media/YouTube.png" alt="YouTube"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <span>© 2025 Group 6</span>
+          <span>All Rights Reserved</span>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
         </div>
       </div>
+    </div>
+  </footer>
 
-      <div class="stats-bar">
-        <div class="stats-bar-inner">
-          <div class="stat-item">
-            <div class="stat-number">200+</div>
-            <div class="stat-label">Sky Animals</div>
-            <div class="stat-desc">Seabirds, raptors and migratory species recorded along the Atlantic corridor</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">97%</div>
-            <div class="stat-label">Native Flora</div>
-            <div class="stat-desc">Of coastal vegetation is composed of indigenous salt-tolerant species</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">34+</div>
-            <div class="stat-label">Sea Fish</div>
-            <div class="stat-desc">Species inhabiting the rocky intertidal and subtidal zones below the cliffs</div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <script src="script/ecosystem-modules.js"></script>
 
-    <!-- ══════════ BIRDS ══════════ -->
-    <section class="birds-section">
-      <div class="bird-hero" id="birdHero">
-        <div class="birds-top">
-          <h2>Sky: A Corridor for Coastal Life</h2>
-          <div class="bird-tags">
-            <span class="bird-tag-pill">Yellow-legged Gull</span>
-            <span class="bird-tag-pill">European Shag</span>
-            <span class="bird-tag-pill">Peregrine Falcon</span>
-            <span class="bird-tag-pill">Oystercatcher</span>
-            <span class="bird-tag-pill">Egyptian Vulture</span>
-          </div>
-        </div>
-        <p class="birds-intro">
-          Above the cliffs of Gaztelugatxe, seabirds and migratory species navigate seasonal winds and ocean currents, forming a vital aerial ecosystem along the Atlantic coast.
-        </p>
-        <div class="bird-thumbs-wrap">
-          <div class="bird-thumbs" id="birdThumbs">
-            <div class="bird-thumb active" data-index="0" data-img="images/ecosystem/yellow-legged-gull.jpg">
-              <img src="images/ecosystem/yellow-legged-gull.jpg" alt="Yellow-legged Gull">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Yellow-legged Gull</div>
-                <div class="bird-thumb-sub">Common coastal seabird</div>
-              </div>
-            </div>
-            <div class="bird-thumb" data-index="1" data-img="images/ecosystem/european-shag.jpg">
-              <img src="images/ecosystem/european-shag.jpg" alt="European Shag">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">European Shag</div>
-                <div class="bird-thumb-sub">Cliff-nesting cormorant</div>
-              </div>
-            </div>
-            <div class="bird-thumb" data-index="2" data-img="images/ecosystem/peregrine-falcon.jpg">
-              <img src="images/ecosystem/peregrine-falcon.jpg" alt="Peregrine Falcon">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Peregrine Falcon</div>
-                <div class="bird-thumb-sub">Apex aerial predator</div>
-              </div>
-            </div>
-            <div class="bird-thumb" data-index="3" data-img="images/ecosystem/oystercatcher.jpg">
-              <img src="images/ecosystem/oystercatcher.jpg" alt="Oystercatcher">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Oystercatcher</div>
-                <div class="bird-thumb-sub">Oceanic migratory bird</div>
-              </div>
-            </div>
-            <div class="bird-thumb" data-index="4" data-img="images/ecosystem/egyptian-vulture.jpg">
-              <img src="images/ecosystem/egyptian-vulture.jpg" alt="Egyptian Vulture">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Egyptian Vulture</div>
-                <div class="bird-thumb-sub">Rare migratory scavenger</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+</body>
 
-    <!-- ══════════ BIRD SPECIES DETAIL ══════════ -->
-    <section class="species-detail">
-      <div class="species-detail-inner">
-        <div class="species-left">
-          <div class="species-number" id="birdNumber">(01)</div>
-          <h3 id="birdName">Yellow-legged Gull</h3>
-          <p id="birdSummary">Larus michahellis is one of the most visible birds along the Basque coast. A versatile forager, it nests on sea-facing cliffs and feeds on fish, invertebrates, and scraps from nearby fishing boats.</p>
-        </div>
-        <div class="species-right" id="birdBody">
-          <p>The Yellow-legged Gull is one of the most characteristic birds of the Atlantic coast. With its bright yellow legs and powerful bill tipped with red, it is easy to identify year-round on the cliffs and rocky shores of Gaztelugatxe.</p>
-          <p>These birds nest in large colonies between April and July, occupying exposed ledges on the sea-facing cliffs. Both parents share incubation duties and are highly territorial, often diving at intruders that venture too close to the nest site.</p>
-          <p>As opportunistic omnivores, Yellow-legged Gulls adapt their diet to seasonal availability — feeding on marine invertebrates, small fish, and discards from fishing vessels. Their presence serves as a useful indicator of broader ecosystem health along the coastline.</p>
-          <p>Conservation efforts focus on monitoring colony sizes and reducing disturbance during the breeding season. Restricted access zones and visitor education programmes have helped stabilise population numbers in recent years.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════ FLORA ══════════ -->
-    <section class="birds-section">
-      <div class="flora-hero" id="floraHero">
-        <div class="birds-top">
-          <h2>Flora: Life on the Cliffs</h2>
-          <div class="bird-tags">
-            <span class="bird-tag-pill">Rock Sea Lavender</span>
-            <span class="bird-tag-pill">Wild Olive</span>
-            <span class="bird-tag-pill">Holm Oak</span>
-            <span class="bird-tag-pill">Heather</span>
-            <span class="bird-tag-pill">Gorse</span>
-          </div>
-        </div>
-        <p class="birds-intro">
-          The vegetation of Gaztelugatxe forms a layered mosaic shaped by wind, salt spray, and thin limestone soils.
-        </p>
-        <div class="bird-thumbs-wrap">
-          <div class="bird-thumbs" id="floraThumbs">
-            <div class="flora-thumb active" data-index="0" data-img="images/ecosystem/sea-lavender.jpg">
-              <img src="images/ecosystem/sea-lavender.jpg" alt="Rock Sea Lavender, Pexels, Skylar Kang">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Rock Sea Lavender</div>
-                <div class="bird-thumb-sub">Salt-tolerant cliff plant</div>
-              </div>
-            </div>
-            <div class="flora-thumb" data-index="1" data-img="images/ecosystem/wild-olive.jpg">
-              <img src="images/ecosystem/wild-olive.jpg" alt="Wild Olive, Pexels, Julia Sakelli">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Wild Olive</div>
-                <div class="bird-thumb-sub">Ancient coastal tree</div>
-              </div>
-            </div>
-            <div class="flora-thumb" data-index="2" data-img="images/ecosystem/holm-oak.jpg">
-              <img src="images/ecosystem/holm-oak.jpg" alt="Holm Oak, Pexels, Petr Ganaj">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Holm Oak</div>
-                <div class="bird-thumb-sub">Evergreen woodland canopy</div>
-              </div>
-            </div>
-            <div class="flora-thumb" data-index="3" data-img="images/ecosystem/heather.jpg">
-              <img src="images/ecosystem/heather.jpg" alt="Heather, Pexels, Ylanite Koppens">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Heather</div>
-                <div class="bird-thumb-sub">Coastal shrub</div>
-              </div>
-            </div>
-            <div class="flora-thumb" data-index="4" data-img="images/ecosystem/gorse.jpg">
-              <img src="images/ecosystem/gorse.jpg" alt="Gorse, Pexels, Matt Hardy">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Gorse</div>
-                <div class="bird-thumb-sub">Spiny scrub</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════ FLORA SPECIES DETAIL ══════════ -->
-    <section class="species-detail">
-      <div class="species-detail-inner">
-        <div class="species-left">
-          <div class="species-number" id="floraNumber">(01)</div>
-          <h3 id="floraName">Rock Sea Lavender</h3>
-          <p id="floraSummary">Limonium binervosum is a salt-tolerant cliff plant found on the exposed rock faces of Gaztelugatxe, adapted to survive wind, spray, and minimal soil.</p>
-        </div>
-        <div class="species-right" id="floraBody">
-          <p>Rock sea lavender grows in crevices and ledges along the steep cliffs, where few other plants can survive. Its low, tufted form helps it resist strong Atlantic winds and constant salt spray.</p>
-          <p>This species is one of the most characteristic plants of the Gaztelugatxe coastline, forming small patches of colour against otherwise bare rock.</p>
-          <p>It thrives in extremely thin soils, drawing nutrients from accumulated organic matter and moisture trapped in cracks in the limestone.</p>
-          <p>Together with other halophytes, it forms the first layer of vegetation in the vertical ecosystem of the cliffs.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════ OCEAN ══════════ -->
-    <section class="birds-section">
-      <div class="ocean-hero" id="oceanHero">
-        
-        <div class="birds-top">
-          <h2>Ocean: Life Beneath the Waves</h2>
-          <div class="bird-tags">
-            <span class="bird-tag-pill">Stalked Barnacle</span>
-            <span class="bird-tag-pill">Wrasses</span>
-            <span class="bird-tag-pill">Coastal Predatory Fish</span>
-            <span class="bird-tag-pill">Key Invertebrates</span>
-            <span class="bird-tag-pill">Red Algae & Mixed Algal Cover</span>
-          </div>
-        </div>
-        <p class="birds-intro">
-          Beneath the cliffs of Gaztelugatxe, a rich intertidal and subtidal world thrives, with barnacles, fish, cephalopods, and algae forming a complex Atlantic reef ecosystem.
-        </p>
-
-        <div class="bird-thumbs-wrap">
-          <div class="bird-thumbs" id="oceanThumbs">
-            <div class="ocean-thumb active" data-index="0" data-img="images/ecosystem/stalked-barnacle.jpg">
-              <img src="images/ecosystem/stalked-barnacle.jpg" alt="Stalked Barnacle, Unsplash, Zaki Ahmed">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Stalked Barnacle</div>
-                <div class="bird-thumb-sub">Intertidal filter-feeder</div>
-              </div>
-            </div>
-            <div class="ocean-thumb" data-index="1" data-img="images/ecosystem/wrasses.jpg">
-              <img src="images/ecosystem/wrasses.jpg" alt="Wrasses, Unsplash, Anastasia">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Wrasses</div>
-                <div class="bird-thumb-sub">Colorful reef-dwelling fish</div>
-              </div>
-            </div>
-            <div class="ocean-thumb" data-index="2" data-img="images/ecosystem/coastal-predatory-fish.jpg">
-              <img src="images/ecosystem/coastal-predatory-fish.jpg" alt="Coastal Predatory Fish, Pexels, Adrian Frentescu">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Coastal Predatory Fish</div>
-                <div class="bird-thumb-sub">Seabass, whiting, and mackerel</div>
-              </div>
-            </div>
-            <div class="ocean-thumb" data-index="3" data-img="images/ecosystem/invertebrates.jpg">
-              <img src="images/ecosystem/invertebrates.jpg" alt="Key Invertebrates, Pexels, Pia B">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Key Invertebrates</div>
-                <div class="bird-thumb-sub">Octopus, urchins, anemones</div>
-              </div>
-            </div>
-            <div class="ocean-thumb" data-index="4" data-img="images/ecosystem/red-algae.jpg">
-              <img src="images/ecosystem/red-algae.jpg" alt="Red Algae & Mixed Algal Cover">
-              <div class="inside-bird-thumb">
-                <div class="bird-thumb-label">Mixed Algal Cover</div>
-                <div class="bird-thumb-sub">Supporting reef life</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════ OCEAN SPECIES DETAIL ══════════ -->
-    <section class="species-detail">
-      <div class="species-detail-inner">
-        <div class="species-left">
-          <div class="species-number" id="oceanNumber">(01)</div>
-          <h3 id="oceanName">Atlantic Wrasse</h3>
-          <p id="oceanSummary">Several wrasse species inhabit the rocky reefs below Gaztelugatxe, feeding on invertebrates and playing a key role in the inshore food web along the Basque coast.</p>
-        </div>
-        <div class="species-right" id="oceanBody">
-          <p>Atlantic wrasse are among the most colourful fish found along the Basque coastline. Species such as the cuckoo wrasse and corkwing wrasse are commonly encountered in the rocky reef habitats directly beneath the cliffs of Gaztelugatxe.</p>
-          <p>These fish are closely associated with kelp and rocky substrate, where they forage for crustaceans, molluscs, and small invertebrates. Their strong jaws allow them to extract prey from crevices and crack the shells of barnacles and mussels.</p>
-          <p>Wrasse play an important ecological role as cleaner fish, removing parasites from larger species. This behaviour has also made them commercially valuable as a biological solution in salmon aquaculture.</p>
-          <p>Their presence in the intertidal and shallow subtidal zone makes them a visible indicator of reef health. Healthy wrasse populations suggest clean water and an intact invertebrate community on the seafloor.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════ CONSERVATION ══════════ -->
-    <section class="conservation">
-      <div class="conservation-inner">
-        <div class="conservation-header">
-          <h2>How We Protect This Ecosystem</h2>
-          <p>Preserving Gaztelugatxe's fragile balance requires responsible tourism, scientific research, and collective action.</p>
-        </div>
-        <div class="feature-card">
-          <span class="tag">Conservation</span>
-          <h3>Managing Tourism to Protect Coastal Wildlife</h3>
-          <p>Visitor numbers, access control, and seasonal restrictions help reduce disturbance to seabirds, vegetation, and marine habitats. Please keep the following tips in mind when visiting in order to reduce environmental impact and improve your experience at the hermitage.</p>
-        </div>
-      </div>
-
-      <div class="articles-section">
-        <div class="articles-grid">
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/gorse.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Stay on defined paths</h4>
-              <p>Protect the coastal ecosystem by staying on marked trails and not damaging the vegetation or any nesting grounds.</p>
-            </div>
-          </div>
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/stalked-barnacle.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Take trash with you</h4>
-              <p>Garbage can do great harms to the local flora and fauna, and there are no bins along the narrow stairs of the islet. Be sure not to leave any trash behind, and pick up waste as you come across it.</p>
-            </div>
-          </div>
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/european-shag.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Keep distance from local wildlife</h4>
-              <p>Don't bother or harrass any of the local birds or wildlife. These creatures live a balanced life, and intervening with thier schedules can cause more harm than good.</p>
-            </div>
-          </div>
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/yellow-legged-gull.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Don't feed the wildlife</h4>
-              <p>These creatures hold pivotal roles in the local ecosystem, and distrupting their diets can cause damage to them and their flocks.</p>
-            </div>
-          </div>
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/invertebrates.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Keep any pets secured</h4>
-              <p>Dogs are welcome here, but we ask that you keep them leashed and secure. Not only can their impact do damage to local flora and fauna, but the rocky shores and steep cliffs can cause harm to your pets.</p>
-            </div>
-          </div>
-          <div class="article-card">
-            <img class="article-img" src="images/ecosystem/0hero.jpg" alt="Wildlife">
-            <div class="article-body">
-              <h4>Take care of yourselves</h4>
-              <p>It's just as important to care for yourselves as it is the biotope. Be sure to drink water, rest, and stay protected from the sun.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer_wrapper">
-                <div class="footer_hero">
-                    <h2 class="footer_title">
-                        Have an idea? Let’s Trip <br> San Juan de Gaztelugatxe
-                    </h2>
-                </div>
-                <div class="footer_main">
-
-                    <div class="footer_logo">
-                        <img src="./images/footer_logo.png" alt="footer_logo">
-                    </div>
-
-                    <nav class="footer_nav">
-                        <ul class="footer_nav-list">
-                            <li class="footer_nav-item"><a href="#">Home</a></li>
-                            <li class="footer_nav-item"><a href="#">History</a></li>
-                            <li class="footer_nav-item"><a href="#">Ecology</a></li>
-                            <li class="footer_nav-item"><a href="#">Cultural Impact</a></li>
-                            <li class="footer_nav-item"><a href="#">Plan Your Visit</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="footer_social">
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Facebook">
-                                    <img src="./images/social_media/Facebook.png" alt="Facebook"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Facebook">
-                                    <img src="./images/social_media/Twitter.png" alt="Twitter"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Instagram">
-                                    <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="LinkedIn">
-                                    <img src="./images/social_media/LinkedIn.png" alt="LinkedIn"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Youtube">
-                                    <img src="./images/social_media/YouTube.png" alt="YouTube"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_bottom">
-                    <span>© 2025 Group 6</span>
-                    <span>All Rights Reserved</span>
-                    <a href="#">Terms and Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script/ecosystem-modules.js"></script>
-
-    </body>
 </html>

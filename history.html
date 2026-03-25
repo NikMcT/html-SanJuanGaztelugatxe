@@ -18,9 +18,8 @@
 <body>
     <!-- site-header -->
     <header class="site-header">
-        <div class="logo">
-            <a href="./index.html" class="hero-brand">Gaztelugatxe</a>
-        </div>
+        <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG logo.png" alt=" logo"></a>
+
         <nav class="site-nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">Home</a></li>
@@ -48,34 +47,46 @@
             <div class="timeline-entry left" style="top: 40%;">
                 <h3 class="entry-year">1334</h3>
                 <h4 class="entry-title">The Siege of Gaztelugatxe</h4>
-                <p class="entry-text">Seven Biscayan knights barricaded themselves 
-                    inside the hermitage to resist the forces of King Alfonso 
-                    XI of Castile. Holding out for over a month on a clifftop accessible only by a 
-                    narrow bridge, they forced the king's army to withdraw — one of the most celebrated acts of Basque defiance.</p>
+                <p class="entry-text">Seven Biscayan knights barricaded themselves
+                    inside the hermitage to resist the forces of King Alfonso
+                    XI of Castile. Holding out for over a month on a clifftop accessible only by a
+                    narrow bridge, they forced the king's army to withdraw — one of the most celebrated acts of Basque
+                    defiance.</p>
             </div>
 
             <div class="timeline-entry right" style="top: 50%;">
                 <h3 class="entry-year">1596</h3>
                 <h4 class="entry-title">Drake's Raid</h4>
-                <p class="entry-text">English privateer Sir Francis Drake attacked the island, looting the hermitage and killing the hermit who lived there. The assault was one of several pirate raids the island endured over the centuries, each time leaving the community to rebuild what the sea and its enemies had taken.</p>
+                <p class="entry-text">English privateer Sir Francis Drake attacked the island, looting the hermitage and
+                    killing the hermit who lived there. The assault was one of several pirate raids the island endured
+                    over the centuries, each time leaving the community to rebuild what the sea and its enemies had
+                    taken.</p>
             </div>
 
             <div class="timeline-entry left" style="top: 60%;">
                 <h3 class="entry-year">1886</h3>
                 <h4 class="entry-title">Demolition &amp; Reconstruction</h4>
-                <p class="entry-text">After centuries of raids, fires, and decay, the deteriorated church was fully demolished and rebuilt from the ground up. During demolition, all artefacts found in the earth — coins, cannonballs, fragments of the island's long history — were discarded into the sea, a loss mourned to this day.</p>
+                <p class="entry-text">After centuries of raids, fires, and decay, the deteriorated church was fully
+                    demolished and rebuilt from the ground up. During demolition, all artefacts found in the earth —
+                    coins, cannonballs, fragments of the island's long history — were discarded into the sea, a loss
+                    mourned to this day.</p>
             </div>
 
             <div class="timeline-entry right" style="top: 70%;">
                 <h3 class="entry-year">1978</h3>
                 <h4 class="entry-title">Fire &amp; Rebirth</h4>
-                <p class="entry-text">A devastating fire destroyed the hermitage almost entirely. The Basque community and local authorities committed to a full restoration, and the rebuilt structure was inaugurated on 24 June 1980 — Saint John the Baptist's feast day — preserving the symbolic heart of the site.</p>
+                <p class="entry-text">A devastating fire destroyed the hermitage almost entirely. The Basque community
+                    and local authorities committed to a full restoration, and the rebuilt structure was inaugurated on
+                    24 June 1980 — Saint John the Baptist's feast day — preserving the symbolic heart of the site.</p>
             </div>
 
             <div class="timeline-entry left" style="top: 80%;">
                 <h3 class="entry-year">2017</h3>
                 <h4 class="entry-title">Dragonstone</h4>
-                <p class="entry-text">HBO's Game of Thrones chose San Juan de Gaztelugatxe as the exterior location for Dragonstone, the ancestral fortress of House Targaryen, in Season 7. The broadcast sent visitor numbers soaring — 75,000 tourists climbed the 241 steps in July 2017 alone, forever changing the island's global profile.</p>
+                <p class="entry-text">HBO's Game of Thrones chose San Juan de Gaztelugatxe as the exterior location for
+                    Dragonstone, the ancestral fortress of House Targaryen, in Season 7. The broadcast sent visitor
+                    numbers soaring — 75,000 tourists climbed the 241 steps in July 2017 alone, forever changing the
+                    island's global profile.</p>
             </div>
         </div>
     </section>
@@ -148,41 +159,41 @@
 
 </body>
 
-    <script>
-gsap.registerPlugin(ScrollTrigger);
+<script>
+    gsap.registerPlugin(ScrollTrigger);
 
-// IMAGE REVEAL (image to outline)
-gsap.to(".image-reveal", {
-    clipPath: "inset(0% 0 0 0)",
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".hero-history",
-        start: "top 200%",
-        end: "bottom top",
-        scrub: true
-    }
-});
+    // IMAGE REVEAL (image to outline)
+    gsap.to(".image-reveal", {
+        clipPath: "inset(0% 0 0 0)",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero-history",
+            start: "top 200%",
+            end: "bottom top",
+            scrub: true
+        }
+    });
 
-// PARALLAX BACKGROUND
-gsap.to(".map-bg", {
-    y: "20%",
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".hero-history",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-    }
-});
+    // PARALLAX BACKGROUND
+    gsap.to(".map-bg", {
+        y: "20%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero-history",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
+    });
 
-// PARALLAX IMAGE (slower)
-gsap.to(".img-sjdg", {
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".hero-history",
-        start: "top top",
-        end: "bottom top",
-        scrub: true
-    }
-});
+    // PARALLAX IMAGE (slower)
+    gsap.to(".img-sjdg", {
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero-history",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+        }
+    });
 </script>

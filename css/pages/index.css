@@ -780,7 +780,7 @@
 
 .img-sjdg {
     position: relative;
-    width: 1600px;
+    width: 100%;
     height: 1900px;
     background-image: url(../../images/sjdg_ori.jpg);
     background-repeat: no-repeat;

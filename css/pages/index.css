@@ -1,3 +1,158 @@
+/* ======================
+   Layout Container
+====================== */
+
+.container {
+    /* max-width: 1380px; */
+    max-width: var(--layout-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header section */
+
+.site-header {
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--nav-width);
+    height: 64px;
+    margin: 0 auto;
+    padding: 12px 40px;
+    border-radius: 8px;
+
+    /* Glass base */
+    background: rgba(var(--color-green-rgb), 0.5);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    display: block;
+    width: 60px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transform-origin: left;
+    transform: scale(2);
+}
+
+.site-nav .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+.site-nav .nav-list .nav-item {
+    padding: 8px 8px;
+}
+
+.site-nav .nav-list .nav-item:hover a {
+    color: var(--color-rice-yellow);
+}
+
+.site-nav .nav-list a {
+    font-family: var(--font-body);
+    font-size: var(--fs-18);
+    color: var(--color-white);
+}
+
+/* footer */
+
+.site-footer {
+    padding-top: 40px;
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 201px;
+    background: url('../../images/hero.jpg') no-repeat right center / cover;
+}
+
+.footer_hero .footer_title {
+    width: 788px;
+    font-family: var(--font-display);
+    font-size: var(--fs-40);
+    line-height: 48px;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_nav .footer_nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+.footer_nav .footer_nav-list a {
+    color: var(--color-green);
+}
+
+.footer_social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60px;
+    color: var(--color-grey-400);
+    border-top: 1px solid #E1E4ED;
+}
+
+.footer_bottom>*:not(:last-child)::after {
+    content: "|";
+    margin: 0 12px;
+    opacity: 0.6;
+}
+
+.footer_bottom a {
+    color: var(--color-grey-600);
+}
+
+.footer_logo {
+    display: block;
+    width: 40px;
+}
+
+.footer_logo img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+
 /* hero section */
 .hero {
     position: relative;
@@ -149,6 +304,7 @@
     color: var(--color-green);
     background-color: var(--color-white);
     transition: all .4s;
+    border-radius: 8px;
 }
 
 .explore__button i {
@@ -160,6 +316,11 @@
     background-color: var(--color-green);
 }
 
+.planyourvisit {
+    width: 140px;
+    padding: 14px 20px;
+}
+
 .explore__controls {
     display: flex;
     gap: 28px;
@@ -169,9 +330,9 @@
     width: 44px;
     height: 44px;
     background-color: transparent;
-    border: 1px solid var(--color-green);
+    border: 1.5px solid var(--color-green);
     border-radius: 50%;
-    opacity: .3;
+    opacity: .7;
     cursor: pointer;
     transition: all .3s;
 }
@@ -183,10 +344,16 @@
 
 .explore__controls .explore__arrow:hover {
     opacity: 1;
+    color: white;
+    background-color: var(--color-green);
 }
 
 .explore__controls .explore__arrow i {
     color: var(--color-green);
+}
+
+.explore__controls .explore__arrow:hover i {
+    color: white;
 }
 
 .explore__image {
@@ -263,14 +430,20 @@
 .timeline__content .timeline__item p {
     font-size: var(--fs-40);
     line-height: var(--lh-normal);
-    color: var(--color-grey);
+    color: #8f8f8f;
+}
+
+.timeline__item p .highlight {
+    color: var(--color-black)
 }
 
 
 /* seasonal section */
 
 .seasonal {
-    background: url("../../images/wood_board.jpg");
+    background: url("../../images/wind_pattern.png");
+    background-repeat: repeat;
+    background-size: contain;
     /* height: 900px; */
 }
 
@@ -278,7 +451,18 @@
     position: relative;
     padding-top: 74px;
     height: 300vh;
+}
 
+.arrow1 {
+    position: absolute;
+    top: 0;
+    right: -60%;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 30%;
+    right: -30%;
 }
 
 .seasonal-board .season-highlight {
@@ -288,10 +472,24 @@
     background-color: #fffffa;
     padding: 30px 49px;
     border-radius: 16px;
+    position: relative;
 }
 
 .season-highlight span {
     color: var(--color-yellow);
+}
+
+.season-highlight .tape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.season-highlight .pin {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .seasonal-board .season-description {
@@ -307,6 +505,19 @@
     border-radius: 16px;
 }
 
+.season-description .tape {
+    position: absolute;
+    top: 0;
+    right: -10%;
+    transform: rotateZ(15deg);
+}
+
+.season-description .lighting_sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
 
 .seasonal-board .season-card {
     position: absolute;
@@ -315,11 +526,14 @@
     padding: 26px 26px;
     background-color: #fffffa;
     border-radius: 16px;
+    /* overflow: hidden; */
 }
 
 .season-card .season-card__image {
     width: 100%;
+    height: 340px;
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .season-card__image img {
@@ -336,22 +550,78 @@
     transform: rotate(-6deg);
 }
 
+.pin {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 60px;
+}
+
 .summer {
-    top: 25%;
+    top: 35%;
     right: 0px;
     transform: rotate(10deg);
 }
 
+.flower_sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.tree_sticker {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    transform: translate(50%, 50%);
+}
+
 .fall {
-    top: 40%;
+    top: 50%;
     left: 0px;
     transform: rotate(-5deg);
 }
 
+.tree_sticker2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .winter {
-    top: 50%;
+    top: 60%;
     right: 0;
     transform: rotate(6deg);
+}
+
+.winter .pin {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.winter .waterdrop {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+
+}
+
+.winter .paper_clip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.winter .photo_small {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .season-postcard {
@@ -359,12 +629,13 @@
     width: 325px;
     height: 450px;
     left: 0;
-    bottom: 15%;
+    bottom: 10%;
     transform: rotate(-10deg);
     padding: 25px 20px;
     /* width: 100%; */
     background-image: url('../../images/postcard.png');
     background-size: cover;
+    line-height: 1.6;
 
 }
 
@@ -372,6 +643,13 @@
     font-size: var(--fs-18);
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
 }
 
 /* things-to-do */
@@ -488,6 +766,14 @@
     border-bottom: 1px solid var(--color-grey);
     border-radius: 8px;
     transition: all .1s;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.6s ease;
+}
+
+.ecosystem__item.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .ecosystem__list .ecosystem__item:hover {

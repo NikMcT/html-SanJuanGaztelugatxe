@@ -10,7 +10,7 @@
     <!-- Base styles: reset, typography, color system, and design tokens -->
     <link rel="stylesheet" href="./css/base.css">
     <!-- Shared components: header, footer, navigation, reusable UI elements -->
-    <link rel="stylesheet" href="./css/components.css">
+    <!-- <link rel="stylesheet" href="./css/components.css"> -->
     <!-- Put your own css  here -->
     <link rel="stylesheet" href="./css/pages/index.css">
 
@@ -20,9 +20,7 @@
 <body>
     <!-- site-header -->
     <header class="site-header">
-        <div class="logo">
-            <a href="./index.html" class="hero-brand">Gaztelugatxe</a>
-        </div>
+        <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG logo.png" alt=" logo"></a>
         <nav class="site-nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">Home</a></li>
@@ -44,9 +42,8 @@
                 </h1>
                 <p class="hero-description">
                     Where stone meets the Atlantic.<br> Rising from the sea, shaped by wind, salt, and centuries. </p>
-                <a href="#about" class="hero-scroll">
-                    Scroll Down
-                    <i class="fa-solid fa-arrow-down"></i>
+                <a href=#things-to-do class="explore__button planyourvisit">
+                    Plan Your Visit
                 </a>
             </div>
         </div>
@@ -102,7 +99,7 @@
 
                         <a href="#" class="explore__button">
                             View More
-                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                         <div class="explore__controls">
@@ -143,47 +140,42 @@
             <div class="timeline__content">
                 <div class="timeline__item active" data-year="1053">
                     <img src="images/timeline_image.jpg" alt="">
-                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
+                    <p><span class="highlight">The earliest known written </span>reference to the island appears in
+                        1053, documenting its
+                        connection to
                         nearby monasteries and
                         confirming its religious significance in medieval Spain.</p>
 
                 </div>
 
                 <div class="timeline__item" data-year="1330">
-                    <img src="images/ecology.jpg" alt="">
-                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
-                        nearby monasteries and
-                        confirming its religious significance in medieval Spain..</p>
+                    <img src="images/things_3.jpg" alt="">
+                    <p>In the 14th century, the island served as a stronghold for the Lords of Biscay. Seven knights
+                        defended it for over a
+                        month, using the narrow 241 steps as a natural defense.</p>
                 </div>
 
                 <div class="timeline__item" data-year="1594">
-                    <img src="images/explore.jpg" alt="">
-                    <p>The earliest known written reference to the island appears in 1053, documenting its connection to
-                        nearby monasteries and
-                        confirming its religious significance in medieval Spain.</p>
+                    <img src="images/visit.jpg" alt="">
+                    <p>TIn the late 16th century, the island was raided by Sir Francis Drake and Huguenot privateers.
+                        The attack led to the
+                        strengthening of the chapel and its defenses.</p>
                 </div>
 
                 <div class="timeline__item" data-year="1978">
-                    <img src="images/explore.jpg" alt="">
+                    <img src="images/homepage/1978.png" alt="">
                     <p>
-                        A devastating fire in 1978 destroyed the hermitage almost entirely. The Basque community and
-                        local authorities committed
-                        to a full restoration, and the rebuilt structure was inaugurated on 24 June 1980 — Saint John
-                        the Baptist's feast day —
-                        preserving the symbolic continuity of a site that has refused to disappear.
+                        A fire in 1978 destroyed the hermitage, but it was rebuilt and reopened in 1980, preserving its
+                        enduring legacy.
 
                     </p>
                 </div>
 
                 <div class="timeline__item" data-year="2023">
-                    <img src="images/culture.jpg" alt="">
-                    <p>Conservation and Heritage Today, the site is a Protected Biotope. Following a surge in tourism,
-                        local authorities
-                        implemented a ticketing system and structural reinforcements to ensure the delicate ecosystem
-                        and the ancient stone path
-                        are preserved for future generations. It remains a place of "active heritage," where locals
-                        still climb the steps to
-                        ring the bell three times for luck.
+                    <img src="images/hero.jpg" alt="">
+                    <p>As a Protected Biotope, the site balances conservation and tourism through visitor limits and
+                        structural protection,
+                        while local traditions—such as ringing the bell for luck—still endure.
                     </p>
                 </div>
             </div>
@@ -199,109 +191,123 @@
 
                 <div class="season-highlight">
                     Seasonal <span>Highlights</span>
+                    <img class="tape" src="./images/tape.png" alt="tape">
+                    <img class="pin" src="./images/pin.png" alt="pin">
+
                 </div>
 
                 <div class="season-description">
                     San Juan de Gaztelugatxe is more than a single viewpoint. From the mainland entrance to the
                     hermitage at the summit,
                     each section offers a different perspective of the landscape. Explore the island step by step.
+                    <img class="tape" src="./images/tape.png" alt="tape">
+                    <img class="lighting_sticker" src="./images/lighting_sticker.png" alt="">
                 </div>
+
 
                 <div class="season-card spring">
                     <div class="season-card__image">
-                        <img src="./images/hero.jpg" alt="">
+                        <img src="./images/things_3.jpg" alt="hero">
                     </div>
 
                     <div class="season-card__content">
-
                         <h3 class="season-card__title">
                             Spring
                         </h3>
-
                         <p class="season-card__description">
-                            LVibrant green hills and nesting seabirds. A time for renewal and mild hiking weather.
-                        </p>
-
+                            Watch the coastal cliffs burst into vibrant green as wildflowers bloom along the path.
+                            Nesting seabirds return to the
+                            jagged rocks, and the mild air makes for a perfect, refreshing hike. </p>
                     </div>
+                    <img class="pin" src="./images/pin.png" alt="pin">
+                    <img class="arrow1" src="./images/arrow_sticker.png" alt="">
 
                 </div>
 
                 <div class="season-card summer">
 
                     <div class="season-card__image">
-                        <img src="./images/hero.jpg" alt="">
+                        <img src="./images/plan/season-summer.jpg" alt="">
                     </div>
 
                     <div class="season-card__content">
 
                         <h3 class="season-card__title">
-                            Spring
+                            Summer
                         </h3>
 
                         <p class="season-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in volup </p>
+                            Experience the hermitage under brilliant sun and calm, turquoise waters. Long days provide
+                            the best light for
+                            photography, though the 241 steps are best climbed during the cooler, glowing magic hour.
+                        </p>
 
                     </div>
+
+                    <img class="flower_sticker" src="./images/flower_sticker.png" alt="">
+                    <img class="tree_sticker" src="./images/tree_sticker.png" alt="">
 
                 </div>
 
                 <div class="season-card fall">
                     <div class="season-card__image">
-                        <img src="./images/hero.jpg" alt="">
+                        <img src="./images/plan/season-spring.jpg" alt="Fall">
                     </div>
 
                     <div class="season-card__content">
 
                         <h3 class="season-card__title">
-                            Spring
+                            Fall
                         </h3>
 
                         <p class="season-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in volup </p>
+                            As the crowds thin, a dramatic golden hue settles over the Bay of Biscay. Crisp winds and
+                            churning waves create a
+                            powerful, atmospheric setting that highlights the island’s raw, ancient beauty.</p>
 
                     </div>
-
+                    <img class="tree_sticker2" src="./images/tree_sticker2.png" alt="">
+                    <img class="arrow2" src="./images/arrow_sticker2.png" alt="">
                 </div>
 
                 <div class="season-card winter">
                     <div class="season-card__image">
-                        <img src="./images/hero.jpg" alt="">
+                        <img src="./images/plan/season-winter.jpg" alt="">
                     </div>
 
                     <div class="season-card__content">
 
                         <h3 class="season-card__title">
-                            Spring
+                            Winter
                         </h3>
 
                         <p class="season-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis
-                            aute irure dolor in reprehenderit in volup </p>
+                            Witness the true power of the Atlantic as white-capped waves crash against the stone arches.
+                            The misty, quiet trails
+                            offer a meditative escape for those seeking the island’s most authentic, rugged soul. </p>
+
+                    </div>
+                    <img class="pin" src="./images/pin.png" alt="">
+                    <img class="waterdrop" src="./images/waterdrop.png" alt="">
+                    <div class="photo_small">
+                        <img src="./images/landscape_photo_small.png" alt="">
+                        <img class="paper_clip" src="./images/paper_clip.png" alt="">
 
                     </div>
 
                 </div>
 
                 <div class="season-postcard">
+                    <img class="cloud" src="./images/cloud_sticker.png" alt="">
                     <div class="season-postcard_content">
                         <p class="season-postcard_title">Visitor’s Checklist</p>
-                        <p class="season-postcard_text">Visitor’s Checklist
+                        <p class="season-postcard_text">Visitor’s Checklist<br>
                             Ensure you have sturdy walking shoes for the 241-step ascent. The path is steep and uneven,
                             so take your time to soak in
                             the breathtaking views of the rugged coastline.
                             <br>
-                            Making a Wish
+                            <br>
+                            Making a Wish<br>
                             Tradition dictates that once you reach the top, you must ring the chapel bell three times.
                             This ancient ritual is said
                             to bring good luck and ward off evil spirits.
@@ -314,7 +320,7 @@
     </section>
 
     <!-- things-to-do section -->
-    <section class="things-to-do">
+    <section id="things-to-do" class="things-to-do">
         <div class="container">
             <h2 class="things-to-do__title">
                 Things to do
@@ -339,13 +345,12 @@
                         </h3>
 
                         <p class="things-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim </p>
+                            Stone bridge, five ascending sections, one hermitage at the top. Takes most people about an
+                            hour. </p>
 
                         <a href="#" class="explore__button">
                             View More
-                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                     </div>
@@ -365,15 +370,15 @@
                     <div class="things-card__content">
 
                         <h3 class="things-card__title">
-                            Things 1
+                            Things 2
                         </h3>
 
                         <p class="things-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-
+                            Boat from Bermeo gives the full view: islet rising from the Atlantic, hermitage at its peak.
+                        </p>
                         <a href="#" class="explore__button">
                             View More
-                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                     </div>
@@ -393,15 +398,16 @@
                     <div class="things-card__content">
 
                         <h3 class="things-card__title">
-                            Things 1
+                            Things 3
                         </h3>
 
                         <p class="things-card__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-
+                            2 km from Bakio along open clifftops. The island appears slowly — silhouette first, then
+                            full detail.
+                        </p>
                         <a href="#" class="explore__button">
                             View More
-                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                     </div>
@@ -501,7 +507,7 @@
                 <div class="footer_main">
 
                     <div class="footer_logo">
-                        <img src="./images/footer_logo.png" alt="footer_logo">
+                        <img src="./images/SJG_Icon.png" alt="footer_logo" footer_logo">
                     </div>
 
                     <nav class="footer_nav">
@@ -515,38 +521,22 @@
                     </nav>
 
                     <div class="footer_social">
+
                         <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Facebook">
-                                    <img src="./images/social_media/Facebook.png" alt="Facebook"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Facebook">
-                                    <img src="./images/social_media/Twitter.png" alt="Twitter"></a>
-                            </li>
+                            <li><a href="#" aria-label="Tiktok">
+                                    <i class="fa-brands fa-tiktok"></i> </li>
                         </ul>
                         <ul class="footer_social-list">
                             <li><a href="#" aria-label="Instagram">
                                     <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
                             </li>
                         </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="LinkedIn">
-                                    <img src="./images/social_media/LinkedIn.png" alt="LinkedIn"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Youtube">
-                                    <img src="./images/social_media/YouTube.png" alt="YouTube"></a>
-                            </li>
-                        </ul>
+
                     </div>
                 </div>
                 <div class="footer_bottom">
                     <span>© 2025 Group 6</span>
                     <span>All Rights Reserved</span>
-                    <a href="#">Terms and Conditions</a>
-                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
@@ -561,7 +551,7 @@
 
     navItems.forEach(item => {
 
-        item.addEventListener("click", () => {
+        item.addEventListener("mouseenter", () => {
 
             const year = item.dataset.year;
 
@@ -655,6 +645,26 @@
     });
 
     updateSlide();
+
+    const ecosystem_items = document.querySelectorAll('.ecosystem__item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.2 // 進入20%就觸發
+    });
+
+    ecosystem_items.forEach(el => observer.observe(el));
+
+    // ecosystem_items.forEach((ecosystem_items, index) => {
+    //     setTimeout(() => {
+    //         ecosystem_items.classList.add('show');
+    //     }, index * 200);
+    // });
 </script>
 
 </html>

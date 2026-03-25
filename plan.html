@@ -24,150 +24,162 @@
 
     <!-- Group shared header-->
     <header class="site-header" role="banner">
-        <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG logo.png" alt=" logo"></a>
+    <a class="hero-brand" href="./index.html">Gaztelugatxe</a>
 
-        <nav class="site-nav" aria-label="Primary">
-            <ul class="nav-list">
+    <nav class="site-nav" aria-label="Primary">
+    <ul class="nav-list">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#">History</a></li>
                 <li class="nav-item"><a href="#">Ecology</a></li>
                 <li class="nav-item"><a href="#">Cultural Impact</a></li>
                 <li class="nav-item"><a aria-current="page" href="./plan.html">Plan Your Visit</a></li>
-            </ul>
-        </nav>
+    </ul>
+    </nav>
     </header>
 
     <main id="main">
 
-        <!--Hero Map-->
-        <section class="plan-hero">
-            <div class="map-page">
-                <div class="map-wrap" id="mapWrap">
-                    <img src="./images/map.webp" alt="Gaztelugatxe Map" class="map-base" />
+    <!--Hero Map-->
+    <section class="plan-hero">
+     <div class="map-page">
+    <div class="map-wrap" id="mapWrap">
+      <img src="./images/map.webp" alt="Gaztelugatxe Map" class="map-base" />
 
-                    <button class="map-hotspot" style="top:36.5%; left:22%;" data-title="Gaztelugatxe"
-                        data-subtitle="Ermita de San Juan"
-                        data-body="A stunning islet connected by a man-made bridge. Home to the famous hermitage."
-                        aria-label="Gaztelugatxe">
-                    </button>
+      <button class="map-hotspot"
+        style="top:36.5%; left:22%;"
+        data-title="Gaztelugatxe"
+        data-subtitle="Ermita de San Juan"
+        data-body="A stunning islet connected by a man-made bridge. Home to the famous hermitage."
+        aria-label="Gaztelugatxe">
+      </button>
 
-                    <button class="map-hotspot" style="top:22%; left:51%;" data-title="Matxitxako" data-subtitle="Cape"
-                        data-body="Northern coastal viewpoint." aria-label="Matxitxako">
-                    </button>
+      <button class="map-hotspot"
+        style="top:22%; left:51%;"
+        data-title="Matxitxako"
+        data-subtitle="Cape"
+        data-body="Northern coastal viewpoint."
+        aria-label="Matxitxako">
+      </button>
 
-                    <button class="map-hotspot" style="top:79%; left:5%;" data-title="Bakio" data-subtitle="Beach town"
-                        data-body="Main access point and beach area." aria-label="Bakio">
-                    </button>
+      <button class="map-hotspot"
+        style="top:79%; left:5%;"
+        data-title="Bakio"
+        data-subtitle="Beach town"
+        data-body="Main access point and beach area."
+        aria-label="Bakio">
+      </button>
 
-                    <button class="map-hotspot" style="top:91%; left:68%;" data-title="Bermeo"
-                        data-subtitle="Fishing port" data-body="Historic coastal town with maritime heritage."
-                        aria-label="Bermeo">
-                    </button>
+      <button class="map-hotspot"
+        style="top:91%; left:68%;"
+        data-title="Bermeo"
+        data-subtitle="Fishing port"
+        data-body="Historic coastal town with maritime heritage."
+        aria-label="Bermeo">
+      </button>
 
-                    <div id="hoverLens" class="hover-lens" hidden></div>
+      <div id="hoverLens" class="hover-lens" hidden></div>
 
-                    <div id="hoverLabel" class="hover-label" hidden>
-                        <span id="hoverLabelText"></span>
-                    </div>
+      <div id="hoverLabel" class="hover-label" hidden>
+        <span id="hoverLabelText"></span>
+      </div>
 
-                    <aside id="mapPanel" class="map-panel" hidden>
-                        <button id="closePanel" class="map-panel__close" type="button"
-                            aria-label="Close panel">×</button>
-                        <p id="panelType" class="map-panel__type">Location</p>
-                        <h2 id="panelTitle" class="map-panel__title"></h2>
-                        <p id="panelSubtitle" class="map-panel__subtitle"></p>
-                        <p id="panelBody" class="map-panel__body"></p>
-                        <div class="map-panel__tags">
-                            <span class="map-panel__tag">Scenic landmark</span>
-                        </div>
-                    </aside>
+      <aside id="mapPanel" class="map-panel" hidden>
+        <button id="closePanel" class="map-panel__close" type="button" aria-label="Close panel">×</button>
+        <p id="panelType" class="map-panel__type">Location</p>
+        <h2 id="panelTitle" class="map-panel__title"></h2>
+        <p id="panelSubtitle" class="map-panel__subtitle"></p>
+        <p id="panelBody" class="map-panel__body"></p>
+        <div class="map-panel__tags">
+          <span class="map-panel__tag">Scenic landmark</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="legend-toggle" id="legendToggle">
+  Map Legend
+</div>
+
+<div class="legend-panel" id="legendPanel" hidden>
+  <div class="legend-panel__inner">
+    <button class="legend-close" id="legendClose" type="button" aria-label="Close legend">×</button>
+    <img src="./images/maplegend.svg" alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions." class="legend-panel__image">
+  </div>
+</div>
+
+<div class="legend-container" aria-label="Map interaction help">
+    <div class="legend-hint">
+      <span>Hover on markers | Click for details</span>
+    </div>
+    </div>
+      </section>
+
+<!-- Routing and Commuting -->
+<section class="routing" aria-labelledby="routing-title">
+  <div class="container">
+    <h2 id="routing-title" class="plan-section-title">Routing &amp; Commuting</h2>
+
+    <div class="routing-grid">
+      <!-- Row 1 -->
+      <div class="routing-row routing-row--top">
+       <div class="routing-media routing-media--top">
+        <img src="./images/routing-bus.jpg" alt="Image showcasing bus travel and commuting.">
+      </div>
+
+      <article class="route-card route-card--bus">
+        <div class="route-card__inner">
+          <h3 class="route-card__title">Bus Route</h3>
+          <p class="route-card__text">Public transport options and key stops for reaching Gaztelugatxe.</p>
+          <a href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/" class="plan-btn plan-btn--primary">View more</a>
+        </div>
+      </article>
+      </div>
+
+      <!-- Row 2 -->
+       <div class="routing-row routing-row--boat">
+      <article class="route-card route-card--boat">
+        <div class="route-card__inner">
+          <h3 class="route-card__title">Boat Route</h3>
+          <p class="route-card__text">Different types of boat access and how to plan your departure and arrival.</p>
+          <a href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/" class="plan-btn plan-btn--primary">View more</a>
+        </div>
+      </article>
+
+      <div class="routing-media routing-media--middle">
+        <img src="./images/routing-boat.jpg" alt="Image showing boat travel.">
+      </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="routing-media routing-media--bottom">
+        <img src="./images/routing-walk.jpg" alt="Image showcasing a walking route.">
+      </div>
+
+      <article class="route-card route-card--walk">
+        <div class="route-card__inner">
+          <h3 class="route-card__title">Walking Route</h3>
+          <p class="route-card__text">Walking paths, difficulty and preparation tips for the route.</p>
+          <a href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/" class="plan-btn plan-btn--primary">View more</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- site-footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_hero">
+                    <h2 class="footer_title">
+                        Have an idea? Let’s Trip <br> San Juan de Gaztelugatxe
+                    </h2>
                 </div>
-            </div>
-
-            <div class="legend-toggle" id="legendToggle">
-                Map Legend
-            </div>
-
-            <div class="legend-panel" id="legendPanel" hidden>
-                <div class="legend-panel__inner">
-                    <button class="legend-close" id="legendClose" type="button" aria-label="Close legend">×</button>
-                    <img src="./images/maplegend.svg"
-                        alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
-                        class="legend-panel__image">
-                </div>
-            </div>
-
-            <div class="legend-container" aria-label="Map interaction help">
-                <div class="legend-hint">
-                    <span>Hover on markers | Click for details</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Routing and Commuting -->
-        <section class="routing" aria-labelledby="routing-title">
-            <div class="container">
-                <h2 id="routing-title" class="plan-section-title">Routing &amp; Commuting</h2>
-
-                <div class="routing-grid">
-                    <!-- Row 1 -->
-                    <div class="routing-row routing-row--top">
-                        <div class="routing-media routing-media--top">
-                            <img src="./images/routing-bus.jpg" alt="Image showcasing bus travel and commuting.">
-                        </div>
-
-                        <article class="route-card route-card--bus">
-                            <div class="route-card__inner">
-                                <h3 class="route-card__title">Bus Route</h3>
-                                <p class="route-card__text">Public transport options and key stops for reaching
-                                    Gaztelugatxe.</p>
-                                <a href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/"
-                                    class="plan-btn plan-btn--primary">View more</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="routing-row routing-row--boat">
-                        <article class="route-card route-card--boat">
-                            <div class="route-card__inner">
-                                <h3 class="route-card__title">Boat Route</h3>
-                                <p class="route-card__text">Different types of boat access and how to plan your
-                                    departure and arrival.</p>
-                                <a href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/"
-                                    class="plan-btn plan-btn--primary">View more</a>
-                            </div>
-                        </article>
-
-                        <div class="routing-media routing-media--middle">
-                            <img src="./images/routing-boat.jpg" alt="Image showing boat travel.">
-                        </div>
-                    </div>
-
-                    <!-- Row 3 -->
-                    <div class="routing-media routing-media--bottom">
-                        <img src="./images/routing-walk.jpg" alt="Image showcasing a walking route.">
-                    </div>
-
-                    <article class="route-card route-card--walk">
-                        <div class="route-card__inner">
-                            <h3 class="route-card__title">Walking Route</h3>
-                            <p class="route-card__text">Walking paths, difficulty and preparation tips for the route.
-                            </p>
-                            <a href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/"
-                                class="plan-btn plan-btn--primary">View more</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- site-footer -->
-          <div class="footer_main">
+                <div class="footer_main">
 
                     <div class="footer_logo">
-                        <img src="./images/SJG_Icon.png" alt="footer_logo" footer_logo">
+                        <img src="./images/footer_logo.png" alt="">
                     </div>
 
                     <nav class="footer_nav">
@@ -181,29 +193,42 @@
                     </nav>
 
                     <div class="footer_social">
-
                         <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Tiktok">
-                                    <i class="fa-brands fa-tiktok"></i> </li>
+                            <li><a href="#" aria-label="Facebook">
+                                    <img src="./images/social_media/Facebook.png" alt="Facebook"></a>
+                            </li>
+                        </ul>
+                        <ul class="footer_social-list">
+                            <li><a href="#" aria-label="Facebook">
+                                    <img src="./images/social_media/Twitter.png" alt="Twitter"></a>
+                            </li>
                         </ul>
                         <ul class="footer_social-list">
                             <li><a href="#" aria-label="Instagram">
                                     <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
                             </li>
                         </ul>
-
+                        <ul class="footer_social-list">
+                            <li><a href="#" aria-label="LinkedIn">
+                                    <img src="./images/social_media/LinkedIn.png" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                        <ul class="footer_social-list">
+                            <li><a href="#" aria-label="Youtube">
+                                    <img src="./images/social_media/YouTube.png" alt="YouTube"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer_bottom">
                     <span>© 2025 Group 6</span>
                     <span>All Rights Reserved</span>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
+    <script src="./js/map.js"></script>
 </body>
-<script>
-        <script src="./js/map.js"></script>
-</body>
-
 </html>

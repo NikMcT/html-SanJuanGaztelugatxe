@@ -44,7 +44,7 @@
         <div class="img-sjdg">
             <div class="image-reveal"></div>
             <!-- Timeline entries: alternate left/right -->
-            <div class="timeline-entry left" style="top: 40%;">
+            <div class="timeline-entry left" data-id="0" style="top: 40%;">
                 <h3 class="entry-year">1334</h3>
                 <h4 class="entry-title">The Siege of Gaztelugatxe</h4>
                 <p class="entry-text">Seven Biscayan knights barricaded themselves
@@ -54,7 +54,7 @@
                     defiance.</p>
             </div>
 
-            <div class="timeline-entry right" style="top: 50%;">
+            <div class="timeline-entry right" data-id="1" style="top: 50%;">
                 <h3 class="entry-year">1596</h3>
                 <h4 class="entry-title">Drake's Raid</h4>
                 <p class="entry-text">English privateer Sir Francis Drake attacked the island, looting the hermitage and
@@ -63,7 +63,7 @@
                     taken.</p>
             </div>
 
-            <div class="timeline-entry left" style="top: 60%;">
+            <div class="timeline-entry left" data-id="2" style="top: 60%;">
                 <h3 class="entry-year">1886</h3>
                 <h4 class="entry-title">Demolition &amp; Reconstruction</h4>
                 <p class="entry-text">After centuries of raids, fires, and decay, the deteriorated church was fully
@@ -72,7 +72,7 @@
                     mourned to this day.</p>
             </div>
 
-            <div class="timeline-entry right" style="top: 70%;">
+            <div class="timeline-entry right" data-id="3" style="top: 70%;">
                 <h3 class="entry-year">1978</h3>
                 <h4 class="entry-title">Fire &amp; Rebirth</h4>
                 <p class="entry-text">A devastating fire destroyed the hermitage almost entirely. The Basque community
@@ -80,7 +80,7 @@
                     24 June 1980 — Saint John the Baptist's feast day — preserving the symbolic heart of the site.</p>
             </div>
 
-            <div class="timeline-entry left" style="top: 80%;">
+            <div class="timeline-entry left" data-id="4" style="top: 80%;">
                 <h3 class="entry-year">2017</h3>
                 <h4 class="entry-title">Dragonstone</h4>
                 <p class="entry-text">HBO's Game of Thrones chose San Juan de Gaztelugatxe as the exterior location for
@@ -160,6 +160,22 @@
 </body>
 
 <script>
+    const timeline_entries = document.querySelectorAll('.timeline-entry')
+
+
+    window.addEventListener('scroll', function () {
+        const n = document.documentElement.scrollTop
+        timeline_entries.forEach((timeline_entries, index) => {
+            const triggerPoint = 300 + index * 100
+            if (n > triggerPoint) {
+                timeline_entries.classList.add('show')
+            } else {
+                timeline_entries.classList.remove('show')
+            }
+        })
+    })
+
+
     gsap.registerPlugin(ScrollTrigger);
 
     // IMAGE REVEAL (image to outline)

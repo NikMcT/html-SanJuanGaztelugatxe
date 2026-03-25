@@ -1,46 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gaztelugatxe Map</title>
+  <link rel="icon" href="./images/SJG_Icon.png">
   <link rel="stylesheet" href="./css/map.css" />
 </head>
+
 <body>
   <div class="map-page">
     <div class="map-wrap" id="mapWrap">
       <img src="./images/final-map.png" alt="Gaztelugatxe Map" class="map-base" />
 
-      <button class="map-hotspot"
-        style="top:36.5%; left:27.9%;"
-        data-title="Gaztelugatxe"
+      <button class="map-hotspot" style="top:36.5%; left:27.9%;" data-title="Gaztelugatxe"
         data-subtitle="Ermita de San Juan"
         data-body="A stunning islet connected by a man-made bridge. Home to the famous hermitage."
         aria-label="Gaztelugatxe">
       </button>
 
-      <button class="map-hotspot"
-        style="top:22%; left:65.4%;"
-        data-title="Matxitxako"
-        data-subtitle="Cape"
-        data-body="Northern coastal viewpoint."
-        aria-label="Matxitxako">
+      <button class="map-hotspot" style="top:22%; left:65.4%;" data-title="Matxitxako" data-subtitle="Cape"
+        data-body="Northern coastal viewpoint." aria-label="Matxitxako">
       </button>
 
-      <button class="map-hotspot"
-        style="top:79%; left:5%;"
-        data-title="Bakio"
-        data-subtitle="Beach town"
-        data-body="Main access point and beach area."
-        aria-label="Bakio">
+      <button class="map-hotspot" style="top:79%; left:5%;" data-title="Bakio" data-subtitle="Beach town"
+        data-body="Main access point and beach area." aria-label="Bakio">
       </button>
 
-      <button class="map-hotspot"
-        style="top:91%; left:86.7%;"
-        data-title="Bermeo"
-        data-subtitle="Fishing port"
-        data-body="Historic coastal town with maritime heritage."
-        aria-label="Bermeo">
+      <button class="map-hotspot" style="top:91%; left:86.7%;" data-title="Bermeo" data-subtitle="Fishing port"
+        data-body="Historic coastal town with maritime heritage." aria-label="Bermeo">
       </button>
 
       <div id="hoverLens" class="hover-lens" hidden></div>
@@ -63,21 +52,24 @@
   </div>
 
   <div class="legend-toggle" id="legendToggle">
-  Map Legend
-</div>
-
-<div class="legend-panel" id="legendPanel" hidden>
-  <div class="legend-panel__inner">
-    <button class="legend-close" id="legendClose" type="button" aria-label="Close legend">×</button>
-    <img src="./images/maplegend.svg" alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions." class="legend-panel__image">
+    Map Legend
   </div>
-</div>
 
-<div class="legend-container" aria-label="Map interaction help">
+  <div class="legend-panel" id="legendPanel" hidden>
+    <div class="legend-panel__inner">
+      <button class="legend-close" id="legendClose" type="button" aria-label="Close legend">×</button>
+      <img src="./images/maplegend.svg"
+        alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
+        class="legend-panel__image">
+    </div>
+  </div>
+
+  <div class="legend-container" aria-label="Map interaction help">
     <div class="legend-hint">
       <span>Hover on markers | Click for details</span>
     </div>
 
-  <script src="./js/map.js"></script>
+    <script src="./js/map.js"></script>
 </body>
+
 </html>

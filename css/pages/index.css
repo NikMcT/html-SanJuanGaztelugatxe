@@ -1170,7 +1170,7 @@ body {
     font-weight: 300;
 }
 
-/* SECTION SHELL — shared by Birds / Flora / Ocean */
+/* SECTION SHELL — shared by Birds / Flora / Ocean / Climate*/
 
 .birds-section {
     padding: 5rem var(--page-pad);
@@ -1187,7 +1187,8 @@ body {
    All three share the same visual rules.*/
 .bird-hero,
 .flora-hero,
-.ocean-hero {
+.ocean-hero, 
+.climate-hero {
     position: relative;
     border-radius: 18px;
     overflow: hidden;
@@ -1195,6 +1196,23 @@ body {
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease;
+}
+
+.bird-hero::after,
+.flora-hero::after,
+.ocean-hero::after,
+.climate-hero::after
+ {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%);
+  z-index: 0;
+}
+
+/* Ensure content sits above the overlay */
+.birds-top, .birds-intro, .bird-thumbs-wrap {
+  z-index: 1;
 }
 
 .birds-top {
@@ -1270,7 +1288,8 @@ body {
 /* ── Individual thumb cards ── */
 .bird-thumb,
 .flora-thumb,
-.ocean-thumb {
+.ocean-thumb,
+.climate-thumb {
     flex: 0 0 270px;
     display: flex;
     align-items: center;
@@ -1287,21 +1306,24 @@ body {
 
 .bird-thumb:hover,
 .flora-thumb:hover,
-.ocean-thumb:hover {
+.ocean-thumb:hover,
+.climate-thumb:hover {
     transform: translateY(-3px);
 }
 
 /* Active state — gold border for all three */
 .bird-thumb.active,
 .flora-thumb.active,
-.ocean-thumb.active {
+.ocean-thumb.active,
+.climate-thumb.active {
     border: 1px solid #c9a84c;
     background: rgba(201, 168, 76, 0.1);
 }
 
 .bird-thumb img,
 .flora-thumb img,
-.ocean-thumb img {
+.ocean-thumb img, 
+.climate-thumb img{
     width: 64px;
     height: 48px;
     object-fit: cover;

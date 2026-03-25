@@ -112,12 +112,54 @@ document.addEventListener("click", (event) => {
 const legendToggle = document.getElementById("legendToggle");
 const legendPanel = document.getElementById("legendPanel");
 const legendClose = document.getElementById("legendClose");
+const legendBackdrop = document.getElementById("legendBackdrop");
 
-legendToggle.addEventListener("click", () => {
+function openLegend() {
+  if (!legendPanel) return;
   legendPanel.hidden = false;
-  legendToggle.style.display = "none";
+  document.body.style.overflow = "hidden";
+}
+
+function closeLegendModal() {
+  if (!legendPanel) return;
+  legendPanel.hidden = true;
+  document.body.style.overflow = "";
+}
+
+if (legendToggle) {
+  legendToggle.addEventListener("click", openLegend);
+}
+
+if (legendClose) {
+  legendClose.addEventListener("click", closeLegendModal);
+}
+
+if (legendBackdrop) {
+  legendBackdrop.addEventListener("click", closeLegendModal);
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && legendPanel && !legendPanel.hidden) {
+    closeLegendModal();
+  }
 });
 
+const mapIntro = document.getElementById("mapIntro");
+const enterMapBtn = document.getElementById("enterMapBtn");
+const skipMapIntro = document.getElementById("skipMapIntro");
+
+function hideMapIntro() {
+  if (!mapIntro) return;
+  mapIntro.classList.add("is-hidden");
+}
+
+if (enterMapBtn) {
+  enterMapBtn.addEventListener("click", hideMapIntro);
+}
+
+if (skipMapIntro) {
+  skipMapIntro.addEventListener("click", hideMapIntro);
+}
 legendClose.addEventListener("click", () => {
   legendPanel.hidden = true;
   legendToggle.style.display = "inline-flex";

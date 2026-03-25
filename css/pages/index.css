@@ -154,7 +154,7 @@
 
 
 /* hero section */
-.hero {
+.homepage_hero {
     position: relative;
     min-height: 100vh;
     background: url("../../images/hero.jpg") center / cover no-repeat;
@@ -162,15 +162,14 @@
     align-items: center;
 }
 
-.hero-content {
+.homepage_hero-content {
     display: flex;
     flex-direction: column;
     gap: 36px;
     width: 921px;
-
 }
 
-.hero-content .hero-title {
+.homepage_hero-title {
     font-family: var(--font-brand);
     font-size: var(--fs-72);
     line-height: var(--lh-tight);
@@ -178,7 +177,7 @@
     color: var(--color-rice-yellow);
 }
 
-.hero-content .hero-description {
+.homepage_hero-description {
     font-family: var(--font-body);
     font-size: var(--fs-24);
     line-height: var(--lh-tight);
@@ -779,8 +778,8 @@
     will-change: transform;
 } */
 
-.img-sjdg { 
-    position:relative;
+.img-sjdg {
+    position: relative;
     width: 1600px;
     height: 1900px;
     background-image: url(../../images/sjdg_ori.jpg);
@@ -799,14 +798,15 @@
     background-position: center;
     background-size: cover;
 
-    clip-path: inset(100% 0 0 0); /* hidden initially */
+    clip-path: inset(100% 0 0 0);
+    /* hidden initially */
 }
 
 /* timeline text entries */
 .timeline-entry {
     position: absolute;
     width: 400px;
-        /* Glass base */
+    /* Glass base */
     background: rgba(12, 12, 32, 0.1);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -938,26 +938,26 @@
 .ecosystem {
     padding: 80px;
 }
- 
+
 .ecosystem__header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 40px;
- 
+
 }
- 
+
 .ecosystem__title {
     font-family: var(--font-display);
     font-size: var(--fs-48);
 }
- 
+
 .ecosystem__content {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
     gap: 100px;
 }
- 
+
 .ecosystem__list .ecosystem__item {
     display: flex;
     justify-content: space-between;
@@ -967,17 +967,17 @@
     border-radius: 8px;
     transition: all .1s;
 }
- 
+
 .ecosystem__list .ecosystem__item:hover {
     color: var(--color-white);
     background-color: var(--color-green);
 }
- 
+
 .ecosystem__item .ecosystem__name {
     font-size: var(--fs-20);
     font-weight: bold;
 }
- 
+
 .ecosystem__item .ecosystem__arrow {
     padding: 14px 14px;
     border-radius: 50%;
@@ -985,46 +985,50 @@
     color: var(--color-green);
     transition: all .3s;
 }
- 
+
 .ecosystem__list .ecosystem__item:hover .ecosystem__arrow {
     transform: rotate(-45deg);
 }
- 
+
 .ecosystem__image {
     height: 314px;
     overflow: hidden;
     margin-bottom: 24px;
     border-radius: 8px;
 }
- 
+
 .ecosystem__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
- 
+
 .ecosystem__detail .ecosystem__detail-title {
     margin-bottom: 12px;
 }
- 
- 
-  :root {
+
+
+:root {
     --page-width: 1440px;
     --page-pad: 80px;
-  }
- 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
- 
-  body {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: var(--off-white);
     color: var(--dark);
     overflow-x: hidden;
-  }
- 
+}
+
 /* ══════════════════════════
    HERO
 ══════════════════════════ */
-  .hero {
+.hero {
     position: relative;
     height: 100vh;
     display: flex;
@@ -1036,23 +1040,23 @@
     background: url("../../images/ecosystem/hero.jpg") top / cover no-repeat;
     display: flex;
     align-items: center;
-    }
- 
-  .hero-img {
+}
+
+.hero-img {
     position: absolute;
     inset: 0;
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/San_Juan_de_Gaztelugatxe_2015.jpg/1280px-San_Juan_de_Gaztelugatxe_2015.jpg') center/cover no-repeat;
     filter: brightness(0.72);
-  }
- 
-  .hero-overlay {
+}
+
+.hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.62) 100%);
-  }
- 
-  /* HERO BODY */
-  .hero-body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.62) 100%);
+}
+
+/* HERO BODY */
+.hero-body {
     position: relative;
     z-index: 5;
     max-width: var(--page-width);
@@ -1063,40 +1067,50 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 2rem;
-  }
-  .hero-content { 
-    color: #fff; 
-    max-width: 520px; 
 }
-  .hero-content h1 {
+
+.hero-content {
+    color: #fff;
+    max-width: 520px;
+}
+
+.hero-content h1 {
     font-size: clamp(2rem, 3.2vw, 3.2rem);
     line-height: 1.12;
     font-weight: 700;
     margin-bottom: 1.1rem;
-  }
-  .hero-content p {
+}
+
+.hero-content p {
     font-size: 0.95rem;
     line-height: 1.7;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     font-weight: 300;
     max-width: 380px;
-  }
-  .hero-aside {
+}
+
+.hero-aside {
     color: #fff;
     text-align: right;
     max-width: 220px;
-  }
-  .hero-aside .aside-title {
+}
+
+.hero-aside .aside-title {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 0.45rem;
-  }
-  .hero-aside p { font-size: 0.8rem; line-height: 1.55; color: rgba(255,255,255,0.75); }
- 
-  /* GLASS STATS */
-  .stats-bar {
+}
+
+.hero-aside p {
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* GLASS STATS */
+.stats-bar {
     position: relative;
     z-index: 5;
     max-width: var(--page-width);
@@ -1104,8 +1118,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 30px;
-  }
-  .stats-bar-inner {
+}
+
+.stats-bar-inner {
     max-width: var(--page-width);
     margin: 0 auto;
     display: grid;
@@ -1118,36 +1133,40 @@
     box-shadow:
         0 4px 30px rgba(0, 0, 0, 0.2),
         inset 0 1px 1px rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 14px;
-    box-shadow: 0 6px 28px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.18);
-  }
-  .stat-item {
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.stat-item {
     padding: 1.6rem 1.8rem;
-  }
-  .stat-number {
+}
+
+.stat-number {
     font-size: 2.1rem;
     font-weight: 700;
     margin: 0.15rem;
     color: white;
-  }
-  .stat-label {
+}
+
+.stat-label {
     font-size: 0.68rem;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--gold);
     margin: 0.55rem;
-  }
-  .stat-desc {
+}
+
+.stat-desc {
     font-size: 0.74rem;
     line-height: 1.5;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 300;
-  }
- 
-    /* SECTION SHELL — shared by Birds / Flora / Ocean */
+}
 
-  .birds-section {
+/* SECTION SHELL — shared by Birds / Flora / Ocean */
+
+.birds-section {
     padding: 5rem var(--page-pad);
     max-width: var(--page-width);
     margin: 0 auto;
@@ -1156,13 +1175,13 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-  }
- 
+}
+
 /* HERO PANELS (bird / flora / ocean)
    All three share the same visual rules.*/
-  .bird-hero,
-  .flora-hero,
-  .ocean-hero {
+.bird-hero,
+.flora-hero,
+.ocean-hero {
     position: relative;
     border-radius: 18px;
     overflow: hidden;
@@ -1170,9 +1189,9 @@
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease;
-  }
- 
-  .birds-top {
+}
+
+.birds-top {
     position: absolute;
     top: 32px;
     left: 32px;
@@ -1181,197 +1200,214 @@
     justify-content: space-between;
     align-items: flex-start;
     color: white;
-  }
-  .birds-top h2 {
+}
+
+.birds-top h2 {
     font-size: 2rem;
     max-width: 320px;
-  }
- 
-  .bird-tags {
+}
+
+.bird-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.45rem;
     justify-content: flex-end;
     max-width: 420px;
-  }
-  .bird-tags span {
-    background: rgba(255,255,255,0.2);
+}
+
+.bird-tags span {
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
     padding: 6px 12px;
     border-radius: 20px;
     font-size: .7rem;
     margin-left: 8px;
-  }
-  .bird-tag-pill {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    color: rgba(255,255,255,0.8);
+}
+
+.bird-tag-pill {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.72rem;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     white-space: nowrap;
     width: 300px;
-  }
- 
-  .birds-intro {
+}
+
+.birds-intro {
     position: absolute;
     top: 110px;
     left: 32px;
     max-width: 380px;
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
     font-size: .9rem;
     line-height: 1.6;
-  }
- 
-  .bird-thumbs-wrap {
+}
+
+.bird-thumbs-wrap {
     position: absolute;
     bottom: 18px;
     left: 20px;
     right: 20px;
-  }
-  .bird-thumbs-wrap::-webkit-scrollbar { display: none; }
- 
-  .bird-thumbs {
+}
+
+.bird-thumbs-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.bird-thumbs {
     display: flex;
     gap: 14px;
-  }
- 
+}
+
 /* ── Individual thumb cards ── */
-  .bird-thumb,
-  .flora-thumb,
-  .ocean-thumb {
+.bird-thumb,
+.flora-thumb,
+.ocean-thumb {
     flex: 0 0 270px;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     cursor: pointer;
     transition: transform 0.2s;
-  }
- 
-  .bird-thumb:hover,
-  .flora-thumb:hover,
-  .ocean-thumb:hover {
+}
+
+.bird-thumb:hover,
+.flora-thumb:hover,
+.ocean-thumb:hover {
     transform: translateY(-3px);
-  }
- 
-  /* Active state — gold border for all three */
-  .bird-thumb.active,
-  .flora-thumb.active,
-  .ocean-thumb.active {
+}
+
+/* Active state — gold border for all three */
+.bird-thumb.active,
+.flora-thumb.active,
+.ocean-thumb.active {
     border: 1px solid #c9a84c;
-    background: rgba(201,168,76,0.1);
-  }
- 
-  .bird-thumb img,
-  .flora-thumb img,
-  .ocean-thumb img {
+    background: rgba(201, 168, 76, 0.1);
+}
+
+.bird-thumb img,
+.flora-thumb img,
+.ocean-thumb img {
     width: 64px;
     height: 48px;
     object-fit: cover;
     border-radius: 6px;
-  }
- 
-  .bird-thumb-label {
+}
+
+.bird-thumb-label {
     padding: 0.55rem 0.8rem 0.2rem;
     font-size: 0.77rem;
     font-weight: 500;
-    color: rgba(255,255,255,0.9);
-  }
-  .bird-thumb-sub {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bird-thumb-sub {
     padding: 0 0.8rem 0.65rem;
     font-size: 0.65rem;
-    color: rgba(255,255,255,0.4);
-  }
- 
+    color: rgba(255, 255, 255, 0.4);
+}
+
 /* SPECIES DETAIL */
-  .species-detail {
+.species-detail {
     background: var(--off-white);
     border-top: 2px solid var(--light-gray);
-  }
-  .species-detail-inner {
+}
+
+.species-detail-inner {
     max-width: var(--page-width);
     margin: 0 auto;
     padding: 1rem var(--page-pad);
     display: grid;
     grid-template-columns: 1fr 1.8fr;
     gap: 5rem;
-  }
-  .species-left .species-number {
+}
+
+.species-left .species-number {
     font-size: 0.72rem;
     color: var(--gray);
     letter-spacing: 0.07em;
     margin-bottom: 0.5rem;
-  }
-  .species-left h3 {
+}
+
+.species-left h3 {
     font-size: 1.55rem;
     margin-bottom: 1rem;
-  }
-  .species-left p {
+}
+
+.species-left p {
     font-size: 0.83rem;
     line-height: 1.68;
     color: var(--gray);
     font-weight: 300;
-  }
-  .species-right p {
+}
+
+.species-right p {
     font-size: 0.86rem;
     line-height: 1.78;
     color: #333;
     margin-bottom: 1.1rem;
     font-weight: 300;
-  }
- 
+}
+
 /* CONSERVATION */
 .conservation {
-  padding: 5rem var(--page-pad);
-  max-width: var(--page-width);
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+    padding: 5rem var(--page-pad);
+    max-width: var(--page-width);
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 }
+
 .conservation-inner {
-  background-image: url("../../images/ecosystem/water-pattern.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 14px;
+    background-image: url("../../images/ecosystem/water-pattern.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
 }
+
 .conservation-header {
-  text-align: center;
-  background: white;
-  border-radius: 14px;
-  padding: 2.25rem 2.5rem;
-  margin-bottom: 1.5rem;
+    text-align: center;
+    background: white;
+    border-radius: 14px;
+    padding: 2.25rem 2.5rem;
+    margin-bottom: 1.5rem;
 }
-  .conservation-header h2 {
+
+.conservation-header h2 {
     font-size: 2.3rem;
     margin-bottom: 0.75rem;
-  }
-  .conservation-header p {
+}
+
+.conservation-header p {
     font-size: 0.9rem;
     color: var(--gray);
     line-height: 1.65;
     max-width: 460px;
     margin: 0 auto;
-  }
- 
-  .feature-card {
+}
+
+.feature-card {
     width: 50%;
     background: white;
     border-radius: 14px;
     padding: 2.25rem 2.5rem;
     margin-bottom: 4rem;
-  }
-  .tag {
+}
+
+.tag {
     display: inline-block;
     background: var(--green-tag);
     color: #fff;
@@ -1381,20 +1417,23 @@
     font-weight: 500;
     letter-spacing: 0.05em;
     margin-bottom: 0.85rem;
-  }
-  .feature-card h3 {
+}
+
+.feature-card h3 {
     font-size: 1.4rem;
     line-height: 1.3;
     margin-bottom: 0.7rem;
-  }
-  .feature-card p {
+}
+
+.feature-card p {
     font-size: 0.83rem;
     color: var(--gray);
     line-height: 1.65;
     font-weight: 300;
     margin-bottom: 1rem;
-  }
-  .read-more {
+}
+
+.read-more {
     color: var(--green);
     font-size: 0.82rem;
     font-weight: 500;
@@ -1403,34 +1442,44 @@
     align-items: center;
     gap: 0.3rem;
     transition: gap 0.2s, color 0.2s;
-  }
-  .read-more:hover { gap: 0.55rem; color: var(--green-light); }
- 
+}
+
+.read-more:hover {
+    gap: 0.55rem;
+    color: var(--green-light);
+}
+
 /* ARTICLES */
 /* .articles-section {
   padding: 0 0 5rem;
 } */
-  .articles-header {
+.articles-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.75rem;
     gap: 1rem;
-  }
-  .articles-header h2 {
+}
+
+.articles-header h2 {
     font-size: 1.65rem;
     font-weight: 700;
     white-space: nowrap;
-  }
-  .filter-tabs {
+}
+
+.filter-tabs {
     display: flex;
     gap: 0.5rem;
     overflow-x: auto;
     scrollbar-width: none;
     padding-bottom: 2px;
-  }
-  .filter-tabs::-webkit-scrollbar { display: none; }
-  .filter-tab {
+}
+
+.filter-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-tab {
     flex: 0 0 auto;
     min-width: 90px;
     padding: 0.38rem 1.2rem;
@@ -1444,70 +1493,110 @@
     transition: all 0.2s;
     white-space: nowrap;
     text-align: center;
-  }
-  .filter-tab.active { background: var(--green); color: #fff; }
-  .filter-tab:hover:not(.active) { background: #d6d2ca; }
- 
-  .articles-grid {
+}
+
+.filter-tab.active {
+    background: var(--green);
+    color: #fff;
+}
+
+.filter-tab:hover:not(.active) {
+    background: #d6d2ca;
+}
+
+.articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-  }
-  .article-card {
+}
+
+.article-card {
     border-radius: 10px;
     overflow: hidden;
     background: var(--off-white);
     cursor: pointer;
     transition: transform 0.22s, box-shadow 0.22s;
-  }
-  .article-card:hover {
+}
+
+.article-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 32px rgba(0,0,0,0.1);
-  }
-  .article-img {
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+.article-img {
     width: 100%;
     height: 190px;
     object-fit: cover;
     display: block;
-  }
-  .article-body { padding: 1.1rem 1.2rem 1.3rem; }
-  .article-body h4 {
+}
+
+.article-body {
+    padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.article-body h4 {
     font-size: 1rem;
     line-height: 1.35;
     margin: 0.5rem 0 0.45rem;
-  }
-  .article-body p {
+}
+
+.article-body p {
     font-size: 0.77rem;
     line-height: 1.55;
     color: var(--gray);
     font-weight: 300;
     margin-bottom: 0.65rem;
-  }
+}
 
 
-  /* ══════════════════════════
+/* ══════════════════════════
      FOOTER
   ══════════════════════════ */
-  footer {
+footer {
     background: var(--dark);
-    color: rgba(255,255,255,0.45);
+    color: rgba(255, 255, 255, 0.45);
     text-align: center;
     padding: 2rem var(--page-pad);
     font-size: 0.75rem;
-  }
-  footer span { color: var(--gold); }
+}
 
-  /* ══════════════════════════
+footer span {
+    color: var(--gold);
+}
+
+/* ══════════════════════════
      ANIMATIONS
   ══════════════════════════ */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  .hero-content  { animation: fadeUp 0.85s ease both; }
-  .stats-bar-inner { animation: fadeUp 1s 0.18s ease both; }
-  .species-fade  { animation: fadeIn 0.32s ease both; }
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    animation: fadeUp 0.85s ease both;
+}
+
+.stats-bar-inner {
+    animation: fadeUp 1s 0.18s ease both;
+}
+
+.species-fade {
+    animation: fadeIn 0.32s ease both;
+}

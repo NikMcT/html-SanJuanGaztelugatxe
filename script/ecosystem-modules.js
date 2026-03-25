@@ -173,6 +173,64 @@ const ocean = [
   }
 ];
 
+const climate = [
+  {
+    number: '(01)',
+    name: 'The Biotope',
+    summary: 'San Juan de Gaztelugatxe is a protected biotope in the Basque Country, recognised for its exceptional natural and geological heritage along the Atlantic coast.',
+    body: [
+      'The biotope designation protects the entire coastal strip, including the islet, its cliffs, and the surrounding marine environment from development and intensive human use.',
+      'The site is managed by the Basque Government and sits within the broader Urdaibai Biosphere Reserve network, connecting it to a wider framework of Atlantic coastal conservation.',
+      'Protection covers not only the visible landscape but also the submerged rocky reefs, intertidal zones, and the cliff-nesting bird colonies that depend on undisturbed conditions.',
+      'Visitor access is carefully managed through the single stone causeway, naturally limiting the number of people who can reach the islet at any one time.'
+    ]
+  },
+  {
+    number: '(02)',
+    name: 'Aketxe Island',
+    summary: 'The smaller uninhabited islet of Aketxe lies just offshore, serving as an undisturbed sanctuary for nesting seabirds and marine wildlife away from visitor access.',
+    body: [
+      'Aketxe is entirely inaccessible to the public, making it one of the most undisturbed coastal habitats in the Basque Country.',
+      'Its cliff ledges and rocky shores provide safe nesting sites for Yellow-legged Gulls, Shags, and Oystercatchers that would otherwise be disturbed on the main islet.',
+      'The waters surrounding Aketxe are among the most productive in the area, with dense invertebrate communities and clear visibility that support diving seabirds.',
+      'The island functions as a natural control site for ecological monitoring, allowing scientists to compare wildlife behaviour and population health with areas exposed to human activity.'
+    ]
+  },
+  {
+    number: '(03)',
+    name: 'Vegetation',
+    summary: 'The plant communities of Gaztelugatxe form a layered transition from bare salt-sprayed rock at the cliff edge to sheltered evergreen woodland on inland slopes.',
+    body: [
+      'Vegetation zones are sharply defined by exposure, with halophytes like rock sea lavender occupying the most hostile cliff faces and heather and gorse dominating open slopes above.',
+      'Wild olive and holm oak appear on more sheltered terrain, forming small but structurally complex woodland patches that support a different suite of insects and birds.',
+      'The vegetation also plays a critical role in soil stabilisation, binding the thin soils on upper slopes against erosion caused by Atlantic storms and heavy seasonal rainfall.',
+      'Because the biotope is protected, the plant communities have been able to recover from earlier grazing and cutting pressure, with scrub and woodland gradually expanding in less visited areas.'
+    ]
+  },
+  {
+    number: '(04)',
+    name: 'Geography',
+    summary: 'Gaztelugatxe is shaped by Cretaceous limestone folded into dramatic ridges and eroded by Atlantic wave action into a landscape of sea stacks, arches, and deep fissures.',
+    body: [
+      'The islet itself is a remnant of a limestone ridge that once extended further into the sea, gradually isolated by wave erosion cutting through weaker rock along joint lines and fault zones.',
+      'The 241-step causeway follows the natural crest of this ridge, connecting the islet to the mainland across a narrow neck of rock shaped by centuries of sea cutting.',
+      'Geological features include sea caves, wave-cut platforms, and vertical cliff faces that expose the tilted limestone strata laid down approximately 100 million years ago.',
+      'The combination of hard limestone and intense Atlantic wave energy creates a landscape that is still actively changing, with rockfalls and cliff recession continuing to reshape the coastline.'
+    ]
+  },
+  {
+    number: '(05)',
+    name: 'Coastal Weather System',
+    summary: 'The Bay of Biscay drives a powerful and unpredictable coastal climate at Gaztelugatxe, with frequent Atlantic storms, strong westerly winds, and high annual rainfall shaping the entire ecosystem.',
+    body: [
+      'The site sits on the southern edge of the Bay of Biscay, fully exposed to Atlantic weather systems that arrive without obstruction across hundreds of kilometres of open ocean.',
+      'Winter storms regularly generate waves exceeding 6–8 metres at the cliff base, driving salt spray far inland and limiting which plants and animals can survive on exposed surfaces.',
+      'Despite the harsh conditions, the maritime climate keeps temperatures mild year-round, rarely falling below 5°C in winter or exceeding 25°C in summer, creating stable conditions for resident species.',
+      'Fog and low cloud are common in spring and autumn as warm air meets cold upwelling water offshore, reducing visibility but contributing to the high humidity that supports the dense coastal vegetation.'
+    ]
+  }
+];
+
 
 /* ══════════════════════════════════════════
    GENERIC MODULE FACTORY
@@ -247,6 +305,17 @@ initModule({
   summaryEl:  document.getElementById('oceanSummary'),
   bodyEl:     document.getElementById('oceanBody'),
   dataset:    ocean
+});
+
+/* ── Climate ── */
+initModule({
+  thumbSelector: '.climate-thumb',
+  heroEl:     document.getElementById('climateHero'),
+  numberEl:   document.getElementById('climateNumber'),
+  nameEl:     document.getElementById('climateName'),
+  summaryEl:  document.getElementById('climateSummary'),
+  bodyEl:     document.getElementById('climateBody'),
+  dataset:    climate
 });
 
 /* ── Filter tabs ── */

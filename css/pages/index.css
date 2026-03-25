@@ -428,7 +428,7 @@
 .timeline__content .timeline__item p {
     font-size: var(--fs-40);
     line-height: var(--lh-normal);
-    color: #8f8f8f;
+    color: #5e5e5e;
 }
 
 .timeline__item p .highlight {
@@ -627,7 +627,7 @@
     width: 325px;
     height: 450px;
     left: 0;
-    bottom: 10%;
+    bottom: 8%;
     transform: rotate(-10deg);
     padding: 25px 20px;
     /* width: 100%; */
@@ -1187,7 +1187,7 @@ body {
    All three share the same visual rules.*/
 .bird-hero,
 .flora-hero,
-.ocean-hero, 
+.ocean-hero,
 .climate-hero {
     position: relative;
     border-radius: 18px;
@@ -1201,18 +1201,19 @@ body {
 .bird-hero::after,
 .flora-hero::after,
 .ocean-hero::after,
-.climate-hero::after
- {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%);
-  z-index: 0;
+.climate-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 0;
 }
 
 /* Ensure content sits above the overlay */
-.birds-top, .birds-intro, .bird-thumbs-wrap {
-  z-index: 1;
+.birds-top,
+.birds-intro,
+.bird-thumbs-wrap {
+    z-index: 1;
 }
 
 .birds-top {
@@ -1322,8 +1323,8 @@ body {
 
 .bird-thumb img,
 .flora-thumb img,
-.ocean-thumb img, 
-.climate-thumb img{
+.ocean-thumb img,
+.climate-thumb img {
     width: 64px;
     height: 48px;
     object-fit: cover;

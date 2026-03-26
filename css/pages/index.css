@@ -829,12 +829,12 @@
 }
 
 .timeline-entry.left {
-    left: 4%;
+    float: left;
     text-align: center;
 }
 
 .timeline-entry.right {
-    right: 16%;
+    float: right;
     text-align: center;
 }
 

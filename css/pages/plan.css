@@ -3,32 +3,33 @@
 /*Map*/
 
 .plan-hero {
-	padding:0px;
-    margin: 0;
+  padding: 0px;
+  margin: 0;
 }
 
-.plan-hero .map-page{
+.plan-hero .map-page {
   width: 100%;
 }
 
 .page-plan .container {
-	max-width: 1440px;
-	margin: 0  auto;
-	padding-left: 80px;
-	padding-right: 90px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 90px;
 }
 
 @media (max-width: 1024px) {
-	.page-plan .container {
-	 padding-left: 40px;
-	 padding-right: 40px;
-	}
+  .page-plan .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
+
 @media (max-width: 640px) {
-	.page-plan .container {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  .page-plan .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /*Routing and Commuting Section*/
@@ -43,9 +44,11 @@
   font-size: 2.7rem;
   line-height: 1.02;
   font-weight: 800;
+  font-family: var(--font-display);
   letter-spacing: -0.03em;
   color: #141b31;
 }
+
 /* first row */
 .routing-row--top {
   display: grid;
@@ -111,6 +114,7 @@
   font-size: 2rem;
   line-height: 1.05;
   font-weight: 800;
+  font-family: var(--font-display);
   color: #ffffff;
   text-align: left;
 }
@@ -119,6 +123,7 @@
   margin: 0 0 1.8rem;
   max-width: none;
   text-align: left;
+  font-family: var(--font-body);
   line-height: 1.7;
   color: #ffffff;
 }
@@ -316,6 +321,7 @@
   font-size: 0.95rem;
   font-weight: 600;
 }
+
 .route-card--bus .plan-btn:hover,
 .route-card--walk .plan-btn:hover {
   background: #10755a;
@@ -361,7 +367,7 @@
   line-height: 1;
   font-weight: 800;
   letter-spacing: -0.03;
-  color:#141b31;
+  color: #141b31;
 }
 
 .seasons-grid {
@@ -396,6 +402,7 @@
   object-fit: cover;
   display: block;
 }
+
 .season-card {
   position: relative;
   overflow: hidden;
@@ -409,6 +416,7 @@
 .season-card:hover img {
   transform: scale(1.08);
 }
+
 .season-card--spring img {
   object-position: center center;
 }
@@ -426,20 +434,18 @@
 }
 
 .season-overlay {
-   position: absolute;
+  position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 2rem;
-  background: linear-gradient(
-   to top,
-    rgba(1, 48, 67, 0.75) 0%,   
-    rgba(1, 48, 67, 0.45) 35%,  
-    rgba(1, 48, 67, 0.15) 65%,  
-    rgba(1, 48, 67, 0) 100%     
-  );
+  background: linear-gradient(to top,
+      rgba(1, 48, 67, 0.75) 0%,
+      rgba(1, 48, 67, 0.45) 35%,
+      rgba(1, 48, 67, 0.15) 65%,
+      rgba(1, 48, 67, 0) 100%);
 }
 
 .season-overlay h3 {
@@ -468,7 +474,7 @@
 
 
 .season-overlay .plan-btn {
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   align-self: flex-start;
@@ -553,11 +559,9 @@
   height: 90px;
   left: 0;
   bottom: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0)
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0));
 }
 
 .things-card__content {
@@ -578,15 +582,15 @@
 }
 
 .explore__button {
-    display: inline-block;
-    padding: 22px 14px;
-    color: var(--color-green);
-    background-color: var(--color-white);
-    transition: all .4s;
-    border-radius: 8px;
+  display: inline-block;
+  padding: 22px 14px;
+  color: var(--color-green);
+  background-color: var(--color-white);
+  transition: all .4s;
+  border-radius: 8px;
 }
 
 .explore__button:hover {
-    color: var(--color-white);
-    background-color: var(--color-green);
+  color: var(--color-white);
+  background-color: var(--color-green);
 }

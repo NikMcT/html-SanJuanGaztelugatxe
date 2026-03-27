@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--color-white);
+}
+
 /* =========================
    Mariella Noeve Font
 ========================= */

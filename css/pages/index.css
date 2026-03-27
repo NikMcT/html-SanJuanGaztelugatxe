@@ -1,4 +1,3 @@
-
 :root {
     /* Layout System */
     --layout-width: 1320px;
@@ -82,7 +81,6 @@
     margin: 0 auto;
     padding: 12px 40px;
     border-radius: 8px;
-
     /* Glass base */
     background: rgba(var(--color-green-rgb), 0.5);
     -webkit-backdrop-filter: blur(6px);
@@ -214,7 +212,7 @@
 .homepage_hero {
     position: relative;
     min-height: 100vh;
-    background: url("../../images/hero.jpg") center / cover no-repeat;
+    background: url("../../images/hero_image.jpg") center / cover no-repeat;
     display: flex;
     align-items: center;
 }
@@ -407,6 +405,7 @@
 .planyourvisit {
     /* width: 140px; */
     padding: 0.9rem 1.6rem;
+    margin-top: 10px;
 }
 
 .explore__controls {
@@ -1119,6 +1118,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* 
 body {
     background: var(--off-white);

@@ -160,7 +160,15 @@ if (enterMapBtn) {
 if (skipMapIntro) {
   skipMapIntro.addEventListener("click", hideMapIntro);
 }
-legendClose.addEventListener("click", () => {
-  legendPanel.hidden = true;
-  legendToggle.style.display = "inline-flex";
-});
+
+const mapIntroToggle = document.getElementById("mapIntroToggle");
+
+if (mapIntroToggle && mapIntro) {
+  mapIntroToggle.addEventListener("click", () => {
+    const isHidden = mapIntro.classList.toggle("is-hidden");
+    mapIntroToggle.textContent = isHidden
+      ? "Show Guide"
+      : "Back To Guide";
+      
+  });
+}

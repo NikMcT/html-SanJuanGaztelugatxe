@@ -1673,14 +1673,6 @@ body {
     }
 }
 
-.hero-content {
-    animation: fadeUp 0.85s ease both;
-}
-
-.stats-bar-inner {
-    animation: fadeUp 1s 0.18s ease both;
-}
-
 .species-fade {
     animation: fadeIn 0.32s ease both;
 }

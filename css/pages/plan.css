@@ -3,52 +3,55 @@
 /*Map*/
 
 .plan-hero {
-  padding: 0;
+	padding:0;
   margin: 0;
 }
 
-.plan-hero .map-page {
+.plan-hero .map-page{
   width: 100%;
 }
 
 .page-plan .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 90px;
+	max-width: 1440px;
+	margin: 0  auto;
+	padding-left: 80px;
+	padding-right: 90px;
 }
 
 @media (max-width: 1024px) {
-  .page-plan .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+	.page-plan .container {
+	 padding-left: 40px;
+	 padding-right: 40px;
+	}
 }
-
 @media (max-width: 640px) {
-  .page-plan .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.page-plan .container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 /*Routing and Commuting Section*/
 
 .routing {
-  padding: 5rem 0;
+  padding: 80px 0;
   background: var(--color-white);
 }
 
 .plan-section-title {
   font-family: var(--font-display);
-  margin: 0 0 1.7rem;
-  font-size: 3rem;
+  margin-bottom: 12px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  font-size: var(--fs-48);
   line-height: 1.02;
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-weight: 600;
   color: var(--color-black);
 }
-
 /* first row */
 .routing-row--top {
   display: grid;
@@ -61,7 +64,7 @@
 .routing-media--top {
   width: 100%;
   height: 335px;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -69,6 +72,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
   object-position: center right;
   display: block;
 }
@@ -81,6 +85,7 @@
   border-radius: 10px;
   overflow: hidden;
   display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   padding: 0.9rem;
@@ -100,7 +105,7 @@
   padding-left: 2.3rem;
   padding-right: 1.8rem;
   padding-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -112,8 +117,8 @@
   margin: 0 0 1.35rem;
   font-family: var(--font-display);
   font-size: 2rem;
-  line-height: 1.05;
-  font-weight: 800;
+  line-height: 1.5;
+  font-weight: 400;
   color: var(--color-white);
   text-align: left;
 }
@@ -122,15 +127,15 @@
   margin: 0 0 1.8rem;
   max-width: none;
   font-family: var(--font-body);
-  font-size: (--fs-16);
+  font-size:var(--fs-16);
   color: var(--color-white);
   text-align: left;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 /* button */
 .route-card--bus .plan-btn {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   width: auto;
   align-self: flex-start;
@@ -139,10 +144,10 @@
   background: var(--color-white);
   color: var(--color-green);
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 8px;
   font-size: 0.95rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.4s ease;
 }
 
 /* row 2 */
@@ -150,13 +155,13 @@
   display: grid;
   grid-template-columns: 370px 1fr;
   gap: 1rem;
-  margin-top: 1.89rem;
+  margin-top: 1.30rem;
   align-items: stretch;
 }
 
 .routing-row--boat .routing-media--boat {
   height: 345px;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -168,11 +173,12 @@
   display: block;
 }
 
+/*left boat card */
 
 .route-card--boat {
   width: 100%;
   height: 345px;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -194,7 +200,7 @@
   padding-left: 2.3rem;
   padding-right: 1.8rem;
   padding-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -204,19 +210,19 @@
 .route-card--boat .route-card__title {
   margin: 0 0 1.35rem;
   font-family: var(--font-display);
-  font-size: 1.89rem;
-  line-height: 1.05;
-  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
   color: var(--color-white);
   text-align: left;
 }
 
 .route-card--boat .route-card__text {
   margin: 0 0 1.8rem;
-  max-width: non;
+  max-width: none;
   font-family: var(--font-body);
   font-size: var(--fs-16);
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--color-white);
   text-align: left;
 }
@@ -232,10 +238,10 @@
   background: var(--color-white);
   color: var(--color-yellow);
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 8px;
   font-size: 0.95rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.4s ease;
 }
 
 /* row 3 */
@@ -243,14 +249,14 @@
   display: grid;
   grid-template-columns: minmax(0, 2.2fr) minmax(320px, 0.78fr);
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.30rem;
   align-items: stretch;
 }
 
 .routing-row--walk .routing-media--walk,
 .routing-row--walk .route-card--walk {
   height: 338px;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -287,7 +293,7 @@
   padding-left: 2.3rem;
   padding-right: 1.8rem;
   padding-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -297,9 +303,9 @@
 .route-card--walk .route-card__title {
   margin: 0 0 1.35rem;
   font-family: var(--font-display);
-  font-size: 1.89rem;
-  line-height: 1.05;
-  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 400;
   color: var(--color-white);
   text-align: left;
 }
@@ -308,8 +314,8 @@
   margin: 0 0 1.8rem;
   max-width: none;
   font-family: var(--font-body);
-  font-size: var(fs-16);
-  line-height: 1.7;
+  font-size: var(--fs-16);
+  line-height: 1.5;
   color: var(--color-white);
   text-align: left;
 }
@@ -325,13 +331,12 @@
   background: var(--color-white);
   color: var(--color-green);
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 8px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.4s ease;
 }
-
 .route-card--bus .plan-btn:hover,
 .route-card--walk .plan-btn:hover {
   background: var(--color-yellow);
@@ -370,36 +375,37 @@
 /*Four Seasons*/
 
 .seasons {
-  padding: 1rem 0 5rem;
+  padding: 80px 0;
   background: var(--color-white);
 }
 
 .seasons-title {
-  margin: 0 0 1.7rem;
-  margin-top: 0;
+  display: block;
+  margin-bottom: 60px;
+  margin: 0;
   font-family: var(--font-display);
-  font-size: 3rem;
-  line-height: 1.02;
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-size: var(--fs-48);
+  font-weight: 600;
+   margin-block-end: 0.90em;
   color: var(--color-black);
 }
+
 
 .seasons-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
+  gap: 20px;
   align-items: start;
 }
 
 .seasons-col {
   display: grid;
-  gap: 1.25rem;
+  gap: 20px;
 }
 
 .season-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -435,18 +441,20 @@
 }
 
 .season-overlay {
-  position: absolute;
+   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 2rem;
-  background: linear-gradient(to top,
-      rgba(1, 48, 67, 0.75) 0%,
-      rgba(1, 48, 67, 0.45) 35%,
-      rgba(1, 48, 67, 0.15) 65%,
-      rgba(1, 48, 67, 0) 100%);
+  background: linear-gradient(
+   to top,
+    rgba(1, 48, 67, 0.75) 0%,   
+    rgba(1, 48, 67, 0.45) 35%,  
+    rgba(1, 48, 67, 0.15) 65%,  
+    rgba(1, 48, 67, 0) 100%     
+  );
 }
 
 .season-overlay h3 {
@@ -476,21 +484,20 @@
 
 
 .season-overlay .plan-btn {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   align-self: flex-start;
   width: auto;
-  gap: 0.5rem;
   padding: 0.9rem 1.6rem;
   background: var(--color-white);
   color: var(--color-green);
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 8px;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
+  font-size: var(--fs-16);
+  font-weight: 600;
+  transition: all 0.4s ease;
 }
 
 .season-overlay .plan-btn:hover {
@@ -498,6 +505,7 @@
   color: var(--color-white);
 }
 
+/* responsive */
 @media (max-width: 900px) {
   .seasons-grid {
     grid-template-columns: 1fr;
@@ -516,18 +524,16 @@
 /* Things to do */
 
 .things-to-do {
-  padding: 1rem 0 5rem;
+  padding: 80px 0;
   background: var(--color-white);
 }
 
 .things-to-do__title {
   font-family: var(--font-display);
-  font-size: 3rem;
-  margin: 0 0 1.7rem;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  font-weight: 400;
+  font-size: var(--fs-48);
+  font-weight: 600;
   color: var(--color-black);
+  margin-bottom: 60px;
 }
 
 .things-to-do__grid {
@@ -563,7 +569,7 @@
 
 .things-card {
   position: relative;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -574,11 +580,27 @@
   height: 90px;
   left: 0;
   bottom: 0;
-  background: linear-gradient(to top,
-      rgba(1, 48, 67, 0.75) 0%,
-      rgba(1, 48, 67, 0.45) 35%,
-      rgba(1, 48, 67, 0.15) 65%,
-      rgba(1, 48, 67, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(1, 48, 67, 0.75) 0%,   
+    rgba(1, 48, 67, 0.45) 35%,  
+    rgba(1, 48, 67, 0.15) 65%,  
+    rgba(1, 48, 67, 0) 100%
+  );
+}
+
+.things-card__image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.things-card:hover img {
+    transform: scale(110%);
+
 }
 
 .things-card__content {
@@ -586,7 +608,7 @@
   bottom: 0;
   color: var(--color-white);
   padding: 20px 20px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .things-card__content .things-card__title {
@@ -604,36 +626,17 @@
 }
 
 .explore__button {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.9rem 1.6rem;
-  gap: 0.5rem;
-  width: auto;
-  align-self: flex-start;
-  color: var(--color-green);
-  background-color: var(--color-white);
-  font-family: var(--font-body);
-  font-size: var(--fs-16);
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  border-radius: 2px;
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    font-weight: 600;
+    color: var(--color-green);
+    background-color: var(--color-white);
+    transition: all .4s;
+    border-radius: 8px;
 }
 
 .explore__button:hover {
-  color: var(--color-white);
-  background-color: var(--color-green);
+    color: var(--color-white);
+    background-color: var(--color-green);
 }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}

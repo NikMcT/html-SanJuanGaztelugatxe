@@ -76,8 +76,8 @@
   position: absolute;
   min-width: 110px;
   min-height: 44px;
-  padding: 10px 16px;
-  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
   background: rgba(255,255,255,0.16);
   border: 1px solid rgba(255,255,255,0.35);
   backdrop-filter: blur(14px);
@@ -100,7 +100,7 @@
 }
 
 #hoverLabelText {
-  font-size: 15px;
+  font-size: 0.95rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -108,14 +108,14 @@
 .map-panel {
   position: absolute;
   top: 50%;
-  right: 35px;
+  right: 40px;
   transform: translateY(-50%);
   width: 340px;
   padding-top: 3rem;
   padding-left: 2.3rem;
   padding-right: 1.8rem;
   padding-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--color-white);  border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
   backdrop-filter: blur(10px);
@@ -131,24 +131,23 @@
   right: 14px;
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid var(--color-dark-blue);
   border-radius: 50%;
-  background: rgba(255,255,255,0.65);
+  background: var(--color-white);
   cursor: pointer;
   font-size: 22px;
 }
 
 .map-panel__type {
   margin: 0 0 10px 0;
-  font-size: 13px;
-  letter-spacing: 0.1em;
+  font-size: 16px;
   text-transform: uppercase;
   background-color: var(--color-white);
 }
 
 .map-panel__title {
   margin: 0 0 8px 0;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.05;
     font-family: var(--font-body);
   color: var(--color-dark-blue)
@@ -157,7 +156,7 @@
 .map-panel__subtitle {
   margin: 0 0 16px 0;
   line-height: 1.05;
-  font-size: 16px;
+  font-size: var(--fs-16);
   color: var(--color-dark-blue);
 }
 
@@ -233,14 +232,14 @@
 .legend-trigger {
   position: absolute;
   right: 24px;
-  bottom: 12px;
-  z-index: 25;
+  bottom: 40px;
+  z-index: 30;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.9rem 1.6rem;
   border: 0;
-  border-radius: 2px;
+  border-radius: 8px;
   background: var(--color-dark-blue);
   color: var(--color-white);
   cursor: pointer;
@@ -302,7 +301,7 @@
   z-index: 1;
   width: min(1200px, calc(100% - 2rem));
   margin: 15vh auto 0;
-  border-radius: 18px;
+  border-radius: 8px;
   background-color: var(--color-white);
   box-shadow: 0 30px 80px rgba(0,0,0,0.35);
   overflow: hidden;
@@ -333,7 +332,7 @@
 .legend-modal__title {
   margin: 0;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #0c0c20;
 }
 
@@ -395,7 +394,7 @@ border-radius: 16px;
 .map-intro__card {
   position: relative;
   width: min(420px, calc(100% - 2rem));
-  padding: 2.2rem 2rem 1.6rem;
+  padding: 0.9rem 1.6rem;
   border-radius: 18px;
   font-family: var(--font-body);
   background: rgba(255, 255, 255, 0.08);
@@ -419,6 +418,7 @@ border-radius: 16px;
   opacity: 1;
 }
 
+/* exit animation */
 .map-intro.is-hidden .map-intro__card {
   transform: translateY(30px) scale(0.95);
   opacity: 0;
@@ -431,14 +431,14 @@ border-radius: 16px;
   right: 14%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #FFB300, #10755A, transparent);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 8px 8px;
 }
 
 .map-intro__eyebrow {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.09rem;
+  margin-top:0.2rem;
   font-family: var(--font-body);
-  font-size: 0.70rem;
-  letter-spacing: 0.16em;
+  font-size: 0.98rem;
   text-transform: uppercase;
   color: #FFB300;
 }
@@ -449,31 +449,32 @@ border-radius: 16px;
   font-size: 2rem;
   line-height: 1.2;
   padding: 0.9rem 1.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   color: var(--color-white);
 }
 
 .map-intro__desc {
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--color-white);
 }
 
 .map-intro__hints {
   margin-bottom: 1.4rem;
+  letter-spacing: -0.01rem;
   font-family: var(--font-body);
    padding: 0.9rem 1.6rem;
-  border-radius: 2px;
+  border-radius: 8px;
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.12);
 }
 
 .map-intro__hints li {
-  font-size: 0.78rem;
+  font-size: 0.98rem;
   line-height: 1.5;
-  color: #ffffff;
+  color:var(--color-white)
 }
 
 .map-intro__hints li + li {
@@ -482,12 +483,12 @@ border-radius: 16px;
 
 .map-intro__cta {
   width: 100%;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 0.9rem 1.6rem;
   background: var(--color-white);
   color:var(--color-dark-blue);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   box-shadow: none;
   border: none;
@@ -512,17 +513,17 @@ border-radius: 16px;
   cursor: pointer;
 }
 
-/*Intro toggle button */
+/* Intro toggle button*/
 .map-intro-toggle {
   position: absolute;
   right: 40px;
-  bottom: 95px;
+  bottom: 120px;
   z-index: 50;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   padding: 0.9rem 1.6rem;
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   font-family: var(--font-body);
 
   background: var(--color-dark-blue);

@@ -1,4 +1,9 @@
+/*Map JS*/
+
 const mapWrap = document.getElementById("mapWrap");
+const mapBase = document.querySelector(".map-base");
+const mapStage = document.querySelector(".map-stage");
+
 const hoverLens = document.getElementById("hoverLens");
 const hoverLabel = document.getElementById("hoverLabel");
 const hoverLabelText = document.getElementById("hoverLabelText");
@@ -9,6 +14,26 @@ const panelTitle = document.getElementById("panelTitle");
 const panelSubtitle = document.getElementById("panelSubtitle");
 const panelBody = document.getElementById("panelBody");
 const closePanel = document.getElementById("closePanel");
+
+function positionHotspots() {
+  if (!mapBase || !mapStage) return;
+
+  const imgRect = mapBase.getBoundingClientRect();
+  const stageRect = mapStage.getBoundingClientRect();
+
+  const offsetX = imgRect.left - stageRect.left;
+  const offsetY = imgRect.top - stageRect.top;
+
+  points.forEach((point) => {
+    const x = parseFloat(point.dataset.x);
+    const y = parseFloat(point.dataset.y);
+
+    if (Number.isNaN(x) || Number.isNaN(y)) return;
+
+    point.style.left = `${offsetX + imgRect.width * x}px`;
+    point.style.top = `${offsetY + imgRect.height * y}px`;
+  });
+}
 
 function positionLens(point) {
   const pointRect = point.getBoundingClientRect();
@@ -97,9 +122,11 @@ points.forEach((point) => {
   });
 });
 
-closePanel.addEventListener("click", () => {
-  panel.hidden = true;
-});
+if (closePanel) {
+  closePanel.addEventListener("click", () => {
+    panel.hidden = true;
+  });
+}
 
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".map-hotspot") && !event.target.closest(".map-panel")) {
@@ -169,6 +196,12 @@ if (mapIntroToggle && mapIntro) {
     mapIntroToggle.textContent = isHidden
       ? "Show Guide"
       : "Back To Guide";
-      
   });
+}
+
+window.addEventListener("load", positionHotspots);
+window.addEventListener("resize", positionHotspots);
+
+if (mapBase) {
+  mapBase.addEventListener("load", positionHotspots);
 }

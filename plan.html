@@ -38,6 +38,50 @@
 
     <main id="main">
 
+    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plan Your Visit. San Juan de Gaztelugatxe</title>
+
+    <!-- Font Awesome kit for icon usage across the site -->
+    <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
+    
+    <!-- Base styles: reset, typography, color system, and design tokens -->
+    <link rel="stylesheet" href="./css/base.css">
+
+    <!-- Shared components: header, footer, navigation, reusable UI elements -->
+    <link rel="stylesheet" href="./css/components.css">
+
+    <!-- Plan css  here -->
+    <link rel="stylesheet" href="./css/pages/plan.css">
+
+    <!-- Map css  here -->
+    <link rel="stylesheet" href="./css/map.css">
+
+</head>
+
+<body>
+
+    <!-- Group shared header-->
+    <header class="site-header" role="banner">
+    <a class="hero-brand" href="./index.html">Gaztelugatxe</a>
+
+    <nav class="site-nav" aria-label="Primary">
+    <ul class="nav-list">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">History</a></li>
+                <li class="nav-item"><a href="#">Ecology</a></li>
+                <li class="nav-item"><a href="#">Cultural Impact</a></li>
+                <li class="nav-item"><a aria-current="page" href="./plan.html">Plan Your Visit</a></li>
+    </ul>
+    </nav>
+    </header>
+
+    <main id="main">
+
     <!--Hero Map-->
     <section class="plan-hero">
      <div class="map-stage">
@@ -73,7 +117,8 @@
 
 <!--Hover points-->
       <button class="map-hotspot"
-        style="top:36.5%; left:22%;"
+        data-x="0.22"
+        data-y="0.365"
         data-title="Gaztelugatxe"
         data-subtitle="Clifftop chapel on a sea island."
         data-body="A dramatic islet crowned by the hermitage of San Juan, 
@@ -82,7 +127,8 @@
       </button>
 
       <button class="map-hotspot"
-        style="top:22%; left:51%;"
+        data-x="0.51"
+        data-y="0.22"
         data-title="Matxitxako"
         data-subtitle="Cliff Top Cape"
         data-body="Wild headland on the northern coast, with a historic lighthouse, rugged cliffs, and panoramic viewpoints over the open Atlantic."
@@ -90,7 +136,8 @@
       </button>
 
       <button class="map-hotspot"
-        style="top:79%; left:5%;"
+        data-x="0.05"
+        data-y="0.79"
         data-title="Bakio"
         data-subtitle="Surf and Seaside Town"
         data-body="Colorful coastal town with a long maritime tradition, lively harbor bars, and narrow old streets that capture everyday Basque life."
@@ -98,6 +145,8 @@
       </button>
 
       <button class="map-hotspot"
+        data-x="0.68"
+        data-y="0.91"
         style="top:91%; left:68%;"
         data-title="Bermeo"
         data-subtitle="Historic Fishing Port"
@@ -190,7 +239,7 @@
           class="plan-btn plan-btn--primary"
           target="_blank"
           rel="noopener noreferrer">
-          View more
+          View More
         </a>
         </div>
       </article>
@@ -206,7 +255,7 @@
           class="plan-btn plan-btn--primary"
           target="_blank"
           rel="noopener noreferrer">
-          View more
+          View More
         </a>
         </div>
       </article>
@@ -230,7 +279,7 @@
           class="plan-btn plan-btn--primary"
           target="_blank" 
           rel="noopener noreferrer">
-          View more
+          View More
         </a>
         </div>
       </article>
@@ -455,6 +504,7 @@
     <script src="./js/map.js"></script>
     <script>
 const revealElements = document.querySelectorAll(".reveal");
+
 const observer = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

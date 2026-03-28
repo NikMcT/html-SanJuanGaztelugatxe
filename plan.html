@@ -2,472 +2,438 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaztelugatxe</title>
-    <!-- Font Awesome kit for icon usage across the site -->
-    <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
-    <!-- Base styles: reset, typography, color system, and design tokens -->
-    <link rel="stylesheet" href="./css/base.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaztelugatxe</title>
+  <!-- Font Awesome kit for icon usage across the site -->
+  <script src="https://kit.fontawesome.com/0a4e373dcf.js" crossorigin="anonymous"></script>
+  <!-- Base styles: reset, typography, color system, and design tokens -->
+  <link rel="stylesheet" href="./css/base.css">
 
   <link rel="stylesheet" href="./css/pages/index.css">
-    
-    <!-- Plan css  here -->
-    <link rel="stylesheet" href="./css/pages/plan.css">
 
-    <!-- Map css  here -->
-    <link rel="stylesheet" href="./css/map.css">
+  <!-- Plan css  here -->
+  <link rel="stylesheet" href="./css/pages/plan.css">
+
+  <!-- Map css  here -->
+  <link rel="stylesheet" href="./css/map.css">
 
 </head>
 
 <body>
 
-    <!-- Group shared header-->
-    <header class="site-header">
-        <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG-logo.png" alt=" logo"></a>
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="history.html">History</a></li>
-                <li class="nav-item"><a href="ecosystem.html">Ecology</a></li>
-                <li class="nav-item"><a href="culture.html">Cultural Impact</a></li>
-                <li class="nav-item"><a href="plan.html">Plan Your Visit</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Group shared header-->
+  <header class="site-header">
+    <a class="logo" href="./index.html" class="hero-brand"><img src="./images/SJG-logo.png" alt=" logo"></a>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="ecosystem.html">Ecology</a></li>
+        <li class="nav-item"><a href="culture.html">Cultural Impact</a></li>
+        <li class="nav-item"><a href="plan.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main id="main">
+  <main id="main">
 
     <!--Hero Map-->
     <section class="plan-hero">
-     <div class="map-stage">
-    <div class="map-wrap" id="mapWrap">
-      <img src="./images/map.webp" alt="Gaztelugatxe Map" class="map-base" />
+      <div class="map-stage">
+        <div class="map-wrap" id="mapWrap">
+          <img src="./images/map.webp" alt="Gaztelugatxe Map" class="map-base" />
 
-<div class="map-intro" id="mapIntro">
-  <div class="map-intro__card" id="mapIntroCard">
-    <div class="map-intro__bar"></div>
+          <div class="map-intro" id="mapIntro">
+            <div class="map-intro__card" id="mapIntroCard">
+              <div class="map-intro__bar"></div>
 
-    <p class="map-intro__eyebrow">Interactive Map</p>
-    <h2 class="map-intro__title">San Juan de Gaztelugatxe</h2>
-    <p class="map-intro__desc">
-      Explore the coastline, landmarks, and key locations of this iconic Basque Country destination.
-    </p>
+              <p class="map-intro__eyebrow">Interactive Map</p>
+              <h2 class="map-intro__title">San Juan de Gaztelugatxe</h2>
+              <p class="map-intro__desc">
+                Explore the coastline, landmarks, and key locations of this iconic Basque Country destination.
+              </p>
 
-    <ul class="map-intro__hints">
-      <li>Hover markers to preview</li>
-      <li>Click markers to open location details</li>
-      <li>Toggle the legend for the full key</li>
-    </ul>
+              <ul class="map-intro__hints">
+                <li>Hover markers to preview</li>
+                <li>Click markers to open location details</li>
+                <li>Toggle the legend for the full key</li>
+              </ul>
 
-    <button class="map-intro__cta" id="enterMapBtn" type="button">
-      Explore the Map
-    </button>
+              <button class="map-intro__cta" id="enterMapBtn" type="button">
+                Explore the Map
+              </button>
 
-    <button class="map-intro__skip" id="skipMapIntro" type="button">
-      Skip intro
-    </button>
-    
-  </div>
-</div>
+              <button class="map-intro__skip" id="skipMapIntro" type="button">
+                Skip intro
+              </button>
 
-<!--Hover points-->
-      <button class="map-hotspot"
-        style="top:36.5%; left:22%;"
-        data-title="Gaztelugatxe"
-        data-subtitle="Clifftop chapel on a sea island."
-        data-body="A dramatic islet crowned by the hermitage of San Juan, 
+            </div>
+          </div>
+
+          <!--Hover points-->
+          <button class="map-hotspot" style="top:36.5%; left:22%;" data-title="Gaztelugatxe"
+            data-subtitle="Clifftop chapel on a sea island." data-body="A dramatic islet crowned by the hermitage of San Juan, 
         reached by a winding stone staircase and rewarded with sweeping views of the Bay of Biscay."
-        aria-label="Gaztelugatxe">
-      </button>
+            aria-label="Gaztelugatxe">
+          </button>
 
-      <button class="map-hotspot"
-        style="top:22%; left:51%;"
-        data-title="Matxitxako"
-        data-subtitle="Cliff Top Cape"
-        data-body="Wild headland on the northern coast, with a historic lighthouse, rugged cliffs, and panoramic viewpoints over the open Atlantic."
-        aria-label="Matxitxako">
-      </button>
+          <button class="map-hotspot" style="top:22%; left:51%;" data-title="Matxitxako" data-subtitle="Cliff Top Cape"
+            data-body="Wild headland on the northern coast, with a historic lighthouse, rugged cliffs, and panoramic viewpoints over the open Atlantic."
+            aria-label="Matxitxako">
+          </button>
 
-      <button class="map-hotspot"
-        style="top:79%; left:5%;"
-        data-title="Bakio"
-        data-subtitle="Surf and Seaside Town"
-        data-body="Colorful coastal town with a long maritime tradition, lively harbor bars, and narrow old streets that capture everyday Basque life."
-        aria-label="Bakio">
-      </button>
+          <button class="map-hotspot" style="top:79%; left:5%;" data-title="Bakio" data-subtitle="Surf and Seaside Town"
+            data-body="Colorful coastal town with a long maritime tradition, lively harbor bars, and narrow old streets that capture everyday Basque life."
+            aria-label="Bakio">
+          </button>
 
-      <button class="map-hotspot"
-        style="top:91%; left:68%;"
-        data-title="Bermeo"
-        data-subtitle="Historic Fishing Port"
-        data-body="Historic coastal town with maritime heritage."
-        aria-label="Bermeo">
-      </button>
+          <button class="map-hotspot" style="top:91%; left:68%;" data-title="Bermeo"
+            data-subtitle="Historic Fishing Port" data-body="Historic coastal town with maritime heritage."
+            aria-label="Bermeo">
+          </button>
 
-      <div id="hoverLens" class="hover-lens" hidden></div>
+          <div id="hoverLens" class="hover-lens" hidden></div>
 
-      <div id="hoverLabel" class="hover-label" hidden>
-        <span id="hoverLabelText"></span>
-      </div>
-
-      <aside id="mapPanel" class="map-panel" hidden>
-        <button id="closePanel" class="map-panel__close" type="button" aria-label="Close panel">×</button>
-        <p id="panelType" class="map-panel__type">Location</p>
-        <h2 id="panelTitle" class="map-panel__title"></h2>
-        <p id="panelSubtitle" class="map-panel__subtitle"></p>
-        <p id="panelBody" class="map-panel__body"></p>
-        <div class="map-panel__tags">
-          <span class="map-panel__tag">Scenic landmark</span>
-        </div>
-      </aside>
-      <button class="map-intro-toggle" id="mapIntroToggle" type="button">
-        Show Guide
-      </button>
-    </div>
-  </div>
-
-  <!--map legend-->
-
-  <button class="legend-trigger" id="legendToggle" aria-label="Open map legend" type="button">
-  <span class="legend-trigger__icon" aria-hidden="true">
-    <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="14" height="2" rx="1" fill="white" opacity="0.9"/>
-      <rect x="0" y="5" width="10" height="2" rx="1" fill="white" opacity="0.9"/>
-      <rect x="0" y="10" width="12" height="2" rx="1" fill="white" opacity="0.9"/>
-    </svg>
-  </span>
-  <span class="legend-trigger__label">Map Legend</span>
-  <span class="legend-trigger__dots" aria-hidden="true">
-    <span class="legend-trigger__dot" style="background:#ffb300;"></span>
-    <span class="legend-trigger__dot" style="background:#10755A;"></span>
-    <span class="legend-trigger__dot" style="background:#013043;"></span>
-    <span class="legend-trigger__dot" style="background:#e53935;"></span>
-  </span>
-</button>
-
-<div class="legend-modal" id="legendPanel" hidden>
-  <div class="legend-modal__backdrop" id="legendBackdrop"></div>
-
-  <div class="legend-modal__card">
-    <div class="legend-modal__header">
-      <p class="legend-modal__title">Map Legend</p>
-      <button class="legend-modal__close" id="legendClose" type="button" aria-label="Close legend">
-        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </div>
-
-    <div class="legend-modal__body">
-      <img
-        src="./images/sjg map.webp"
-        alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
-        class="legend-modal__image"
-      />
-    </div>
-  </div>
-</div>
-      </section>
-
-<!-- Routing and Commuting -->
-<section class="routing" aria-labelledby="routing-title">
-  <div class="container reveal">
-    <h2 id="routing-title" class="plan-section-title">Routing &amp; Commuting</h2>
-    <div class="routing-grid">
-
-      <!-- Row 1 -->
-      <div class="routing-row routing-row--top">
-       <div class="routing-media routing-media--top">
-        <img src="./images/routing-bus.webp" alt="Image showcasing bus travel and commuting | Photo from TurismoVasco">
-      </div>
-
-      <article class="route-card route-card--bus">
-        <div class="route-card__inner">
-          <h3 class="route-card__title">Bus Route</h3>
-          <p class="route-card__text">Public transport options and key stops for reaching Gaztelugatxe.</p>
-          <a href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/"
-          class="plan-btn plan-btn--primary"
-          target="_blank"
-          rel="noopener noreferrer">
-          View more
-        </a>
-        </div>
-      </article>
-      </div>
-
-      <!-- Row 2 -->
-       <div class="routing-row routing-row--boat">
-      <article class="route-card route-card--boat">
-        <div class="route-card__inner">
-          <h3 class="route-card__title">Boat Route</h3>
-          <p class="route-card__text">Different types of boat access and how to plan your departure and arrival.</p>
-          <a href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/" 
-          class="plan-btn plan-btn--primary"
-          target="_blank"
-          rel="noopener noreferrer">
-          View more
-        </a>
-        </div>
-      </article>
-
-      <div class="routing-media routing-media--boat">
-        <img src="./images/routing-boat.webp" alt="Image showing boat travel | Photo from TurismoVasco">
-      </div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="routing-media routing-row--walk">
-        <div class="routing-media routing-media--walk">
-        <img src="./images/routing-walk.webp" alt="Image showcasing a walking route | Photo from Pexels">
-      </div>
-
-      <article class="route-card route-card--walk">
-        <div class="route-card__inner">
-          <h3 class="route-card__title">Walking Route</h3>
-          <p class="route-card__text">Walking paths, difficulty and preparation tips for the route.</p>
-          <a href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/" 
-          class="plan-btn plan-btn--primary"
-          target="_blank" 
-          rel="noopener noreferrer">
-          View more
-        </a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!--Four Seasons-->
-
-<section class="seasons">
-  <div class="container reveal">
-    <h2 class="seasons-title">Four Seasons</h2>
-
-    <div class="seasons-grid">
-      <div class="seasons-col">
-        <article class="season-card season-card--spring season-card--large">
-          <img src="./images/spring-season.webp" alt="Spring at Gaztelugatxe | Photo from Pexels">
-          <div class="season-overlay">
-            <h3>Spring</h3>
-            <p>Mild days, lush green cliffs, and calm seas reveal the quiet mysticism.</p>
-            <a href="./index.html#spring" class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">View More</a>
+          <div id="hoverLabel" class="hover-label" hidden>
+            <span id="hoverLabelText"></span>
           </div>
-        </article>
 
-        <article class="season-card season-card--fall season-card--small">
-          <img src="./images/fall-season.webp" alt="Fall at Gaztelugatxe | Photo from Pexels">
-          <div class="season-overlay">
-            <h3>Fall</h3>
-            <p>Softer light, cooler air, and visitors make the landscape feel serene and contemplative.</p>
-            <a href="./index.html#fall" class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">View More</a>
-          </div>
-        </article>
+          <aside id="mapPanel" class="map-panel" hidden>
+            <button id="closePanel" class="map-panel__close" type="button" aria-label="Close panel">×</button>
+            <p id="panelType" class="map-panel__type">Location</p>
+            <h2 id="panelTitle" class="map-panel__title"></h2>
+            <p id="panelSubtitle" class="map-panel__subtitle"></p>
+            <p id="panelBody" class="map-panel__body"></p>
+            <div class="map-panel__tags">
+              <span class="map-panel__tag">Scenic landmark</span>
+            </div>
+          </aside>
+          <button class="map-intro-toggle" id="mapIntroToggle" type="button">
+            Show Guide
+          </button>
+        </div>
       </div>
 
-      <div class="seasons-col">
-        <article class="season-card season-card--summer season-card--small">
-          <img src="./images/season-summer.webp" alt="Summer at Gaztelugatxe | Photo from Pexels">
-          <div class="season-overlay">
-            <h3>Summer</h3>
-            <p>Warm, sunny weather and long days draw crowds to the steps and rocky coves.</p>
-            <a href="./index.html#summer" class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">View More</a>
-          </div>
-        </article>
+      <!--map legend-->
 
-        <article class="season-card season-card--winter season-card--large">
-          <img src="./images/winter-season.webp" alt="Winter at Gaztelugatxe | Photo from Pexels">
-          <div class="season-overlay">
-            <h3>Winter</h3>
-            <p>Cool, often rainy weather and dramatic waves give the chapel a rugged, coastal character.</p>
-            <a href="./index.html#winter" class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">View More</a>
+      <button class="legend-trigger" id="legendToggle" aria-label="Open map legend" type="button">
+        <span class="legend-trigger__icon" aria-hidden="true">
+          <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="14" height="2" rx="1" fill="white" opacity="0.9" />
+            <rect x="0" y="5" width="10" height="2" rx="1" fill="white" opacity="0.9" />
+            <rect x="0" y="10" width="12" height="2" rx="1" fill="white" opacity="0.9" />
+          </svg>
+        </span>
+        <span class="legend-trigger__label">Map Legend</span>
+        <span class="legend-trigger__dots" aria-hidden="true">
+          <span class="legend-trigger__dot" style="background:#ffb300;"></span>
+          <span class="legend-trigger__dot" style="background:#10755A;"></span>
+          <span class="legend-trigger__dot" style="background:#013043;"></span>
+          <span class="legend-trigger__dot" style="background:#e53935;"></span>
+        </span>
+      </button>
+
+      <div class="legend-modal" id="legendPanel" hidden>
+        <div class="legend-modal__backdrop" id="legendBackdrop"></div>
+
+        <div class="legend-modal__card">
+          <div class="legend-modal__header">
+            <p class="legend-modal__title">Map Legend</p>
+            <button class="legend-modal__close" id="legendClose" type="button" aria-label="Close legend">
+              <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
           </div>
-        </article>
+
+          <div class="legend-modal__body">
+            <img src="./images/sjg map.webp"
+              alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
+              class="legend-modal__image" />
+          </div>
+        </div>
       </div>
-    </div>
-</section>
+    </section>
 
-<!--Things to do-->
+    <!-- Routing and Commuting -->
+    <section class="routing" aria-labelledby="routing-title">
+      <div class="container reveal">
+        <h2 id="routing-title" class="plan-section-title">Routing &amp; Commuting</h2>
+        <div class="routing-grid">
 
-<section id="things-to-do" class="things-to-do">
-    <div class="container reveal">
+          <!-- Row 1 -->
+          <div class="routing-row routing-row--top">
+            <div class="routing-media routing-media--top">
+              <img src="./images/routing-bus.webp"
+                alt="Image showcasing bus travel and commuting | Photo from TurismoVasco">
+            </div>
+
+            <article class="route-card route-card--bus">
+              <div class="route-card__inner">
+                <h3 class="route-card__title">Bus Route</h3>
+                <p class="route-card__text">Public transport options and key stops for reaching Gaztelugatxe.</p>
+                <a href="https://sanjuangaztelugatxe.com/en/bus-to-san-juan-de-gaztelugatxe/"
+                  class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">
+                  View more
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="routing-row routing-row--boat">
+            <article class="route-card route-card--boat">
+              <div class="route-card__inner">
+                <h3 class="route-card__title">Boat Route</h3>
+                <p class="route-card__text">Different types of boat access and how to plan your departure and arrival.
+                </p>
+                <a href="https://sanjuangaztelugatxe.com/en/boat-ride-to-san-juan-de-gaztelugatxe/"
+                  class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">
+                  View more
+                </a>
+              </div>
+            </article>
+
+            <div class="routing-media routing-media--boat">
+              <img src="./images/routing-boat.webp" alt="Image showing boat travel | Photo from TurismoVasco">
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="routing-media routing-row--walk">
+            <div class="routing-media routing-media--walk">
+              <img src="./images/routing-walk.webp" alt="Image showcasing a walking route | Photo from Pexels">
+            </div>
+
+            <article class="route-card route-card--walk">
+              <div class="route-card__inner">
+                <h3 class="route-card__title">Walking Route</h3>
+                <p class="route-card__text">Walking paths, difficulty and preparation tips for the route.</p>
+                <a href="https://sanjuangaztelugatxe.com/en/walking-routes-to-san-juan-de-gaztelugatxe/"
+                  class="plan-btn plan-btn--primary" target="_blank" rel="noopener noreferrer">
+                  View more
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+    </section>
+
+    <!--Four Seasons-->
+
+    <section class="seasons">
+      <div class="container reveal">
+        <h2 class="seasons-title">Four Seasons</h2>
+
+        <div class="seasons-grid">
+          <div class="seasons-col">
+            <article class="season-card season-card--spring season-card--large">
+              <img src="./images/spring-season.webp" alt="Spring at Gaztelugatxe | Photo from Pexels">
+              <div class="season-overlay">
+                <h3>Spring</h3>
+                <p>Mild days, lush green cliffs, and calm seas reveal the quiet mysticism.</p>
+                <a href="./index.html#spring" class="plan-btn plan-btn--primary" target="_blank"
+                  rel="noopener noreferrer">View More</a>
+              </div>
+            </article>
+
+            <article class="season-card season-card--fall season-card--small">
+              <img src="./images/fall-season.webp" alt="Fall at Gaztelugatxe | Photo from Pexels">
+              <div class="season-overlay">
+                <h3>Fall</h3>
+                <p>Softer light, cooler air, and visitors make the landscape feel serene and contemplative.</p>
+                <a href="./index.html#fall" class="plan-btn plan-btn--primary" target="_blank"
+                  rel="noopener noreferrer">View More</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="seasons-col">
+            <article class="season-card season-card--summer season-card--small">
+              <img src="./images/season-summer.webp" alt="Summer at Gaztelugatxe | Photo from Pexels">
+              <div class="season-overlay">
+                <h3>Summer</h3>
+                <p>Warm, sunny weather and long days draw crowds to the steps and rocky coves.</p>
+                <a href="./index.html#summer" class="plan-btn plan-btn--primary" target="_blank"
+                  rel="noopener noreferrer">View More</a>
+              </div>
+            </article>
+
+            <article class="season-card season-card--winter season-card--large">
+              <img src="./images/winter-season.webp" alt="Winter at Gaztelugatxe | Photo from Pexels">
+              <div class="season-overlay">
+                <h3>Winter</h3>
+                <p>Cool, often rainy weather and dramatic waves give the chapel a rugged, coastal character.</p>
+                <a href="./index.html#winter" class="plan-btn plan-btn--primary" target="_blank"
+                  rel="noopener noreferrer">View More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+    </section>
+
+    <!--Things to do-->
+
+    <section id="things-to-do" class="things-to-do">
+      <div class="container reveal">
         <h2 class="things-to-do__title">
-            Things to do
+          Things to do
         </h2>
 
         <div class="things-to-do__grid">
 
-            <article class="things-card">
+          <article class="things-card">
 
-                <div class="things-card__image">
-                    <img src="./images/hero.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
-                </div>
-
-                <ul class="things-card__tags">
-                    <li class="things-card__tag">Visit</li>
-                </ul>
-
-                <div class="things-card__content">
-
-                    <h3 class="things-card__title">
-                        Book Tickets
-                    </h3>
-
-                    <p class="things-card__description">
-                        Stone bridge, five ascending sections, one hermitage at the top. Takes most people about an
-                        hour.
-                    </p>
-
-                    <a href="https://turismovasco.com/reservas/comprar_producto.html?id_epigrafe=2272&id_panel=676&id_experiencia=21761&id_elemento=21761&tipo_elemento=2&id_destino=4839&id_operador=4839&id_punto_venta=5682&id_idioma=0&cierre_app=1&CodAgencia=undefined"
-                        class="explore__button" target="_blank" rel="noopener noreferrer">
-                        View More
-                    </a>
-
-                </div>
-
-            </article>
-
-            <article class="things-card">
-
-                <div class="things-card__image">
-                    <img src="images/things_2.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
-                </div>
-
-                <ul class="things-card__tags">
-                    <li class="things-card__tag">Boats</li>
-                </ul>
-
-                <div class="things-card__content">
-
-                    <h3 class="things-card__title">
-                        Visit via Boats
-                    </h3>
-
-                    <p class="things-card__description">
-                        Boat from Bermeo gives the full view: islet rising from the Atlantic, hermitage at its peak.
-                    </p>
-
-                    <a href="https://turismovasco.com/reservas/comprar_producto.html?id_epigrafe=925&id_panel=676&id_experiencia=5216&id_elemento=5216&tipo_elemento=2&id_destino=4839&id_operador=4839&id_punto_venta=5682&id_idioma=0&cierre_app=1&CodAgencia=undefined"
-                        class="explore__button" target="_blank" rel="noopener noreferrer">
-                        View More
-                    </a>
-
-                </div>
-
-            </article>
-
-            <article class="things-card">
-
-                <div class="things-card__image">
-                    <img src="images/things_3.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
-                </div>
-
-                <ul class="things-card__tags">
-                    <li class="things-card__tag">Tours</li>
-                </ul>
-
-                <div class="things-card__content">
-
-                    <h3 class="things-card__title">
-                        Guided Tours
-                    </h3>
-
-                    <p class="things-card__description">
-                        2 km from Bakio along open clifftops. The island appears slowly . silhouette first, then
-                        full detail.
-                    </p>
-
-                    <a href="https://sanjuangaztelugatxe.com/en/guided-tours-in-san-juan-de-gaztelugatxe/"
-                        class="explore__button" target="_blank" rel="noopener noreferrer">
-                        View More
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<!-- site-footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer_wrapper">
-                <div class="footer_hero">
-                    <h2 class="footer_title">
-                        Have an idea? Let's Trip <br> San Juan de Gaztelugatxe
-                    </h2>
-                </div>
-                <div class="footer_main">
-
-                    <div class="footer_logo">
-                        <img src="./images/footer_logo.png" alt="">
-                    </div>
-
-                    <nav class="footer_nav">
-                        <ul class="footer_nav-list">
-                            <li class="footer_nav-item"><a href="./index.html">Home</a></li>
-                            <li class="footer_nav-item"><a href="#">History</a></li>
-                            <li class="footer_nav-item"><a href="./ecosystem.html">Ecology</a></li>
-                            <li class="footer_nav-item"><a href="./culture.html">Cultural Impact</a></li>
-                            <li class="footer_nav-item"><a href="#">Plan Your Visit</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="footer_social">
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Facebook">
-                                    <img src="./images/social_media/Facebook.png" alt="Facebook"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Twitter">
-                                    <img src="./images/social_media/Twitter.png" alt="Twitter"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Instagram">
-                                    <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="LinkedIn">
-                                    <img src="./images/social_media/LinkedIn.png" alt="LinkedIn"></a>
-                            </li>
-                        </ul>
-                        <ul class="footer_social-list">
-                            <li><a href="#" aria-label="Youtube">
-                                    <img src="./images/social_media/YouTube.png" alt="YouTube"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer_bottom">
-                    <span>© 2025 Group 6</span>
-                    <span>All Rights Reserved</span>
-                    <a href="#">Terms and Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
+            <div class="things-card__image">
+              <img src="./images/hero.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
             </div>
+
+            <ul class="things-card__tags">
+              <li class="things-card__tag">Visit</li>
+            </ul>
+
+            <div class="things-card__content">
+
+              <h3 class="things-card__title">
+                Book Tickets
+              </h3>
+
+              <p class="things-card__description">
+                Stone bridge, five ascending sections, one hermitage at the top. Takes most people about an
+                hour.
+              </p>
+
+              <a href="https://turismovasco.com/reservas/comprar_producto.html?id_epigrafe=2272&id_panel=676&id_experiencia=21761&id_elemento=21761&tipo_elemento=2&id_destino=4839&id_operador=4839&id_punto_venta=5682&id_idioma=0&cierre_app=1&CodAgencia=undefined"
+                class="explore__button" target="_blank" rel="noopener noreferrer">
+                View More
+              </a>
+
+            </div>
+
+          </article>
+
+          <article class="things-card">
+
+            <div class="things-card__image">
+              <img src="images/things_2.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
+            </div>
+
+            <ul class="things-card__tags">
+              <li class="things-card__tag">Boats</li>
+            </ul>
+
+            <div class="things-card__content">
+
+              <h3 class="things-card__title">
+                Visit via Boats
+              </h3>
+
+              <p class="things-card__description">
+                Boat from Bermeo gives the full view: islet rising from the Atlantic, hermitage at its peak.
+              </p>
+
+              <a href="https://turismovasco.com/reservas/comprar_producto.html?id_epigrafe=925&id_panel=676&id_experiencia=5216&id_elemento=5216&tipo_elemento=2&id_destino=4839&id_operador=4839&id_punto_venta=5682&id_idioma=0&cierre_app=1&CodAgencia=undefined"
+                class="explore__button" target="_blank" rel="noopener noreferrer">
+                View More
+              </a>
+
+            </div>
+
+          </article>
+
+          <article class="things-card">
+
+            <div class="things-card__image">
+              <img src="images/things_3.jpg" alt="Photo from Pexels | Booking Link from TurismoVasco">
+            </div>
+
+            <ul class="things-card__tags">
+              <li class="things-card__tag">Tours</li>
+            </ul>
+
+            <div class="things-card__content">
+
+              <h3 class="things-card__title">
+                Guided Tours
+              </h3>
+
+              <p class="things-card__description">
+                2 km from Bakio along open clifftops. The island appears slowly . silhouette first, then
+                full detail.
+              </p>
+
+              <a href="https://sanjuangaztelugatxe.com/en/guided-tours-in-san-juan-de-gaztelugatxe/"
+                class="explore__button" target="_blank" rel="noopener noreferrer">
+                View More
+              </a>
+
+            </div>
+
+          </article>
+
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- site-footer -->
+    <div class="site-footer">
+      <div class="container">
+        <div class="footer_wrapper">
+          <div class="footer_hero">
+            <h2 class="footer_title">
+              Have an idea? Let’s Trip <br> San Juan de Gaztelugatxe
+            </h2>
+          </div>
+          <div class="footer_main">
+
+            <div class="footer_logo">
+              <img src="./images/SJG_Icon.png" alt="footer_logo">
+            </div>
+
+            <nav class="footer_nav">
+              <ul class="footer_nav-list">
+                <li class="footer_nav-item"><a href="index.html">Home</a></li>
+                <li class="footer_nav-item"><a href="history.html">History</a></li>
+                <li class="footer_nav-item"><a href="ecosystem.html">Ecology</a></li>
+                <li class="footer_nav-item"><a href="culture.html">Cultural Impact</a></li>
+                <li class="footer_nav-item"><a href="plan.html">Plan Your Visit</a></li>
+              </ul>
+            </nav>
+
+            <div class="footer_social">
+              <ul class="footer_social-list">
+                <li><a href="https://www.instagram.com/explore/locations/648812/san-juan-de-gaztelugatxe/"
+                    aria-label="Instagram">
+                    <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <span>© 2025 Group 6</span>
+            <span>All Rights Reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/map.js"></script>
     <script>
-const revealElements = document.querySelectorAll(".reveal");
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("is-visible");
-      obs.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.15,
-  rootMargin: "0px 0px -50px 0px"
-});
+      const revealElements = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+      });
 
-revealElements.forEach(el => observer.observe(el));
-</script>
+      revealElements.forEach(el => observer.observe(el));
+    </script>
 </body>
+
 </html>

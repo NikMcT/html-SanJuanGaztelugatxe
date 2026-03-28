@@ -185,7 +185,7 @@
   justify-content: center;
   padding: 0.9rem;
   background-color: var(--color-yellow);
-  background-image: url("../../images/stairway-pattern.jpg");
+  background-image: url("../../images/stairway-pattern");
   background-repeat: repeat;
   background-size: 255px auto;
   background-position: center;
@@ -522,71 +522,65 @@
 }
 
 /* Things to do */
-
 .things-to-do {
-  padding: 80px 0;
-  background: var(--color-white);
+    padding: 80px 0;
 }
 
 .things-to-do__title {
-  font-family: var(--font-display);
-  font-size: var(--fs-48);
-  font-weight: 600;
-  color: var(--color-black);
-  margin-bottom: 60px;
+    font-family: var(--font-display);
+    font-size: var(--fs-48);
+    margin-bottom: 60px;
 }
 
 .things-to-do__grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    /* grid-auto-rows: 300px; */
 }
 
 .things-card__image {
-  height: 600px;
+    /* aspect-ratio: 16/9; */
+    height: 600px;
 }
 
-.things-card__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .things-card__tags {
-  position: absolute;
-  top: 27px;
-  left: 20px;
-  color: var(--color-white);
-  padding: 4px 32px;
-  border-radius: 100px;
-  border: 1px solid var(--color-white);
-  background: rgba(12, 12, 32, 0.1);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  font-family: var(--font-body);
-  font-size: var(--fs-16);
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    color: var(--color-white);
+    padding: 4px 32px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+    /* Glass base */
+    background: rgba(12, 12, 32, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .things-card {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
 }
 
-.things-card::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 90px;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to top,
-    rgba(1, 48, 67, 0.75) 0%,   
-    rgba(1, 48, 67, 0.45) 35%,  
-    rgba(1, 48, 67, 0.15) 65%,  
-    rgba(1, 48, 67, 0) 100%
-  );
+.things-card_overlay {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2rem;
+    background: linear-gradient(to top,
+            rgba(1, 48, 67, 0.75) 0%,
+            rgba(1, 48, 67, 0.45) 20%,
+            rgba(1, 48, 67, 0.15) 55%,
+            rgba(1, 48, 67, 0) 100%);
 }
 
 .things-card__image img {
@@ -604,25 +598,22 @@
 }
 
 .things-card__content {
-  position: absolute;
-  bottom: 0;
-  color: var(--color-white);
-  padding: 20px 20px;
-  z-index: 3;
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    color: #ffffff;
+    padding: 20px 20px;
+
 }
 
 .things-card__content .things-card__title {
-  font-family: var(--font-display);
-  font-size: var(--fs-24);
-  font-weight: 400;
-  margin-bottom: 12px;
+    font-size: var(--fs-24);
+    margin-bottom: 12px;
 }
 
+
 .things-card__description {
-  font-family: var(--font-body);
-  font-size: var(--fs-16);
-  line-height: 1.5;
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .explore__button {

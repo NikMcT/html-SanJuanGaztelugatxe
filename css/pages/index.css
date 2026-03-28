@@ -1172,26 +1172,25 @@ body {
 /* ══════════════════════════
    HERO
 ══════════════════════════ */
-.hero {
+.eco-hero {
     position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     overflow: hidden;
     position: relative;
     min-height: 100vh;
     background: url("../../images/ecosystem/hero.jpg") top / cover no-repeat;
-    display: flex;
     align-items: center;
 }
 
-.hero-img {
+/* .hero-img {
     position: absolute;
     inset: 0;
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/San_Juan_de_Gaztelugatxe_2015.jpg/1280px-San_Juan_de_Gaztelugatxe_2015.jpg') center/cover no-repeat;
     filter: brightness(0.72);
-}
+} */
 
 .hero-overlay {
     position: absolute;
@@ -1200,7 +1199,7 @@ body {
 }
 
 /* HERO BODY */
-.hero-body {
+.eco-hero-body {
     position: relative;
     z-index: 5;
     max-width: var(--page-width);
@@ -1211,15 +1210,16 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 2rem;
+    margin-top: 275px;
 }
 
-.hero-content {
+.eco-hero-content {
     color: #fff;
     max-width: 900px;
     padding-bottom: 30px;
 }
 
-.hero-content h1 {
+.eco-hero-content h1 {
     font-family: var(--font-display);
     font-size: var(--fs-48);
     line-height: 1.12;
@@ -1227,7 +1227,7 @@ body {
     margin-bottom: 1.1rem;
 }
 
-.hero-content p {
+.eco-hero-content p {
     font-size: var(--fs-18);
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.85);
@@ -1649,7 +1649,7 @@ body {
 
 
 /* ══════════════════════════
-     ANIMATIONS
+     ANIMATIONS for ecosytme page
   ══════════════════════════ */
 @keyframes fadeUp {
     from {

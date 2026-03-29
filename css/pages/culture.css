@@ -8,6 +8,68 @@ body {
 }
 
 
+.site-header {
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--nav-width);
+    height: 64px;
+    margin: 0 auto;
+    padding: 12px 40px;
+    border-radius: 8px;
+    opacity: unset;
+    background: rgba(var(--color-green-rgb), 0.5);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    display: block;
+    width: 60px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transform-origin: left;
+    transform: scale(2);
+}
+
+.site-nav .nav-list a {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--fs-18);
+    color: var(--color-white);
+}
+
+.site-nav .nav-list a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-rice-yellow);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.site-nav .nav-list a:hover::after {
+    width: 100%;
+}
+
+
 /* page header */
 
 .page-header {
@@ -18,8 +80,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: url('../../images/culture/culture-bg.png');
-    background-repeat: repeat;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .page-header-card {
@@ -74,6 +137,10 @@ body {
     animation: marquee 25s linear infinite;
 }
 
+.photo-strip:hover .photos-track {
+    animation-play-state: paused;
+}
+
 .photo-item {
     width: 340px;
     height: 400px;
@@ -87,7 +154,7 @@ body {
     object-fit: cover;
 }
 
-/* white arc shape covering top edge */
+/* strip curve top */
 .strip-curve-top {
     position: absolute;
     top: -80px;
@@ -100,7 +167,7 @@ body {
     z-index: 2;
 }
 
-/* white arc shape covering bottom edge */
+/* strip curve bottom */
 .strip-curve-bottom {
     position: absolute;
     bottom: -80px;
@@ -157,7 +224,6 @@ body {
     z-index: 0;
 }
 
-/* tagline */
 .tagline {
     display: flex;
     align-items: center;
@@ -220,4 +286,9 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .3s;
+}
+
+.section-image:hover img {
+    transform: scale(110%);
 }

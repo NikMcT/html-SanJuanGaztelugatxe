@@ -438,7 +438,7 @@ border-radius: 16px;
   margin-bottom: 0.09rem;
   margin-top:0.2rem;
   font-family: var(--font-body);
-  font-size: var(--fs-16);
+  font-size: var(--fs);
   text-transform: uppercase;
   color: #FFB300;
 }
@@ -560,7 +560,8 @@ border-radius: 16px;
   border-radius: 8px;
   overflow: hidden;
   margin: 20px;
-  font-size: var(--fs-30);
+  font-size: var(--fs-24);
+  font-family: var(--font-display);
 }
 
 .map-module{

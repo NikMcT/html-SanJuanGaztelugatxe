@@ -442,24 +442,6 @@
       </div>
     </div>
     <script src="./js/map.js"></script>
-    <script>
-      const revealElements = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            obs.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
-      });
-
-      revealElements.forEach(el => observer.observe(el));
-    </script>
-
-    <script src="map.js"></script>
 </body>
 
 </html>

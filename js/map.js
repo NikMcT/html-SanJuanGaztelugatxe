@@ -136,75 +136,75 @@
 //   }
 // });
 
-// const legendToggle = document.getElementById("legendToggle");
-// const legendPanel = document.getElementById("legendPanel");
-// const legendClose = document.getElementById("legendClose");
-// const legendBackdrop = document.getElementById("legendBackdrop");
+const legendToggle = document.getElementById("legendToggle");
+const legendPanel = document.getElementById("legendPanel");
+const legendClose = document.getElementById("legendClose");
+const legendBackdrop = document.getElementById("legendBackdrop");
 
-// function openLegend() {
-//   if (!legendPanel) return;
-//   legendPanel.hidden = false;
-//   document.body.style.overflow = "hidden";
-// }
+function openLegend() {
+  if (!legendPanel) return;
+  legendPanel.hidden = false;
+  document.body.style.overflow = "hidden";
+}
 
-// function closeLegendModal() {
-//   if (!legendPanel) return;
-//   legendPanel.hidden = true;
-//   document.body.style.overflow = "";
-// }
+function closeLegendModal() {
+  if (!legendPanel) return;
+  legendPanel.hidden = true;
+  document.body.style.overflow = "";
+}
 
-// if (legendToggle) {
-//   legendToggle.addEventListener("click", openLegend);
-// }
+if (legendToggle) {
+  legendToggle.addEventListener("click", openLegend);
+}
 
-// if (legendClose) {
-//   legendClose.addEventListener("click", closeLegendModal);
-// }
+if (legendClose) {
+  legendClose.addEventListener("click", closeLegendModal);
+}
 
-// if (legendBackdrop) {
-//   legendBackdrop.addEventListener("click", closeLegendModal);
-// }
+if (legendBackdrop) {
+  legendBackdrop.addEventListener("click", closeLegendModal);
+}
 
-// document.addEventListener("keydown", (event) => {
-//   if (event.key === "Escape" && legendPanel && !legendPanel.hidden) {
-//     closeLegendModal();
-//   }
-// });
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && legendPanel && !legendPanel.hidden) {
+    closeLegendModal();
+  }
+});
 
-// const mapIntro = document.getElementById("mapIntro");
-// const enterMapBtn = document.getElementById("enterMapBtn");
-// const skipMapIntro = document.getElementById("skipMapIntro");
+const mapIntro = document.getElementById("mapIntro");
+const enterMapBtn = document.getElementById("enterMapBtn");
+const skipMapIntro = document.getElementById("skipMapIntro");
 
-// function hideMapIntro() {
-//   if (!mapIntro) return;
-//   mapIntro.classList.add("is-hidden");
-// }
+function hideMapIntro() {
+  if (!mapIntro) return;
+  mapIntro.classList.add("is-hidden");
+}
 
-// if (enterMapBtn) {
-//   enterMapBtn.addEventListener("click", hideMapIntro);
-// }
+if (enterMapBtn) {
+  enterMapBtn.addEventListener("click", hideMapIntro);
+}
 
-// if (skipMapIntro) {
-//   skipMapIntro.addEventListener("click", hideMapIntro);
-// }
+if (skipMapIntro) {
+  skipMapIntro.addEventListener("click", hideMapIntro);
+}
 
-// const mapIntroToggle = document.getElementById("mapIntroToggle");
+const mapIntroToggle = document.getElementById("mapIntroToggle");
 
-// if (mapIntroToggle && mapIntro) {
-//   mapIntroToggle.addEventListener("click", () => {
-//     const isHidden = mapIntro.classList.toggle("is-hidden");
-//     mapIntroToggle.textContent = isHidden
-//       ? "Show Guide"
-//       : "Back To Guide";
-//   });
-// }
+if (mapIntroToggle && mapIntro) {
+  mapIntroToggle.addEventListener("click", () => {
+    const isHidden = mapIntro.classList.toggle("is-hidden");
+    mapIntroToggle.textContent = isHidden
+      ? "Show Guide"
+      : "Back To Guide";
+  });
+}
 
-// window.addEventListener("load", positionHotspots);
-// window.addEventListener("resize", positionHotspots);
+window.addEventListener("load", positionHotspots);
+window.addEventListener("resize", positionHotspots);
 
-// if (mapBase) {
-//   mapBase.addEventListener("load", positionHotspots);
-// }
+if (mapBase) {
+  mapBase.addEventListener("load", positionHotspots);
+}
 
 
 const locations = [
@@ -304,3 +304,18 @@ function select(i) {
 renderPins();
 renderNav();
 renderContent(0);
+
+      const revealElements = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+      });
+
+      revealElements.forEach(el => observer.observe(el));

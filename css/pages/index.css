@@ -222,6 +222,17 @@
     width: 60px;
 }
 
+.fa-instagram {
+    color: var(--color-green);
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.fa-instagram:hover {
+    transform: translateY(-5px);
+}
+
+
 .footer_logo img {
     width: 100%;
     height: auto;

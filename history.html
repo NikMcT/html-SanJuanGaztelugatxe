@@ -42,8 +42,8 @@
 
         <!-- <div class="map-bg"></div> -->
         <div class="img-sjdg" role="img" aria-label="David Vives - San Juan de Gaztelugatxe"></div>
-            <div class="image-reveal"></div>
-            <div class="container">
+        <div class="image-reveal"></div>
+        <div class="container">
             <!-- Timeline entries: alternate left/right -->
             <div class="timeline-entry left" data-id="0" style="top: 40%;">
                 <h2 class="entry-year">1334</h2>
@@ -89,7 +89,7 @@
                     numbers soaring — 75,000 tourists climbed the 241 steps in July 2017 alone, forever changing the
                     island's global profile.</p>
             </div>
-            </div>
+        </div>
     </section>
 
     <!-- site-footer -->
@@ -121,7 +121,7 @@
                         <ul class="footer_social-list">
                             <li><a href="https://www.instagram.com/explore/locations/648812/san-juan-de-gaztelugatxe/"
                                     aria-label="Instagram">
-                                    <img src="./images/social_media/Instagram.png" alt="Instagram"></a>
+                                    <i class="fa fa-instagram"></a>
                             </li>
                         </ul>
                     </div>
@@ -137,60 +137,61 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 
-<script>
-    const timeline_entries = document.querySelectorAll('.timeline-entry')
+    <script>
+        const timeline_entries = document.querySelectorAll('.timeline-entry')
 
 
-    window.addEventListener('scroll', function () {
-        const n = document.documentElement.scrollTop
-        timeline_entries.forEach((timeline_entries, index) => {
-            const triggerPoint = 300 + index * 100
-            if (n > triggerPoint) {
-                timeline_entries.classList.add('show')
-            } else {
-                timeline_entries.classList.remove('show')
-            }
+        window.addEventListener('scroll', function () {
+            const n = document.documentElement.scrollTop
+            timeline_entries.forEach((timeline_entries, index) => {
+                const triggerPoint = 300 + index * 100
+                if (n > triggerPoint) {
+                    timeline_entries.classList.add('show')
+                } else {
+                    timeline_entries.classList.remove('show')
+                }
+            })
         })
-    })
 
 
-    gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
 
-    // IMAGE REVEAL (image to outline)
-    gsap.to(".image-reveal", {
-        clipPath: "inset(0% 0 0 0)",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".hero-history",
-            start: "top 200%",
-            end: "bottom top",
-            scrub: true
-        }
-    });
+        // IMAGE REVEAL (image to outline)
+        gsap.to(".image-reveal", {
+            clipPath: "inset(0% 0 0 0)",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".hero-history",
+                start: "top 200%",
+                end: "bottom top",
+                scrub: true
+            }
+        });
 
-    // PARALLAX BACKGROUND
-    gsap.to(".map-bg", {
-        y: "20%",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".hero-history",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
+        // PARALLAX BACKGROUND
+        gsap.to(".map-bg", {
+            y: "20%",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".hero-history",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
 
-    // PARALLAX IMAGE (slower)
-    gsap.to(".img-sjdg", {
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".hero-history",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-</script>
+        // PARALLAX IMAGE (slower)
+        gsap.to(".img-sjdg", {
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".hero-history",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+    </script>
 
 </body>
+
 </html>

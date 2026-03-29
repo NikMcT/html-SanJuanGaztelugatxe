@@ -532,6 +532,7 @@
     display: block;
     object-fit: cover;
     display: block;
+    border-radius: 8px;
 }
 
 .timeline__content .timeline__item p {
@@ -892,7 +893,7 @@
 
 .history-main-title {
     font-family: var(--font-display);
-    font-size: var(--fs-56);
+    font-size: var(--fs-48);
     color: #f6faf9;
     margin-bottom: 16px;
     max-width: 900px;

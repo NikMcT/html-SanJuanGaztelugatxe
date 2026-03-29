@@ -15,7 +15,7 @@
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  background-color:#E1F3FC;
+  background-color:#e1f3fc;
 }
 
 .map-stage {
@@ -551,4 +551,243 @@ border-radius: 16px;
 .map-intro.is-hidden ~ .map-intro-toggle {
   opacity: 1;
   pointer-events: auto;
+}
+
+
+
+
+.map-module-header{
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  font-size: var(--fs-30);
+}
+
+.map-module{
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;  /* single column — we'll overlap instead */
+  position: relative;
+  max-width: var(--layout-width);
+  margin: 0 auto;
+  min-height: 560px;
+  background: #e1f3fc;
+}
+
+.map-container{
+  margin-top: 100px;
+}
+
+
+
+.map-left {
+  position: relative;
+  background: #e1f3fc;
+  overflow: hidden;
+  width: 85%;
+  height: 100%;
+  min-height: 560px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.map-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.map-right {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  z-index: 10;
+  width: 40%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  pointer-events: none;  /* let clicks pass through to map pins below */
+}
+
+/* Re-enable clicks on the actual content inside */
+.map-right > * {
+  pointer-events: auto;
+}
+
+.map-pin {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+  opacity: 0.25;
+	background: rgba(255,255,255,0.18);
+	border: 1px solid rgba(255,255,255,0.45);
+
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+
+	box-shadow:
+		0 8px 20px rgba(0,0,0,0.18),
+		inset 0 0 10px rgba(255,255,255,0.2);
+
+	transition: all 0.2s ease;
+}
+
+.map-pin:hover {
+	transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+	background: rgba(255,255,255,0.28);
+}
+
+.map-pin.active {
+	background: rgba(255, 179, 0, 0.2);
+	border: 1px solid rgba(255, 179, 0, 0.6);
+}
+
+.map-pin.active .pin-dot {
+	background: #FFB300;
+	box-shadow:
+		0 0 0 6px rgba(255, 179, 0, 0.25),
+		0 0 14px rgba(255, 179, 0, 0.6);
+}
+
+.pin-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #013043;
+
+	box-shadow:
+		0 0 0 4px rgba(255,255,255,0.25),
+		0 0 10px rgba(1, 48, 67, 0.4);
+}
+
+
+
+.location-nav {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+}
+
+.loc-btn {
+	font-size: 12px;
+	padding: 5px 12px;
+	border-radius: 20px;
+	border: 0.5px solid var(--color-border-secondary);
+	background: var(--color-background-secondary);
+	color: var(--color-text-secondary);
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.loc-btn.active {
+	background: #013043;
+	color: #fff;
+	border-color: #013043;
+}
+
+.loc-eyebrow {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+
+.loc-title {
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--color-text-primary);
+	margin-bottom: 4px;
+	line-height: 1.2;
+}
+
+.loc-subtitle {
+	font-size: 13px;
+	color: var(--color-text-secondary);
+	margin-bottom: 1rem;
+}
+
+.loc-divider {
+	height: 0.5px;
+	background: var(--color-border-tertiary);
+	margin-bottom: 1rem;
+}
+
+.loc-body {
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--color-text-secondary);
+}
+
+.loc-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 1.25rem;
+}
+
+.loc-tag {
+	font-size: 11px;
+	padding: 4px 10px;
+	border-radius: 20px;
+	background: var(--color-background-secondary);
+	color: var(--color-text-tertiary);
+	border: 0.5px solid var(--color-border-tertiary);
+}
+
+.loc-stat-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-top: 1.25rem;
+}
+
+.loc-stat {
+	background: var(--color-background-secondary);
+	border-radius: var(--border-radius-md);
+	padding: 10px 12px;
+}
+
+.loc-stat-val {
+	font-size: 17px;
+	font-weight: 500;
+	color: var(--color-text-primary);
+}
+
+.loc-stat-lbl {
+	font-size: 11px;
+	color: var(--color-text-tertiary);
+	margin-top: 2px;
+}
+
+.fade-in {
+	animation: fi 0.25s ease both;
+}
+
+@keyframes fi {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

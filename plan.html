@@ -44,11 +44,11 @@
         <div class="map-wrap" id="mapWrap">
           <img src="./images/map.webp" alt="Gaztelugatxe Map" class="map-base" />
 
-          <div class="map-intro" id="mapIntro">
+                    <div class="map-intro" id="mapIntro">
             <div class="map-intro__card" id="mapIntroCard">
               <div class="map-intro__bar"></div>
 
-              <p class="map-intro__eyebrow">Interactive Map</p>
+              <p class="map-intro__eyebrow">Plan Your Visit</p>
               <h2 class="map-intro__title">San Juan de Gaztelugatxe</h2>
               <p class="map-intro__desc">
                 Explore the coastline, landmarks, and key locations of this iconic Basque Country destination.
@@ -60,18 +60,14 @@
                 <li>Toggle the legend for the full key</li>
               </ul>
 
-              <button class="map-intro__cta" id="enterMapBtn" type="button">
-                Explore the Map
-              </button>
-
-              <button class="map-intro__skip" id="skipMapIntro" type="button">
-                Skip intro
+              <!-- <button class="map-intro__cta" id="enterMapBtn" type="button"> -->
+              <button class="map-intro__cta" type="button">
+                <a href="#map-module">Explore the Map</a>
               </button>
 
             </div>
           </div>
-
-          <!--Hover points-->
+<!-- 
           <button class="map-hotspot" data-x="0.22" data-y="0.365" data-title="Gaztelugatxe"
             data-subtitle="Clifftop chapel on a sea island." data-body="A dramatic islet crowned by the hermitage of San Juan, 
         reached by a winding stone staircase and rewarded with sweeping views of the Bay of Biscay."
@@ -91,13 +87,13 @@
           <button class="map-hotspot" data-x="0.68" data-y="0.91" data-title="Bermeo"
             data-subtitle="Historic Fishing Port" data-body="Historic coastal town with maritime heritage."
             aria-label="Bermeo">
-          </button>
+          </button> -->
 
-          <div id="hoverLens" class="hover-lens" hidden></div>
+          <!-- <div id="hoverLens" class="hover-lens" hidden></div>
 
           <div id="hoverLabel" class="hover-label" hidden>
             <span id="hoverLabelText"></span>
-          </div>
+          </div> -->
 
           <aside id="mapPanel" class="map-panel" hidden>
             <button id="closePanel" class="map-panel__close" type="button" aria-label="Close panel">×</button>
@@ -114,47 +110,70 @@
           </button>
         </div>
       </div>
+    </section>
 
-      <!--map legend-->
+    <!-- <section class="plan-hero">
+      <div class="plan-hero-body">
+      <div class="plan-hero-content">
+        <h1>Plan Your Visit</h1>
+        <p>Want to plan the best trip to San Juan de Gaztelugatxe for you and your group? Learn more about commuting, paths, maps, and restrictions here.</p>
+      </div>
+    </div>
+    </section> -->
 
-      <button class="legend-trigger" id="legendToggle" aria-label="Open map legend" type="button">
-        <span class="legend-trigger__icon" aria-hidden="true">
-          <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="0" width="14" height="2" rx="1" fill="white" opacity="0.9" />
-            <rect x="0" y="5" width="10" height="2" rx="1" fill="white" opacity="0.9" />
-            <rect x="0" y="10" width="12" height="2" rx="1" fill="white" opacity="0.9" />
-          </svg>
-        </span>
-        <span class="legend-trigger__label">Map Legend</span>
-        <span class="legend-trigger__dots" aria-hidden="true">
-          <span class="legend-trigger__dot" style="background:#ffb300;"></span>
-          <span class="legend-trigger__dot" style="background:#10755A;"></span>
-          <span class="legend-trigger__dot" style="background:#013043;"></span>
-          <span class="legend-trigger__dot" style="background:#e53935;"></span>
-        </span>
-      </button>
+    <section class="map-container" class="container" id="map-module">
+      <div class="map-module">
+        <div class="map-module-header">      
+            <h2>Interactive Map</h2>
+        </div>
+        <div class="map-left" id="mapLeft">
+          <img src="./images/map.webp" alt="Gaztelugatxe coastal map" />
+        </div>
 
-      <div class="legend-modal" id="legendPanel" hidden>
-        <div class="legend-modal__backdrop" id="legendBackdrop"></div>
+        <div class="map-right">
+          <div class="location-nav" id="locNav"></div>
+          <div id="locContent"></div>
 
-        <div class="legend-modal__card">
-          <div class="legend-modal__header">
-            <p class="legend-modal__title">Map Legend</p>
-            <button class="legend-modal__close" id="legendClose" type="button" aria-label="Close legend">
-              <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-              </svg>
-            </button>
+        <button class="legend-trigger" id="legendToggle" aria-label="Open map legend" type="button">
+          <span class="legend-trigger__icon" aria-hidden="true">
+            <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="14" height="2" rx="1" fill="white" opacity="0.9" />
+              <rect x="0" y="5" width="10" height="2" rx="1" fill="white" opacity="0.9" />
+              <rect x="0" y="10" width="12" height="2" rx="1" fill="white" opacity="0.9" />
+            </svg>
+          </span>
+          <span class="legend-trigger__label">Map Legend</span>
+          <span class="legend-trigger__dots" aria-hidden="true">
+            <span class="legend-trigger__dot" style="background:#ffb300;"></span>
+            <span class="legend-trigger__dot" style="background:#10755A;"></span>
+            <span class="legend-trigger__dot" style="background:#013043;"></span>
+            <span class="legend-trigger__dot" style="background:#e53935;"></span>
+          </span>
+        </button>
+
+        <div class="legend-modal" id="legendPanel" hidden>
+          <div class="legend-modal__backdrop" id="legendBackdrop"></div>
+          <div class="legend-modal__card">
+            <div class="legend-modal__header">
+              <p class="legend-modal__title">Map Legend</p>
+              <button class="legend-modal__close" id="legendClose" type="button" aria-label="Close legend">
+                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="legend-modal__body">
+              <img src="./images/sjg-map.webp"
+                alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
+                class="legend-modal__image" />
+            </div>
           </div>
-
-          <div class="legend-modal__body">
-            <img src="./images/sjg-map.webp"
-              alt="Map legend for visitor services, transport, facilities, landmarks, and restrictions."
-              class="legend-modal__image" />
-          </div>
+        </div>
         </div>
       </div>
     </section>
+
 
     <!-- Routing and Commuting -->
     <section class="routing" aria-labelledby="routing-title">
@@ -438,6 +457,8 @@
 
       revealElements.forEach(el => observer.observe(el));
     </script>
+
+    <script src="map.js"></script>
 </body>
 
 </html>

@@ -11,25 +11,28 @@
   width: 100%;
 }
 
-.page-plan .container {
+.page-plan .map-container {
 	max-width: 1440px;
 	margin: 0  auto;
 	padding-left: 80px;
 	padding-right: 90px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1024px) {
-	.page-plan .container {
+	.page-plan .map-container {
 	 padding-left: 40px;
 	 padding-right: 40px;
 	}
 }
 @media (max-width: 640px) {
-	.page-plan .container {
+	.page-plan .map-container {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 }
+
+
 
 /*Routing and Commuting Section*/
 

@@ -1683,7 +1683,7 @@ body {
 
 /* culture page css */
 
-body {
+.culture-body {
     /* background-color: #ffffff; */
     background-image: linear-gradient(to bottom, white, #F6FAF9);
 }

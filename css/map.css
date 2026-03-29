@@ -438,15 +438,15 @@ border-radius: 16px;
   margin-bottom: 0.09rem;
   margin-top:0.2rem;
   font-family: var(--font-body);
-  font-size: 0.98rem;
+  font-size: var(--fs-16);
   text-transform: uppercase;
   color: #FFB300;
 }
 
 .map-intro__title {
   margin-bottom: 0.09rem;
-  font-family: var(--font-body);
-  font-size: 2rem;
+    font-family: var(--font-display);
+    font-size: var(--fs-56);
   line-height: 1.2;
   padding: 0.9rem 1.6rem;
   border-radius: 8px;

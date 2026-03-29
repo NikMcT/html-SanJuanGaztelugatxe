@@ -392,7 +392,7 @@
 }
 
 .explore__content .explore__description {
-    font-size: var(--fs-24);
+    font-size: var(--fs-20);
     margin-bottom: 40px;
 }
 
@@ -616,7 +616,7 @@
     top: 5%;
     right: 0;
     font-family: var(--font-body);
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
     background-color: #fffffa;
     padding: 35px 21px;
     border-radius: 16px;
@@ -666,7 +666,6 @@
 }
 
 .season-card__description {
-    font-weight: 600;
     line-height: var(--lh-normal);
 }
 
@@ -755,7 +754,7 @@
     width: 325px;
     height: 450px;
     left: 0;
-    bottom: 8%;
+    bottom: 3%;
     transform: rotate(-10deg);
     padding: 25px 20px;
     /* width: 100%; */

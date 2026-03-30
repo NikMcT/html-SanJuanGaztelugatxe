@@ -171,40 +171,40 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-const mapIntro = document.getElementById("mapIntro");
-const enterMapBtn = document.getElementById("enterMapBtn");
-const skipMapIntro = document.getElementById("skipMapIntro");
+// const mapIntro = document.getElementById("mapIntro");
+// const enterMapBtn = document.getElementById("enterMapBtn");
+// const skipMapIntro = document.getElementById("skipMapIntro");
 
-function hideMapIntro() {
-  if (!mapIntro) return;
-  mapIntro.classList.add("is-hidden");
-}
+// function hideMapIntro() {
+//   if (!mapIntro) return;
+//   mapIntro.classList.add("is-hidden");
+// }
 
-if (enterMapBtn) {
-  enterMapBtn.addEventListener("click", hideMapIntro);
-}
+// if (enterMapBtn) {
+//   enterMapBtn.addEventListener("click", hideMapIntro);
+// }
 
-if (skipMapIntro) {
-  skipMapIntro.addEventListener("click", hideMapIntro);
-}
+// if (skipMapIntro) {
+//   skipMapIntro.addEventListener("click", hideMapIntro);
+// }
 
-const mapIntroToggle = document.getElementById("mapIntroToggle");
+// const mapIntroToggle = document.getElementById("mapIntroToggle");
 
-if (mapIntroToggle && mapIntro) {
-  mapIntroToggle.addEventListener("click", () => {
-    const isHidden = mapIntro.classList.toggle("is-hidden");
-    mapIntroToggle.textContent = isHidden
-      ? "Show Guide"
-      : "Back To Guide";
-  });
-}
+// if (mapIntroToggle && mapIntro) {
+//   mapIntroToggle.addEventListener("click", () => {
+//     const isHidden = mapIntro.classList.toggle("is-hidden");
+//     mapIntroToggle.textContent = isHidden
+//       ? "Show Guide"
+//       : "Back To Guide";
+//   });
+// }
 
-window.addEventListener("load", positionHotspots);
-window.addEventListener("resize", positionHotspots);
+// window.addEventListener("load", positionHotspots);
+// window.addEventListener("resize", positionHotspots);
 
-if (mapBase) {
-  mapBase.addEventListener("load", positionHotspots);
-}
+// if (mapBase) {
+//   mapBase.addEventListener("load", positionHotspots);
+// }
 
 
 const locations = [

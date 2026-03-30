@@ -555,6 +555,12 @@
     overflow: hidden;
 }
 
+.season-highlight-title{
+    font-family: var(--font-display);
+    font-size: var(--fs-48);
+    font-weight: 600;
+}
+
 .seasonal-board {
     position: relative;
     padding-top: 74px;

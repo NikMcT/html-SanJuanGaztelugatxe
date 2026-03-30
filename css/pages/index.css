@@ -555,7 +555,7 @@
     overflow: hidden;
 }
 
-.season-highlight-title{
+.season-highlight-title {
     font-family: var(--font-display);
     font-size: var(--fs-48);
     font-weight: 600;
@@ -760,16 +760,16 @@
     position: absolute;
     width: 325px;
     height: 450px;
-    left: 0;
-    bottom: 3%;
+    left: 40px;
+    bottom: 80px;
     transform: rotate(-10deg);
     padding: 25px 20px;
-    /* width: 100%; */
     background-image: url('../../images/postcard.png');
     background-size: cover;
-    line-height: 1.6;
+    background-position: center;
 
 }
+
 
 .season-postcard_title {
     font-size: var(--fs-18);
@@ -1817,8 +1817,13 @@ body {
 }
 
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .photos-track {

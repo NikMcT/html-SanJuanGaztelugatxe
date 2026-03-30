@@ -774,6 +774,7 @@
     background-image: url('../../images/postcard.png');
     background-size: cover;
     background-position: center;
+    display: none;
 
 }
 
